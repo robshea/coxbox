@@ -1,4 +1,4 @@
-/************************************************************************/
+35/************************************************************************/
 /******* THEME NAME: Transparent Horizontal                       *******/
 /*******                                                          *******/
 /******* Last changed: 2008-10-21 15:15 GMT                       *******/
@@ -19,9 +19,13 @@ BODY
 
 BODY, TD, P, H1, H2, H3, H4, H5, H6
 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  color: #000000;
+	font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5em;
+	font-style: normal;
+	color: #333333;
 }
 BODY
 {
@@ -30,7 +34,9 @@ BODY
 }
 H1, H2, H3, H4, H5, H6
 {
-  font-weight: bold;
+	font-family: "News Cycle", sans-serif;
+	-webkit-text-stroke: 0.25px;
+	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 H1
 {
@@ -60,9 +66,9 @@ P:first-child, H1:first-child, H2:first-child, H3:first-child, H4:first-child, H
 {
   margin-top: 0;
 }
-A, A:link, A:active, A:visited
-{
-  color: #0781C7;
+A, A:link, A:active, A:visited {
+  color: #d01d00;
+  text-decoration: none;
 }
 A:hover
 {
@@ -237,7 +243,7 @@ SPAN.contStyleExcInlineSmaller
 
 #idMainContainer
 {
-  width: 919px;
+  width: 960px;
   height: auto;
 }
 
@@ -247,8 +253,9 @@ SPAN.contStyleExcInlineSmaller
 
 #idHeaderContainer
 {
-  width: 919px;
+  width: 960px;
   height: auto;
+  margin-top: 20px;
 }
 
 /******* Header containers for applying background *******/
@@ -287,6 +294,9 @@ SPAN.contStyleExcInlineSmaller
   font-size: 175%;
   font-weight: bold;
   white-space: nowrap;
+  font-family: "News Cycle", sans-serif;
+  -webkit-text-stroke: 0.25px;
+  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 
 /******* Editable header region container *******/
@@ -294,14 +304,14 @@ SPAN.contStyleExcInlineSmaller
 
 .headerContentHolder
 {
-  width: 919px;
+  width: 960px;
   height: 138px;
   background-color: #FFFFFF;
 }
 
 #idHeaderContent
 {
-  width: 919px;
+  width: 960px;
   height: 138px;
 }
 
@@ -330,7 +340,7 @@ SPAN.contStyleExcInlineSmaller
 {
   position: absolute;
   top: 10px;
-  left: 720px;
+  left: 760px;
   width: 190px;
   height: 103px;
   z-index: 33003;
@@ -725,9 +735,9 @@ html>body #idLoginPasswordForgot
   margin: 0 0px 0 0;
   padding: 5px 5px 5px 5px;
   background-color: transparent;
-  font-size: 120%;
+  font-size: 1.8em;
   font-weight: bold;
-  color: #000000;
+  color: #d01d00;
   text-align: left;
   text-decoration: none;  
   overflow: hidden;
@@ -1212,8 +1222,8 @@ background-position: left top;
 
 #idPrimaryContentContainer
 {
-  width: 919px;
-  margin: 0px;
+  width: 960px;
+  margin: 10px;
   height: auto;
   float: left;
 }
@@ -1222,9 +1232,8 @@ background-position: left top;
 
 #idPrimaryContentContainer .d1
 {
-  width: 917px;
+  width: 940px;
   float: left;
-  border: 1px solid #CCCCCC;
 }
 #idPrimaryContentContainer .d1 .d1
 {
@@ -1235,7 +1244,6 @@ background-position: left top;
 #idPrimaryContentContainer .block .inner
 {
   float: left;
-  padding: 15px 23px 15px 33px;
 }
 
 /******* Container for content editing *******/
@@ -1249,7 +1257,7 @@ background-position: left top;
 #idPrimaryContentBlock1ContentHolder,
 #idPrimaryContentBlock1Content
 {
-  width: 861px;
+  width: 940px;
 }
 
 /*******************************************************************/
@@ -1268,8 +1276,9 @@ background-position: left top;
 
 #idFooterContainer
 {
-  width: 919px;
+  width: 960px;
   height: auto;
+  margin: 10px;
 }
 
 /******* Footer containers for applying background *******/
@@ -1302,14 +1311,14 @@ background-position: left top;
 
 .footerContentHolder
 {
-  width: 909px;
+  width: 940px;
   height: auto;
   padding: 0;
   background-color: #FFFFFF;
 }
 #idFooterContent
 {
-  width: 909px;
+  width: 940px;
 }
 
 /*******************************************************************/
