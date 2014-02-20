@@ -1,3 +1,12 @@
+#idHeaderAssociationName 
+{
+	font-weight: normal;
+	font-family: "News Cycle", sans-serif;
+	-webkit-text-stroke: 0.25px;
+	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+	color: #333;
+}
+
 #idMainMenu TD A,
 #idMainMenu TD A:link,
 #idMainMenu TD A:active,
@@ -5,27 +14,50 @@
 #idMainMenu TD A:hover,
 #idMainMenu TD SPAN SPAN
 {
-  display: block;
-  height: 100%;
-  margin: 0;
-  padding: 5px;
-  background-color: transparent;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #d01d00;
-  text-align: left;
-  text-decoration: none;  
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: middle;
-/ display: inline-block;
-/ margin-right: 0;
-/ padding-right: 5px;
-  font-family: "News Cycle", sans-serif;
-  -webkit-text-stroke: 0.25px;
-  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+	display: block;
+	height: 1.1em;
+	margin: 0;
+	padding: 5px;
+	background-color: transparent;
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #d01d00;
+	text-align: left;
+	text-decoration: none;  
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	/ display: inline-block;
+	/ margin-right: 0;
+	/ padding-right: 5px;
+	font-family: "News Cycle", sans-serif;
+	-webkit-text-stroke: 0.25px;
+	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 
 #idMainMenu TD.separator SPAN {
 	display: none;
+}
+TABLE#idPageLayoutMainContainer .pageLayoutTitleOuterContainer {
+	padding-bottom: 0;
+}
+.home_promo {
+	margin: 40px auto 0;
+	width: 220px;
+}
+.home_promo_title {
+	background-color: #eee;
+	padding: 10px;
+	margin: 0;
+	font-size: 1.25em;
+	font-family: "News Cycle", sans-serif;
+	-webkit-text-stroke: 0.25px;
+	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+}
+.home_promo img {
+	line-height: 1em;
+}
+.home_promo_copy {
+	margin: 10px 0;
+	font-size: 1em;
 }
