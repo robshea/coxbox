@@ -1,0 +1,637 @@
+//tooltips on forum
+.controlTooltipExtender
+{
+	padding: 15px;
+	width: 25%;
+}
+
+#idForumSummaryContainer
+{
+	.introOuterContainer
+	{
+		float: left;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.forumPagerContainer
+	{
+		float: left;
+		padding: 10px 0;
+		width: 100%;
+		text-align: right;
+	}
+
+
+	.boxBodyContainer,
+	.boxHeaderContainer
+	{
+		TABLE
+		{
+			width: 100%;
+
+			TD
+			{
+				padding: 5px;
+				margin: 0;
+				margin-left:0;
+				margin-right: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				height:40px;
+
+
+				&.threadImageTD
+				{
+					width: 5%;
+				}
+
+				&.threadTD
+				{
+					width: 55%;
+				}
+
+				&.lastReplyTD
+				{
+					width: 30%;
+
+					.lastReply
+					{
+						span
+						{
+							float: left;
+							width: 100%;
+						}
+					}
+				}
+
+				&.repliesCountTD
+				{
+					width: 10%;
+				}
+
+				DIV
+				{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.boxHeaderContainer
+	{
+		table
+		{
+			td
+			{
+				padding: 0;
+			}
+		}
+	}
+
+	//create topic/subscribe to forum
+	#idForumPanelContainer
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+		input
+		{
+			float: left;
+		}
+
+		#idSubscribe,
+		#idUnsubscribe,
+		.forumPanelSubscribeLink
+		{
+			float: right;
+			margin-right: 4px;
+		}
+	}
+}
+
+#idForumCategoryListContainer
+{
+	.forumCategoryOuterContainer
+	{
+		float: left;
+		margin-bottom: 15px;
+		width: 100%;
+		.forumListContainer
+		{
+			//outline box override
+			.boxHeaderOuterContainer
+			{
+				padding-left: 0;
+				margin-top: 0;
+				width: 100%;
+			}
+
+			TABLE
+			{
+				width: 100%;
+				padding: 5px 0;
+
+				TD
+				{
+					padding: 3px 0;
+					height:40px;
+
+					&.pageStateIconTD
+					{
+						width: 5%;
+
+						.pageStateIcon
+						{
+
+							DIV
+							{
+                              &.memberIconDiv
+                              {
+                                background: url(<$StaticModel.ThemeUrl$>/images/icon-access-member.png) left top no-repeat;
+                                height: 16px;
+                                width: 16px;
+                              }
+
+                              &.adminIconDiv
+                              {
+                                background: url(<$StaticModel.ThemeUrl$>/images/icon-access-admin.png) left top no-repeat;
+                                height: 16px;
+                                width: 16px;
+                              }
+
+                              &.anybodyIconDiv
+                              {
+                                background: url(<$StaticModel.ThemeUrl$>/images/icon-access-anybody.png) left top no-repeat;
+                                height: 16px;
+                                width: 16px;
+                              }
+							}
+						}
+					}
+
+					&.threadTD
+					{
+						width: 45%;
+
+						.forumDescription
+						{
+							display: block;
+							clear: both;
+						}
+					}
+
+					&.lastReplyTD
+					{
+						width: 30%;
+
+						a, span
+						{
+							float: left;
+							width: 100%;
+						}
+					}
+
+					&.topicsCountTD
+					{
+						width: 10%;
+						text-align: center;
+					}
+
+					&.repliesCountTD
+					{
+						width: 10%;
+						text-align: center;
+					}
+						
+					div
+					{
+						width: 100%;
+					}
+				}
+
+			}
+
+            //not for header!
+            .boxBodyContainer TD
+            {
+
+            &.pageStateIconTD
+            {
+              width: 5%;
+              vertical-align: top;
+              text-align: right;
+              padding: 10px 0;
+              height: auto;
+
+              .pageStateIcon
+              {
+                display: inline-block;
+                padding: 8px 10px 0 0;
+                width: 16px;
+              }
+            }
+
+            &.threadTD
+            {
+              width: 45%;
+              vertical-align: top;
+              padding: 10px 0;
+              height: auto;
+
+              .thread
+              {
+                padding: 6px 0 0 0;
+              }
+
+              .forumDescription
+              {
+                display: block;
+                clear: both;
+              }
+            }
+          }
+		}
+	}
+}
+
+//comments list
+#idForumDetailsContainer
+{
+	#idForumPanelContainer
+	{
+		float: left;
+		width: 100%;
+		margin: 5px 0;
+
+		#idUnsubscribe
+		{
+			float: right;
+			vertical-align: top;
+			width: 50%;
+			text-align: right;
+			IMG
+			{
+				vertical-align: top;
+				margin-right: 3px;
+			}
+		}
+
+		#idSubscribe
+		{
+			float: right;
+		}
+
+		input
+		{
+			float: left;
+		}
+	}
+
+	#idForumBottomPanelContainer
+	{
+		float: left;
+		width: 100%;
+		margin: 5px 0;
+
+		a
+		{
+			float: right;
+		}
+	}
+
+	.pagerOuterContainer
+	{
+		float: right;
+		width: 100%;
+		text-align: right;
+		margin-bottom: 15px;
+	}
+
+	ul.boxesList
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li
+		{
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+
+			.messageActionsContainer
+			{
+				float: right;
+				margin-right: 4%;
+			}
+
+			.forumMessageHeaderTable
+			{
+				TD>DIV,
+				TD>SPAN
+				{
+					padding: 10px;
+					display: block;
+				}
+
+				TD
+				{
+					width: 50%;
+				}
+			}
+
+			.boxBodyOuterContainer .boxBodyContainer
+			{
+				float: none;
+			}
+
+
+
+			.forumMessageTable
+			{
+				table-layout: fixed;
+
+				TD
+				{
+					vertical-align: top;
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					&.left
+					{
+						width: 18%;
+						padding: 2% 2% 2%;
+
+						.boxBodyInfoOuterContainer
+						{
+							//overriding outline box defaults, oh my
+							width: auto;
+							display: inline;
+							float: none;
+							padding: 0;
+						}
+					}
+
+					&.right
+					{
+						width: 78%;
+						padding-right: 2%;
+						//outline box override
+						.boxBodyContentOuterContainer
+						{
+							width: 95%;
+							padding-bottom: 3%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//edit msg at forum
+#idForumEditEntryContainer
+{
+
+	.mandatoryFieldsTitle
+	{
+		float: left;
+		clear: both;
+		width: 19%;
+		text-align: right;
+		margin: 10px 0;
+	}
+
+
+	#idAuthorLabelContainer
+	{
+		.labeledTextContainer
+		{
+			DIV
+			{
+				display: inline;
+			}
+		}
+	}
+
+	.fieldContainer
+	{
+		margin-bottom: 5px;
+		clear: both;
+
+		.captchaImageContainer
+		{
+			float: left;
+			width: 300px;
+			margin-bottom: 10px;
+
+			.captchaImage
+			{
+				float: left;
+				margin-right: 2%;
+			}
+		}
+
+		.fieldSubContainer
+		{
+			.fieldLabel
+			{
+				float: left;
+				width: 19%;
+				padding-right: 1%;
+				text-align: right;
+			}
+
+			.fieldBody
+			{
+				width: 79%;
+				INPUT.authorTextBox
+				{
+					max-width: 550px;
+					width: 77%;
+				}
+			}
+		}
+
+		TABLE
+		{
+			width: 100%;
+
+			TD.left
+			{
+				width: 20%;
+				vertical-align: top;
+
+				.fieldLabel
+				{
+					width: 94%;
+					padding-right: 6%;
+
+					DIV
+					{
+						float: left !important;
+					}
+				}
+			}
+
+			TD.right
+			{
+				width: 80%;
+				vertical-align: top;
+
+				#idEditorContainer
+				{
+					width: 550px;
+					overflow: hidden;
+					position: relative;
+					border: 1px solid #888888;
+					white-space: normal;
+
+					#idEditorToolbarContainer
+					{
+						border-bottom: 1px solid #8cc63f;
+						background: #FFFFFF url(<$StaticModel.ThemeUrl$>/images/editor-toolbar-bg.gif) left center repeat-x;
+					}
+
+					//works bad with percents
+					TEXTAREA
+					{
+						width: 548px;
+						height: 250px;
+					}
+				}
+
+				.subjectTextBox
+				{
+					width: 545px;
+					border: 1px solid black;
+				}
+			}
+		}
+	}
+
+	//also fieldcontainer
+	#idStickinessLabelContainer
+	{
+		float: left;
+		width: 100%;
+		text-align: left;
+
+		.fieldBody
+		{
+			float: left;
+			width: 87%;
+			margin-left: 13%;
+			.stickinessForumLabel
+			{
+				padding: 0;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+
+			.stickinessForumLabelDate
+			{
+				padding-right: 5px;
+			}
+		}
+	}
+
+
+	//overrides default for box footer container
+	.boxFooterOuterContainer
+	{
+		width: 100%;
+		margin: 0;
+
+		.boxFooterContainer
+		{
+			padding: 0;
+			float: left;
+			width: 100%;
+
+			.inner
+			{
+				padding-top: 5px !important;
+			}
+
+			//topic stickyness
+			.generalFieldsContainer
+			{
+				margin-bottom: 10px;
+				float: left;
+				padding: 0;
+				width: 100%;
+
+				.fieldLabel
+				{
+					width: 13%;
+					float: left;
+				}
+
+				.fieldBody
+				{
+					width: 87%;
+					float: left;
+
+					.typeCheckboxContainer
+					{
+						margin-right: 5px;
+					}
+				}
+			}
+
+			//"create" button, stupid layout
+
+			.boxFooterPrimaryOuterContainer
+			{
+				display: inline;
+				float: left;
+				margin-left: 20%;
+
+			}
+
+			//"cancel" button
+			.boxFooterSecondaryOuterContainer
+			{
+				display: inline;
+				float: left;
+				margin-left: 10px;
+
+				.d1, .d2
+				{
+					margin: 0 !important;
+					background: none !important;
+				}
+			}
+
+			//subscribe options
+			#idForumSubscribeOptionsContainer
+			{
+				float: left;
+				margin: 8px 0 10px 40px;
+				*width: 35%;
+
+				#idForumSubscribeOptionSelect
+				{
+					margin-bottom: 5px;
+					margin-top: -3px;
+					float: right;
+				}
+
+				#idForumSubscribeOptionCheckbox
+				{
+					margin-right: 10px;
+					float: right;
+
+					input
+					{
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+

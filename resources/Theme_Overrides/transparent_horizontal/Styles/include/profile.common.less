@@ -1,0 +1,530 @@
+//member profile
+#idMemberProfile
+{
+	//profile/privacy/email subscriptions/Photo Albums etc links @ the top
+	.memberDetailsTabsContainer
+	{
+		margin: 10px 0;
+		padding: 0;
+		float: left;
+		width: 100%;
+
+		UL.memberDetailsTabMenu
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		li
+		{
+			float: left;
+			margin: 0 20px 0 0;
+
+			.warning
+			{
+				background: url("<$StaticModel.ThemeUrl$>/images/icons/icon-warning.gif") no-repeat scroll 0px 2px transparent;
+				padding-left: 17px;
+			}
+		}
+	}
+
+	SPAN.totalBalance
+	{
+		float: right;
+		font-weight: bold;
+	}
+
+	DIV.subTitle
+	{
+		float: left;
+		width: 100%;
+	}
+
+	H1.pageTitle
+	{
+		float: left;
+		width: 50%;
+	}
+
+	//form override, place buttons change membership level etc to the right
+	#idMemberProfileContainer
+	{
+		#idSectionMembershipLevelContainer
+		{
+			#idMembershipLevelContainerHolder
+			{
+				float: left;
+				width: 100%;
+
+				#idMembershipLevelContainer
+				{
+					width: 70%;
+					float: left;
+
+					TABLE
+					{
+						width: 100%;
+
+						TD.left
+						{
+							width: 35%;
+						}
+
+						TD.right
+						{
+							width: 65%;
+							padding-left: 0.7%;
+						}
+					}
+				}
+
+				.actionButtonContainer
+				{
+					text-align: right;
+					margin-bottom: 10px;
+					float: right;
+				}
+			}
+
+			#idExpirationDateContainerHolder
+			{
+				float: left;
+				width: 100%;
+
+				#idExpirationDateContainer
+				{
+					float: left;
+					width: 70%;
+					.fieldLabel
+					{
+						width: 33%;
+					}
+
+					.fieldBody
+					{
+						width: 60%;
+						padding-left: 0.7%;
+					}
+				}
+
+				.actionButtonContainer
+				{
+					text-align: right;
+					margin-bottom: 10px;
+					float: right;
+				}
+			}
+		}
+
+		#idSectionGroupAccountContainer
+		{
+			.actionButtonContainer
+			{
+				margin-bottom: 10px;
+				margin-left: 25%;
+				*margin-left: 13%;
+				float: left;
+			}
+		}
+	}
+
+	//header before privacy table
+	#accessByOthersContainer
+	{
+		//colored box override
+		.fieldLabel
+		{
+			width: 33%;
+		}
+
+		.fieldBody
+		{
+			width: 67%;
+
+			h4
+			{
+				.explanation
+				{
+					font-size: 85%;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+
+	//e-mail subscriptions - edit
+	#idMemberSubscriptionsContainer
+	{
+		//form override
+		.fieldSubContainer TABLE
+		{
+			width: auto;
+
+			TD.tdForumLink
+			{
+				padding-left: 5px;
+			}
+		}
+
+		.fieldLabel
+		{
+			//in profile-email subscription, checkbox on the left side
+			.memberFormCheckBox
+			{
+				INPUT
+				{
+					margin-right: 5px;
+				}
+			}
+
+			//in member profile - subscriptions
+			.forumSubscriptionBlock
+			{
+				DIV
+				{
+					float: right;
+					margin-left: 5px;
+
+					&.forumSubscriptionBlockLabel
+					{
+						margin-left: 0;
+						margin-top: 1px;
+					}
+
+					&.forumSubscriptionBlockCheckbox
+					{
+						margin-top: 3px;
+					}
+
+					&.forumSubscriptionBlockDropDown
+					{
+						SELECT
+						{
+							width: 65px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//allow to show profile message
+	.includeInMemberDirectoryContainer
+	{
+		margin-bottom: 10px;
+	}
+
+	TABLE#memberFieldTable
+	{
+		width: 100%;
+		float: left;
+
+		TD,
+		TH
+		{
+			padding: 5px 0;
+			width: 25%;
+			text-align: center;
+		}
+
+		TD
+		{
+			&.memberFieldHeadingTD
+			{
+				text-align: center;
+			}
+
+			DIV
+			{
+				margin: 0 auto;
+			}
+		}
+
+		TH.memberFieldTitle
+		{
+			text-align: right;
+			font-weight: normal;
+		}
+
+		//icons
+		.anybodyImage
+		{
+			width: 16px;
+			height: 16px;
+			overflow: hidden;
+			padding-right: 3px;
+			background: url(<$StaticModel.ThemeUrl$>/images/globe.png) left top no-repeat;
+		}
+
+		.otherMembersImage
+		{
+			width: 16px;
+			height: 16px;
+			overflow: hidden;
+			padding-right: 3px;
+			background: url(<$StaticModel.ThemeUrl$>/images/member_prof.png) left top no-repeat;
+		}
+
+		.nobodyImage
+		{
+			width: 16px;
+			height: 16px;
+			overflow: hidden;
+			padding-right: 3px;
+			background: url(<$StaticModel.ThemeUrl$>/images/fc-ico-memprof-nbd.gif) left top no-repeat;
+		}
+	}
+
+	//invoices list header
+	.genericListHeaderContainer
+	{
+		clear: both;
+		margin: 10px 0;
+
+		TD
+		{
+			vertical-align: middle;
+
+			&.searchBox
+			{
+				width: 30%;
+				SPAN
+				{
+					padding-right: 10px;
+					padding-top: 1px;
+				}
+			}
+
+			&.infoContainer
+			{
+				width: 17%;
+			}
+
+			&.reloadContainer
+			{
+				width: 10%;
+			}
+
+			&.messages
+			{
+				width: 10%;
+			}
+
+			&.pagingContainerTitle
+			{
+				width: 8%;
+	            text-align: right;
+
+	            span
+	            {
+                    padding-right: 5px;
+	            }
+			}
+
+			&.pagingContainer
+			{
+				width: 10%;
+	            text-align: right;
+
+				#idPagingContainerTop
+				{
+					display: inline;
+				}
+			}
+
+		}
+
+		TD>*
+		{
+			vertical-align: middle;
+		}
+
+		em
+		{
+			font-weight: bold;
+			font-style: normal;
+		}
+	}
+
+	
+	#idMemberInvoicesForm .confirmWindowWarning .cww-co
+	{
+		min-height: 55px;
+	}
+
+	#membersTable
+	{
+		margin-top: 15px;
+
+		TD.lastTd,
+		TH.lastTh
+		{
+			text-align: right;
+			padding-right: 5px;
+
+		}
+
+		input[type="checkbox"]
+		{
+			margin-left: 10px;
+			width: 15px;
+			margin-top: 3px;
+		}
+
+		input[type="submit"]
+		{
+			margin-left: 5px;
+			padding: 1px;
+		}
+
+		input.smallButton,
+		input.button
+		{
+			padding: 1px;
+			width:0;
+			overflow: visible;
+		}
+
+		input.smallButton[class],
+		input.button[class]
+		{
+			 width: auto;
+		}
+
+		TD
+		{
+			line-height: 1.2em;
+
+			DIV
+			{
+				margin-right: 25px;
+				clear: both;
+			}
+
+			DIV.alert
+			{
+				color: red;
+				font-weight: bold;
+			}
+
+			DIV.alertThin
+			{
+				color: red;
+				font-weight: normal;
+			}
+
+			DIV:first-child
+			{
+				margin-bottom: 5px;
+			}
+
+			DIV.checkbox
+			{
+				margin-right: 0;
+
+				INPUT, SPAN
+				{
+					float: right;
+				}
+			}
+
+
+  			&.pending
+			{
+				background-image: url(<$StaticModel.ThemeUrl$>/images/pending.gif);
+				background-position: left 10px;
+				background-repeat: no-repeat;
+			}
+
+			&.firstTd
+			{
+				padding-left: 16px !important;
+
+				SPAN
+				{
+					white-space: nowrap;
+				}
+			}
+
+			&.memberDirectoryBottomRow
+			{
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				padding: 0 17px 10px;
+			}
+
+			SPAN.nowrap
+			{
+				white-space: nowrap;
+			}
+
+			&.lastTd
+			{
+				DIV.alert
+				{
+					float: right;
+				}
+			}
+		}
+
+		TH
+		{
+			&.firstTh
+			{
+				width: 25%;
+				padding-left: 16px !important;
+			}
+
+			&.invoiceNumber
+			{
+				width: 45%;
+			}
+
+			&.status
+			{
+				width: 30%;
+			}
+
+		}
+
+		TR
+		{
+
+			&.hiddenRow
+			{
+				display: none;
+			}
+		}
+	}
+}
+
+//member public profile
+#idMemberDirectoryDetailsContainer
+{
+	float: left;
+	width: 100%;
+
+	H2
+	{
+		margin-bottom: 10px;
+
+		.sendMailButtonContainer
+		{
+			margin-left: 10px;
+		}
+	}
+} 
+
+//send email form results
+#idSendEmailForm
+{
+	#idButtonsContainer 
+	{
+		INPUT
+		{
+			width: auto;
+		}
+	}
+}

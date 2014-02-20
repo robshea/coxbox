@@ -1,0 +1,1 @@
+<$Gadget Name="Login.LoginBox" Id="idGeneralLoginBox"$>

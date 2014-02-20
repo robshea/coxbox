@@ -1,0 +1,9 @@
+#idFooterContent:after {
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    font-size: 0;
+    content: ".";
+}

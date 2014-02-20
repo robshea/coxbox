@@ -1,0 +1,1 @@
+<$AdminViewIcons(pos = "before")$><$it.Title$><$AdminViewIcons(pos = "after")$>

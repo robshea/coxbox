@@ -1,0 +1,171 @@
+//common for all containers
+
+//artboxes in editor
+.artBoxHolder
+{
+	overflow-x: hidden;
+	clear: both;
+}
+
+.artBoxContainer
+{
+	text-align: left;
+
+	.artBoxTitleContainer
+	{
+		H4.artBoxTitle
+		{
+			padding: 0 0 5px 0;
+			margin: 0;
+			font-size: 15pt;
+			font-weight: bold;
+		}
+	}
+
+	.artBoxContentContainer
+	{
+		//specially for donations
+		.donationGoalModuleContainer
+		{
+			.donationGoalCurrentContainer
+			{
+				overflow: hidden;
+
+				.donationGoalProgressContainer
+				{
+					.donationGoalTable
+					{
+						width: 100%;
+						float: left;
+
+						tr.donationGoalProgressInfoContainer
+						{
+							td
+							{
+								padding-bottom: 5px;
+							}
+						}
+
+						tr.donationGoalProgressBarContainer
+						{
+							width: 100%;
+
+							table
+							{
+								height: 26px;
+								width: 100%;
+
+								TD.donationGoalProgressBarLeftPart
+								{
+									background: url(<$StaticModel.ThemeUrl$>/images/artboxes/artbox-percentage-left.gif) repeat-x;
+								}
+
+								TD.donationGoalProgressBarRightPart
+								{
+									background: url(<$StaticModel.ThemeUrl$>/images/artboxes/artbox-percentage-right.gif) repeat-x;
+								}
+							}
+
+							td.donationGoalPercentageContainer
+							{
+								width: 4%;
+								padding-left: 1%;
+							}
+
+							table
+							{
+								width: 100%;
+							}
+						}
+					}
+				}
+
+				.donationGoalNotesContainer
+				{
+					font-size: 80%;
+					margin: 5px 0;
+				}
+
+				//who and for the god's sake why made separator in this module???
+				DIV.donationGoalModuleSeparator
+				{
+					display: none;
+				}
+			}
+
+			.donationGoalButton
+			{
+				text-align: center;
+				margin: 6px 0;
+			}
+		}
+
+		//specially for blog posts
+		.blogModuleContainer
+		{
+			.blogModuleItem
+			{
+				margin-bottom: 5px;
+			}
+		}
+
+		//specially for forums
+		.forumModuleContainer
+		{
+			.forumModuleItem
+			{
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.moduleViewType-0
+	{
+		.itemInfoContainer
+		{
+			font-size: 0.85em;
+			padding-top: 4px;
+		}
+
+		.moduleSeparator
+		{
+			height: 2px;
+			overflow: hidden;
+		}
+
+		.lastSeparator
+		{
+			display: none;
+		}
+	}
+}
+
+//"none" box
+.artBoxContainerType-000
+{
+	width: 100%;
+	.artBoxInnerContainer
+	{
+		.b1
+		{
+			width: 100%;
+		}
+
+		.b2
+		{
+			width: 100%;
+		}
+
+		.b3
+		{
+			width: 98%;
+			padding: 1%;
+		}
+
+		.artBoxContentContainer
+		{
+			width: 95%;
+			padding: 1% 2%;
+		}
+	}
+}

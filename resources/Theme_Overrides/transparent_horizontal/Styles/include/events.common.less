@@ -1,0 +1,338 @@
+//event calendar - new
+#idEventListCalendar
+{
+	//top links week/month/year etc
+	#idViewSwitchersTable
+	{
+		float: left;
+		width: 100%;
+		margin: 15px 0;
+		
+		#group1
+		{
+			width: 50%;
+			float: left;
+			text-align: left;
+			
+			DIV
+			{
+				float: left;
+				margin-right: 20px;
+			}
+		}
+		
+		#group2
+		{
+			width: 50%;
+			float: left;
+			text-align: right;
+			
+			DIV
+			{
+				display: inline;
+				margin-left: 20px;
+			}
+		}
+	}
+	
+	.EventListCalendar
+	{
+		width: 100%;
+		TD
+		{
+			padding: 5px;
+		}
+
+	}
+}
+
+#idEventDetailsContainer
+{
+	#idEventBackContainer
+	{
+		float: left;
+		width: 49%;
+	}
+	
+	#idEventViewSwitcher
+	{
+		float: left;
+		width: 50%;
+		text-align: right;
+	}
+
+	.pageTitleContainer
+	{
+		width: 100%;
+
+		H1
+		{
+			width: 100%;
+
+		}
+	}
+
+	//colored box
+	.boxBodyInfoViewFill
+	{
+		width: 31%;
+		float: left;
+		padding: 2%;
+		min-width: 192px;
+
+		.boxInfoContainer
+		{
+			width: 100%;
+			float: left;
+			
+			//list of parameters
+			UL.boxInfo
+			{
+				list-style: none;
+				padding: 0;
+				margin: 0 0 7px 0;
+				float: left;
+				width: 100%;
+				
+				//a single parameter
+				LI
+				{
+					clear: both;
+					float: left;
+					width: 100%;
+					margin: 0 0 3px 0;
+					padding: 0;
+					
+					//name of param
+					LABEL
+					{
+						width: 35%;
+						float: left;
+						text-align: right;
+						padding-right: 3%;
+					}
+					
+					//value of param
+					DIV
+					{
+						width: 62%;
+						float: left;
+					}
+				}
+			}
+		}
+		
+		.boxActionContainer
+		{
+			//we have boxactioncontainer somewhere else described as root class
+			margin-left: 0;
+			
+			.infoAlreadyRegistered,
+			.infoRegistrationIsNotAvailable,
+			.infoRegistrationIsClosed
+			{
+				margin-top: 10px;
+			}
+			
+			INPUT
+			{
+				margin: 10px 0;
+			}
+		}
+
+		.inner>DIV
+		{
+			float: left;
+			width: 100%;
+		}
+		
+		.registrationInfoContainer
+		{
+			float: left;
+			
+			H4.infoTitle
+			{
+				margin: 0;
+			}
+			
+			UL.registrationInfo
+			{
+				float: left;
+				width: 100%;
+				padding: 0;
+				margin: 5px 0 10px 0;
+				list-style: disc inside none;
+				
+				LI
+				{
+					margin: 0 10px 3px 0;
+					padding: 0;
+				}
+			}
+		}
+		
+		.regTypeHr
+		{
+			float: left;
+			clear: both;
+			width: 100%;
+		}
+	}
+	
+	.boxBodyContentOuterContainer
+	{
+		width: 62%;
+		padding-left: 2%;
+		float: left;
+	}
+
+	.boxMessageContainer
+	{
+		float: left;
+	}
+	
+	
+}
+
+//event summary
+#idEventSummaryContainer
+{
+	//list of events!
+	UL.boxesList
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		> LI
+		{
+			margin: 0 0 10px 0;
+			padding: 0;
+			
+			.boxContainer
+			{
+
+				.boxActionContainer
+				{
+					//override default boxActionContainer
+					margin-left: 0;
+					width: 35%;
+					text-align: right;
+
+					INPUT
+					{
+						margin-right: 0;
+					}
+				}
+				
+				.boxBodyContentContainer
+				{
+					.inner
+					{
+						max-height: 210px;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	#idPastEventsContainer
+	{
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+		
+		.sectionTitle
+		{
+			margin-bottom: 10px;
+		}
+		
+		TABLE.pastEventsList
+		{
+			width: 100%;
+			
+			TD
+			{
+				padding-bottom: 10px;
+				
+				&.left
+				{
+					width: 25%;
+				}
+			}
+		}
+	}
+}
+
+//event registrations list
+#idEventRegistrationsViewContainer
+{
+	#membersTable
+	{
+		td.memberDirectoryColumn3
+		{
+			INPUT
+			{
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+//single registration page
+#idEventRegistrationContainer
+{
+	.eventRegistrationInfoTotalAmount
+	{
+		.infoText
+		{
+			font-weight: bold;
+		}
+	}
+
+	.navigationContainer
+	{
+		#viewAllRegistrations
+		{
+			float: left;
+			padding-top: 5px;
+		}
+	}
+
+	#idEventRegistrationTypeRadioGroupContainer .fieldItem
+	{
+		padding-bottom: 10px;
+	}
+
+	//cross on guest list
+	#membersTable H5 A IMG
+	{
+		float: left;
+		margin-top: 2px;
+	}
+}
+
+//attendees view container
+#idEventRegistrationsViewContainer
+{
+	.titleRightContainer
+	{
+		float: right;
+	}
+	
+	.titleLeftContainer
+	{
+		float: left;
+	}
+	
+	.pagerOuterContainer
+	{
+		float: right;
+		clear: both;
+		margin: 5px 0;
+	}
+}
+

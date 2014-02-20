@@ -1,0 +1,500 @@
+//form
+
+.formTitleContainer
+{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+
+	H3.formTitle
+	{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+}
+
+.mandatoryFieldsTitle
+{
+	display: block;
+	float: right;
+	text-align: right;
+	width: 50%;
+	*clear: left;
+
+	em
+	{
+		color: red;
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+}
+
+.formOuterContainer
+{
+	margin-top: 10px;
+}
+
+.formContainer
+{
+	.captionContainer
+	{
+		float: left;
+		width: 99.4%;
+		padding: 0.3%;
+		margin: 10px 0;
+
+		.fieldLabel
+		{
+			width: 25%;
+			float: left;
+		}
+
+		.fieldBody
+		{
+			width: 75%;
+			float: left;
+		}
+	}
+
+	.sectionContainer
+	{
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+
+	.fieldSubContainer
+	{
+		margin-bottom: 10px;
+		float: left;
+		width: 100%;
+
+        *margin-bottom: 0px;
+        *padding-bottom: 10px;
+
+		.fieldLabel
+		{
+			width: 23%;
+			float: left;
+			text-align: right;
+			padding-right: 2%;
+			overflow: hidden;
+			*padding-top: 2px;
+
+			//for drawing asterisks etc
+			span
+			{
+				margin-right: 2px;
+
+				&.leavePasswordBlank
+				{
+					display: block;
+					width: 100%;
+					margin: 0;
+				}
+			}
+
+			//cross and check mark, in my profile/email subscriptions, for exmaple
+			.labeledImage
+			{
+				display: inline;
+				IMG
+				{
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.fieldBody
+		{
+			width: 74%;
+			float: left;
+
+			//comment for the fields
+			.typeInstruction
+			{
+				font-size: 0.9em;
+				clear: both;
+				white-space: normal;
+
+                .levelDescription
+                {
+                    font-size: 0.9em;
+                }
+			}
+
+			.textLine
+			{
+				width: 100%;
+			}
+
+			a.inactiveLink
+			{
+				text-decoration: line-through !important;
+			}
+
+			INPUT
+			{
+				overflow: hidden;
+
+				&.typeButton
+				{
+					width: auto;
+					padding: 2px 10px;
+				}
+				
+				&.typeText
+				{
+					width: 69.3%;
+				}
+			}
+
+			TEXTAREA
+			{
+				width: 69.3%;
+				height: 120px;
+			}
+
+			IFRAME
+			{
+				#Upload_Description
+				{
+					color: white;
+				}
+			}			
+
+			.captchaImageContainer
+			{
+				.captchaGuiding
+				{
+					margin-bottom: 7px;
+				}
+			}
+
+			UL.list
+			{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				LI
+				{
+					height: auto;
+					min-height: 16px;
+
+					&.checked
+					{
+						background: url(<$StaticModel.ThemeUrl$>/images/recEmails.gif) left top no-repeat;
+						padding-left: 20px;
+					}
+
+					&.unchecked
+					{
+						background: url(<$StaticModel.ThemeUrl$>/images/recEmails-n.gif) left top no-repeat;
+						padding-left: 20px;
+					}
+
+					UL.list
+					{
+						margin-left: 17px;
+					}
+				}
+			}
+
+			SELECT
+			{
+				width: 70%;
+			}
+
+			.fieldItem
+			{
+				clear: both;
+				width: 100%;
+				display: table-row;
+
+				&.disabled span:first-child LABEL
+				{
+
+    				background: url(<$StaticModel.ThemeUrl$>/images/icons/icon-warning.gif) no-repeat right 1px;
+				    padding-right: 20px;					
+				}
+
+				.typeRadioContainer,
+				.typeCheckboxContainer,
+				.typeRadio
+				{
+					vertical-align: top;
+					margin: 1px 2px 0 0;
+					display: table-cell;
+					width: 4%;
+
+				    padding-bottom: 9px;
+	                *width: 3%;
+	                *display: inline-block;
+                    *margin-top: 0;
+
+					INPUT
+					{
+						cursor: pointer;
+						width: 15px;
+	                    border: none;
+	                    *height: 14px;
+					}
+				}
+
+				.label
+				{
+					vertical-align: top;
+					width: 90%;
+					display: table-cell;
+	                padding-bottom: 9px;
+	                position: relative;
+	                zoom: 1;
+
+                    *display: inline-block;
+
+					LABEL
+					{
+						cursor: pointer;
+                        *vertical-align: top;
+					}
+					
+					label.levelProperties
+					{
+						span.textLine
+						{
+							strong.labelTitle
+							{
+								*padding-right: 4px;
+							}
+						}
+					}
+
+					.textLine
+					{
+						display: block;
+                        float: none;
+                        width: auto;
+
+                        strong
+                        {
+                            *display: inline-block;
+                        }
+					}
+					
+					//input value for donations, f.e.
+					INPUT.typeText
+					{
+						width: 30%;
+						margin-left: 1%;
+					}
+
+					.labelSubTitle
+					{
+						font-size: 100%;
+					}					
+					
+				}
+
+                .label>label
+                {
+                    *display: inline-block;
+                }
+			}
+		}
+
+		//fucking inconsistance, changing widths for table-enabled fields
+		TABLE
+		{
+			width: 100%;
+			TD.left
+			{
+				width: 25%;
+				text-align: right;
+				vertical-align: top;
+				padding-top: 1px;
+
+				.fieldLabel
+				{
+					width: 92%;
+					padding-right: 8%;
+				}
+			}
+
+			TD.right
+			{
+				width: 75%;
+				vertical-align: top;
+
+				.fieldBody
+				{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.singleStringContainer //only for single-line inputs
+	{
+		.fieldLabel
+		{
+			*padding-top: 2px;
+		}
+	}
+
+}
+
+//chrome hack for valid textarea width;
+@media all and (-webkit-min-device-pixel-ratio:0)
+{.formContainer .fieldSubContainer .fieldBody textarea
+{
+	width: 70%;
+}
+}
+
+//captcha? dunno ))-;
+.fileFieldContainer
+{
+	.fieldBody
+	{
+		IFRAME
+		{
+			width: 390px !important;
+		}
+	}
+}
+
+//save/cancel buttons, also fieldSubContainer
+.buttonsSubContainer
+{
+	margin-left: 25%;
+	*margin-left: 23%;
+
+	.fieldLabel
+	{
+		width: 0;
+	}
+
+	.fieldBody
+	{
+		INPUT
+		{
+			width: 15%;
+			margin-right: 2%;
+		}
+	}
+}
+
+//form navigation, like next/cancel butnz
+.navigationContainer
+{
+	float: left;
+	width: 100%;
+	margin: 5px 0;
+
+	.additionalLink
+	{
+		float: left;
+		clear: both;
+		margin-top: 10px;
+	}
+
+
+	input[type="submit"],
+	input[type="button"]
+	{
+		margin-right: 15px;
+	}
+
+	input[type="submit"]:last-child,
+	input[type="submit"]:only-child,
+	input[type="button"]:last-child,
+	input[type="button"]:only-child
+	{
+		margin-right: 0;
+	}
+
+	.left
+	{
+		float: left;
+		input[type="submit"]
+		{
+			float: left;
+		}
+		
+		input
+		{
+			float: left;
+		}
+	}
+
+	.right
+	{
+		float: right;
+		margin-left: 10px;
+
+        input
+        {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+
+        input[type="submit"]:first-child,
+    	input[type="submit"]:only-child,
+        input[type="button"]:first-child,
+        input[type="button"]:only-child
+        {
+            margin-left: 0;
+        }
+
+		A.backLink
+		{
+			margin-right: 15px;
+		}
+	}
+}
+
+
+//colored box in reg. form, omg complete inconsistance in naming, so angry )))))-;
+.infoOuterContainer
+{
+
+	clear: both;
+	padding: 2%;
+	margin: 0 0 10px 0;
+
+
+	.infoTitle
+	{
+		width: 30%;
+		padding-right: 2%;
+		float: left;
+		text-align: right;
+	}
+
+	.clearEndContainer
+	{
+		clear: both;
+	}
+	
+	.infoText
+	{
+		width: 68%;
+		float: left;
+		
+		.textLine
+		{
+			float: left;
+			width: 100%;
+			clear: both;
+			
+			span
+			{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+

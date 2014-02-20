@@ -1,0 +1,89 @@
+//unsubscribe newsletter page
+#idUnsubscribeRequest p
+{
+	margin-top: 10px;
+}
+
+//agreement to WA terms of use
+#idTermsOfUseContainer
+{
+	.fieldItem
+	{
+		padding-bottom: 1em;
+		.typeCheckboxContainer
+		{
+			margin-right: 0.1em;
+		}
+	}
+
+	.clearEndContainer
+	{
+		clear: both;
+	}
+}
+
+//logged in user change password
+#idChangePasswordPage
+{
+	//override default form behaviour
+	#idActionButtonsContainer input
+	{
+		width: 15%;
+		margin-right: 3%;
+	}
+
+	h1.pageTitle
+	{
+		padding-bottom: 0;
+	}
+
+	.introContainer
+	{
+		margin-bottom: 20px;
+
+	}
+}
+
+
+//for header editing in admin customize header mode
+BODY.customizeContentView
+{
+
+	#idMainContainer
+	{
+		float: none;
+		margin: 0 auto;
+		position: relative;
+		
+		.hidden
+		{
+		  display: none;
+		}
+	}
+}
+	  
+
+.functionalPageContentContainer .clearEndContainer
+{
+	clear: both;
+	height: 1px;
+}
+
+DIV.BulletedContainerWarninngSigned
+{
+	padding-left: 20px;
+	background: url(<$StaticModel.ThemeUrl$>/images/confirmWindows/icon-warning.gif) left 0px no-repeat;
+	min-height: 16px;
+}
+
+DIV.BulletedContainerWarninngSignedDisabled
+{
+	padding-left: 20px;
+	background: url(<$StaticModel.ThemeUrl$>/images/confirmWindows/icon-warning-disabled.gif) left 0px no-repeat;
+	min-height: 16px;
+}
+
+.hidden
+{
+  display: none;
+}

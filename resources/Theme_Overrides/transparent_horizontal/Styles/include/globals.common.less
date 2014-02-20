@@ -1,0 +1,154 @@
+.mandatorySymbol,
+.requiredSymbol
+{
+	color: red;
+	font-weight: bold;
+	font-size: 0.8em;
+	padding-right: 2px;
+}
+
+.formContainer .fieldSubContainer .fieldLabel span.mandatorySymbol
+{
+	text-decoration: none;
+}
+
+.validationError
+{
+	color: red;
+	margin-left: 10px;
+	font-size: 0.7em;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="submitButton"]
+{
+	cursor: pointer;
+	padding: 2px 7px;
+	overflow: visible;
+	width: auto;
+}
+
+
+//content pages
+h2.pageSubTitle,
+h2.stepTitle
+{
+	padding-bottom: 10px;
+	padding-bottom: 0.5em;
+}
+	
+//kind of pages with page name at the left and action on the right
+.pageTitleOuterContainer
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	margin-bottom: 10px;
+    //inconsistance, need additional class!!!
+    .pageViewSwitcherOuterContainer
+	{
+		float: right;
+		a
+		{
+			margin-left: 5px;
+		}
+	}
+	
+    .pageBackContainer
+	{
+		float: left;
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+    .pageTitleContainer
+	{
+      float: left;
+	  width: 75%;
+	}
+}
+
+.boxActionContainer
+{
+	margin-left: 15%;
+	margin-top: 10px;
+	float: left;
+
+	INPUT
+	{
+		padding: 2px 5px;
+		margin-right: 5px;
+	}
+} 
+
+#idTitleContainer
+{
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+	
+	h1.pageTitle
+	{
+		float: left;
+		width: 75%;
+	}
+	
+    #idTitleRight
+	{
+		float: right;
+		width: 25%;
+
+		.pageViewSwitcherContainer
+		{
+			float: right;
+		}
+	}
+}
+
+
+//print link
+@media screen
+{
+	#idPrintLinkContainer
+	{
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		background: transparent;
+		z-index: 50000;
+		cursor: pointer;
+		width: 42px;
+		height: 20px;
+		background: url(<$StaticModel.ThemeUrl$>/images/icon-printer.gif) center center no-repeat;
+	}
+	
+	#idPrintWarning
+	{
+		display: none;
+	}
+}
+
+//quotes everywhere
+blockquote
+{
+	border-width: 1px;
+	border-style: solid;
+	padding: 1% 1% 1% 2%;
+	margin: 1% 1% 1% 0;
+}
+
+.pageTitleContainer a.rssFeedLabel
+{
+    outline: none;
+    display: inline-block;
+
+    img
+    {
+        border: 0;
+        outline: none;
+    }
+}
+
+
+

@@ -1,0 +1,264 @@
+//member directory simple search filters
+.browsingColumns
+{
+	width: 100%;
+	table-layout: fixed;
+	margin-top: 10px;
+	float: left;
+	TH
+	{
+		text-align: left;
+		vertical-align: top;
+		font-weight: bolder;
+		padding-bottom: 7px;
+		width: 23%;
+		padding-right: 2%;
+	}
+
+	TD
+	{
+		width: 23%;
+		padding-right: 2%;
+		vertical-align: top;
+		padding-right: 15px;
+		font-size: 90%;
+		.filterOptions
+		{
+			max-height: 160px;
+			height: auto;
+			-height: 160px;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			UL
+			{
+				padding: 0px;
+				margin: 0px;
+				list-style-type: none;
+				list-style-position: outside;
+
+				LI
+				{
+					padding: 3px 0px;
+
+					a
+					{
+						&.emptyName
+						{
+							-moz-opacity: 0.5;
+							-khtml-opacity: 0.5;
+							opacity: 0.5;
+							display: block;
+							zoom: 1;
+							//these were in two different similar selectors for fcuking ie
+							-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+							//filter: alpha(opacity = 50);
+						}
+
+						&.selectedName
+						{
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		.selectedFilter
+		{
+			display: none;
+			padding-top: 3px;
+			.changeValue
+			{
+				padding-bottom: 1px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+//simple search box
+#memberDirectorySearchArea
+{
+	margin-bottom: 5px;
+	#membersFound
+	{
+		font-weight: bold;
+		font-style: normal;
+		margin-right: 20px;
+	}
+
+	#idPagingData
+	{
+		SELECT
+		{
+			margin-left: 5px;
+		}
+	}
+}
+
+//link to advanced search
+.advSearchContainerLink
+{
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+}
+
+//advanced search
+.clearValuesOuterContainer
+{
+	padding-bottom: 5px;
+	clear: both;
+	text-align: right;
+}
+
+.separatorTextContainer,
+.searchButtonContainer,
+.exitAdvSearchContainer
+{
+	float: left;
+	display: inline;
+	margin-right: 6px;
+}
+
+//list of selected advance fields in results
+.selectedCriteriaListInnerContainer
+{
+	.fieldContainer
+	{
+		width: 100%;
+		clear: both;
+
+		.fieldLabel
+		{
+			width: 47%;
+			float: left;
+			text-align: right;
+			margin-right: 3%;
+		}
+
+		.fieldBody
+		{
+			width: 49%;
+			float: left;
+			text-align: left;
+		}
+	}
+}
+
+//area with selected criteria, edit search and clear search links
+.selectedCriteriaListActionsOuterContainer
+{
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+
+	.editAdvSearchContainer
+	{
+		float: left;
+	}
+
+	.clearAdvSearchContainer
+	{
+		float: left;
+		margin-left: 10px;
+	}
+}
+
+.selectedCriteriaListActionsInnerContainer
+{
+	.editAdvSearchContainer, .clearAdvSearchContainer
+	{
+		float: left;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-right: 15px;
+	}	  
+	.clearEndContainer
+	{
+		clear: both;
+	}
+}	  	
+
+//bottom paging container
+#idPagingData2
+{
+	SELECT
+	{
+		margin-left: 7px;
+	}
+}
+	
+//hope this is common for all forms (nope! this one's unique)
+.generalFormContainer
+{
+	.criteriaListItem
+	{
+		margin-bottom: 5px;
+
+		.fieldContainer
+		{
+			width: 50%;
+			float: left;
+
+			TABLE
+			{
+				width: 100%;
+
+				TD
+				{
+					width: 50%;
+
+					.fieldLabel
+					{
+						float: right;
+						padding-right: 10px;
+					}
+
+					.fieldBody
+					{
+						float: left;
+						width: 90%;
+
+						SELECT
+						{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.valueContainer
+		{
+			width: 49%;
+			float: left;
+
+			//inconsistence, fieldcontainer again!!!
+			.fieldContainer
+			{
+				width: 80%;
+				//plain text input and select (dropdown)
+				INPUT.typeText,
+				SELECT
+				{
+					width: 100%;
+				}
+
+				//radio buttons and checkboxes
+				.typeRadioContainer,
+				.typeCheckboxContainer
+				{
+					width: 5%;
+				}
+
+				.label
+				{
+					width: 93%;
+					margin-left: 2%;
+				}
+			}
+		}
+	}
+}

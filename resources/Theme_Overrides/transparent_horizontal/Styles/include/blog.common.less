@@ -1,0 +1,416 @@
+//global for all blog pages
+#idBlogPageContainer
+{
+	.boxContainer
+	{
+		.boxFooterContainer
+		{
+			float: left;
+			width: 100%;
+
+			.boxFooterPrimaryOuterContainer
+			{
+				float: left;
+			}
+
+			.boxFooterSecondaryOuterContainer
+			{
+				float: right;
+			}
+		}
+	}
+}
+
+
+//blog summary
+#idBlogSummaryContainer
+{
+	float: left;
+	width: 100%;
+	#idBlogTopPagerContainer
+	{
+		margin-top: 10px;
+	}
+
+	UL.boxesList
+	{
+		margin: 20px 0 0 0;
+		padding: 0;
+		list-style: none;
+
+		LI.boxesListItem
+		{
+			margin-bottom: 15px;
+			padding-top: 5px;
+			float: left;
+			width: 100%;
+
+			.boxHeaderOuterContainer
+			{
+				margin-bottom: 10px;
+			}
+
+			.boxBodyOuterContainer
+			{
+				margin-bottom: 10px;
+				overflow: hidden;
+				max-height: 150px;
+
+				.boxBodyInfoOuterContainer
+				{
+					margin-bottom: 10px;
+
+					h5
+					{
+						font-size: 1em;
+						font-weight: normal;
+					}
+				}
+			}
+
+			.boxFooterContainer
+			{
+				width: 100%;
+			}
+		}
+	}
+}
+
+//blog post details, new
+#idBlogDetailsContainer
+{
+	float: left;
+	width: 100%;
+	.pageTitleOuterContainer
+	{
+		margin-bottom: 10px;
+	}
+
+	.blogEntryOuterContainer
+	{
+		margin-bottom: 20px;
+		float: left;
+		width: 100%;
+
+		.boxHeaderOuterContainer
+		{
+			margin-bottom: 10px;
+		}
+
+		.boxBodyOuterContainer
+		{
+			margin-bottom: 10px;
+
+			.boxBodyInfoOuterContainer
+			{
+				margin-bottom: 10px;
+
+				H5
+				{
+					font-weight: normal;
+					font-size: 1.1em;
+				}
+			}
+		}
+
+		.boxFooterOuterContainer
+		{
+			float: left;
+			width: 100%;
+
+			.boxFooterContainer
+			{
+				width: 100%;
+			}
+		}
+	}
+
+	H3.sectionTitle
+	{
+		margin-bottom: 10px;
+	}
+
+	#idBlogCommentsContainer
+	{
+		float: left;
+		padding-top: 5px;
+		width: 100%;
+
+		UL.blogCommentsList
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			clear: both;
+			width: 100%;
+
+			LI.blogCommentItem
+			{
+				padding: 0;
+				margin-bottom: 10px;
+				float: left;
+				width: 100%;
+
+				.addNewCommentContainer
+				{
+					float: left;
+					margin-bottom: 10px;
+					padding-bottom: 10px;
+					padding-top: 10px;
+					width: 100%;
+				}
+
+				.blogComment
+				{
+					float: left;
+					width: 100%;
+
+					.commentViewContainer
+					{
+						margin-bottom: 10px;
+						float: left;
+						width: 100%;
+
+						.boxHeaderOuterContainer
+						{
+							margin-bottom: 10px;
+
+							H5
+							{
+								font-weight: normal;
+								font-size: 1em;
+							}
+
+						}
+					}
+
+		            .boxBodyOuterContainer
+					{
+						margin-bottom: 10px;
+					}
+
+				}
+			}
+
+			UL.blogCommentsList
+			{
+				margin: 0 0 0 5%;
+				padding: 0;
+				width: 95%;
+			}
+		}
+	}
+}
+
+#idDivBlogCommentFieldsContainer
+{
+	.fieldContainer
+	{
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	TABLE
+	{
+		width: 100%;
+		clear: both;
+
+		TD.left
+		{
+			width: 15%;
+			text-align: right;
+			vertical-align: top;
+
+			.fieldLabel
+			{
+				padding-right: 10px;
+			}
+		}
+
+		TD.right
+		{
+			width: 85%;
+
+			TEXTAREA,INPUT
+			{
+				width: 80%;
+				margin-bottom: 10px;
+			}
+
+			TEXTAREA
+			{
+				height: 200px;
+			}
+
+
+			INPUT.captchaCode
+			{
+				width: 270px;
+			}
+		}
+	}
+
+	#idCaptchaImageContainer
+	{
+		margin-left: 15%;
+		width: 85%;
+
+		.fieldLabel
+		{
+			display: none;
+		}
+
+		.captchaImage
+		{
+			width: 280px;
+			float: left;
+		}
+
+		.captchaIcons
+		{
+			float: left;
+			width: 25px;
+		}
+	}
+}
+
+
+
+//edit msg at blog
+#idBlogPostEditContainer
+{
+	.mandatoryFieldsTitle
+	{
+		float: left;
+		clear: both;
+		width: 19%;
+		text-align: right;
+		margin: 10px 0;
+	}
+
+
+	.boxFooterOuterContainer
+	{
+		float: left;
+		margin-left: 20%;
+
+		.boxFooterContainer
+		{
+			float: left;
+			width: 100%;
+
+			.boxFooterPrimaryOuterContainer
+			{
+				float: left;
+			}
+
+			.boxFooterSecondaryOuterContainer
+			{
+				float: left;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	#idAuthorLabelContainer
+	{
+		.labeledTextContainer
+		{
+			DIV
+			{
+				display: inline;
+			}
+		}
+	}
+
+	.fieldContainer
+	{
+		margin-bottom: 5px;
+		clear: both;
+
+		.captchaImageContainer
+		{
+			float: left;
+			width: 300px;
+			margin-bottom: 10px;
+
+			.captchaImage
+			{
+				float: left;
+				margin-right: 2%;
+			}
+		}
+
+		.fieldSubContainer
+		{
+			.fieldLabel
+			{
+				float: left;
+				width: 19%;
+				text-align: right;
+				padding-right: 1%;
+			}
+		}
+
+		TABLE
+		{
+			width: 100%;
+
+			TD.left
+			{
+				width: 20%;
+				vertical-align: top;
+
+				.fieldLabel
+				{
+					width: 94%;
+					padding-right: 6%;
+				}
+			}
+
+
+			TD.right
+			{
+				width: 80%;
+				vertical-align: top;
+
+				#idEditorContainer
+				{
+					width: 550px;
+					overflow: hidden;
+					position: relative;
+					border: 1px solid #888888;
+					white-space: normal;
+
+					#idEditorToolbarContainer
+					{
+						border-bottom: 1px solid #8cc63f;
+						background: #FFFFFF url(<$StaticModel.ThemeUrl$>/images/editor-toolbar-bg.gif) left center repeat-x;
+					}
+
+					//works bad with percents
+					TEXTAREA
+					{
+						width: 548px;
+						height: 250px;
+					}
+				}
+
+				.subjectTextBox
+				{
+					width: 550px;
+				}
+			}
+		}
+	}
+}
+
+.blogPagerContainer
+{
+    .inner
+    {
+        text-align: right;
+    }
+}

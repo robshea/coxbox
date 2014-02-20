@@ -1,0 +1,454 @@
+#idPhotoAlbumList
+{
+	//not there
+	#idMemberPhotoAlbumContainer
+	{
+		width: 100%;
+		float: left;
+
+		#idPhotoAlbumHeaderRightContainer
+		{
+			float: right;
+		}
+
+		#idPhotoAlbumTitleMainContainer
+		{
+			margin-top: 10px;
+			.titleLeftContainer
+			{
+				float: left;
+				width: 75%;
+			}
+
+			.titleRightContainer
+			{
+				float: right;
+				width: 23%;
+			}
+		}
+	}
+
+	#idPhotoTitleMainContainer
+	{
+		.pageTitleContainer
+		{
+			width: 70%;
+		}
+
+		#idPhotoAlbumCreatedOnContainer
+		{
+			float: right;
+			width: 30%;
+			text-align: right;
+		}
+	}
+
+	#idIntroContainer
+	{
+		margin-bottom: 10px;
+		float: left;
+		width: 100%;
+	}
+
+	#idPhotoAlbumPanelContainer
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+
+		.noPhotosPanel
+		{
+			margin-bottom: 10px;
+			float: left;
+			width: 100%;
+		}
+
+		.photoAlbumUploadButtonContainer
+		{
+			float: left;
+			margin-bottom: 10px;
+		}
+
+		.photoAlbumViewModeContainer
+		{
+			float: left;
+			margin-bottom: 10px;
+			padding-top: 4px;
+
+			INPUT
+			{
+				margin-right: 2px;
+			}
+
+			LABEL
+			{
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+//album in member profile
+#idPhotoAlbum
+{
+	.pageBackContainer
+	{
+		margin-bottom: 10px;
+	}
+
+	#idPhotoAlbumBackContainer
+	{
+		float: left;
+	}
+
+	.buttonsInTitleContainer
+	{
+		float: right;
+	}
+
+	#idPhotoAlbumTitleMainContainer
+	{
+		float: left;
+		width: 100%;
+		margin-top: 5px;
+
+		.titleLeftContainer
+		{
+			width: 70%;
+			float: left;
+		}
+
+		.titleRightContainer
+		{
+			width: 30%;
+			float: right;
+			text-align: right;
+		}
+	}
+}
+
+//shared between album in profile and photo album functional page
+//placeholder for list of photos
+#idPhotoAlbumMainContainer
+{
+	width: 100%;
+	clear: both;
+
+	.descriptionContainer
+	{
+		margin-bottom: 10px;
+	}
+
+	UL.photosContainerUL
+	{
+		margin: 5px auto 0 auto;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		_margin-left: -10px;
+		_padding-left: 10px;
+		_padding-top: 5px;
+		clear: both;
+
+		LI
+		{
+			width: 160px;
+			-width: 165px;
+			margin: 0 0 25px 0;
+			text-align: center;
+			vertical-align: text-top;
+			display: -moz-inline-stack;
+			display: inline-block;
+			_overflow: hidden;
+			zoom: 1;
+			*display: inline;
+
+			.photoMainContainer
+			{
+				cursor: pointer;
+				float: left;
+				height: 160px;
+				width: 145px;
+
+				.photoInnerContainer
+				{
+					background: none;
+					border: 0;
+					margin: 0;
+					padding: 0;
+					width: 144px;
+
+					.photoAlbumItemThumbnailPhoto
+					{
+						background: transparent;
+						padding: 6px;
+						text-align: center;
+
+						IMG
+						{
+							border: 0;
+							padding: 0;
+						}
+
+						.smallDescriptionContainer
+						{
+							display: block;
+							overflow: hidden;
+							white-space: nowrap;
+							width: 130px;
+						}
+					}
+				}
+
+				.photoInnerContainerOver
+				{
+					margin: -1px 0 0 -1px;
+					padding: 1px 0 6px 0;
+					width: 144px;
+					position: relative;
+
+					//set as cover and delete links
+					a:hover
+					{
+						display: block;
+						width: 100%;
+						text-align: center;
+					}
+
+					.photoAlbumItemThumbnailPhotoHover
+					{
+						background-color: transparent;
+						border: 0;
+						padding: 6px 6px 0 6px;
+						margin: 0;
+						text-align: center;
+
+						a
+						{
+							background: transparent;
+						}
+
+						IMG
+						{
+							border: 0;
+							padding: 0;
+						}
+					}
+
+					.fullDescriptionContainer
+					{
+						overflow: hidden;
+						padding: 0 5px 4px 7px;
+						overflow: hidden;
+						text-align: left;
+						width: 125 px;
+					}
+				}
+			}
+
+			//photo set as cover for album
+			&.coverPhoto
+			{
+				.photoContainer
+				{
+					.photoInnerContainer
+					{
+						.photoAlbumItemThumbnailPhoto
+						{
+							IMG
+							{
+								border: 0;
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#idPhotoAlbumCreatedOnContainer
+	{
+		float: right;
+		font-size: 1.1em;
+	}
+}
+
+//album pager
+
+#idPhotoAlbumTopPagerContainer,
+#idPhotoAlbumBottomPagerContainer
+{
+	float: right;
+	width: 100%;
+	margin-bottom: 10px;
+	.photoAlbumPagerContainer
+	{
+		float: right;
+	}
+}
+
+//single photo as functional page and in profile. do we really need these two?
+#idPhotoAlbumSinglePhoto,
+#idPhotoPage
+{
+	#idMenuHeaderContainer
+	{
+		margin-bottom: 10px;
+		float: left;
+		width: 100%;
+	}
+
+	#idPhotoHeaderContainer
+	{
+		#idPhotoBackContainer
+		{
+			float: left;
+		}
+
+		.buttonsInTitleContainer
+		{
+			float: right;
+		}
+	}
+
+	#idPhotoMainContainer
+	{
+		float: left;
+		width: 100%;
+
+		#idPhotoMainSectionContainer
+		{
+			text-align: center;
+		}
+	}
+
+	.footerContainer
+	{
+		float: left;
+		text-align: center;
+		width: 100%;
+
+		TEXTAREA
+		{
+			width: 60%;
+			height: 100px;
+			margin: 10px 0;
+		}
+
+		.buttonsContainer
+		{
+			margin-top: 10px;
+		}
+	}
+}
+
+//single photo in profile
+#idPhotoPage
+{
+	#idMenuHeaderContainer
+	{
+		text-align: center;
+
+		.linkContainer
+		{
+			display: inline;
+			margin-right: 10px;
+		}
+	}
+}
+
+//single photo in func. page
+#idPhotoAlbumSinglePhoto
+{
+	#idMenuHeaderContainer
+	{
+		.linkContainer
+		{
+			float: left;
+			margin-right: 10px;
+		}
+
+		.infoContainer
+		{
+			float: right;
+			margin-left: 10px;
+		}
+	}
+}
+
+//album list in both public and personal profile
+#idMemberPhotoGalleryContainer
+{
+	#idPhotoGalleryMainSectionContainer
+	{
+		float: left;
+		text-align: center;
+		width: 100%;
+		clear: both; 
+
+		.emptyGalleryPanelInnerDiv
+		{
+			text-align: left;
+
+			.noAlbumsLocalizeContainer
+			{
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	UL.albumsContainerUL
+	{
+		margin: 5px auto 0 auto;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		_margin-left: -10px;
+		_padding-left: 10px;
+		_padding-top: 5px;
+		clear: both;
+
+		LI
+		{
+			width: 160px;
+			-width: 165px;
+			margin: 0 7px 25px 0;
+			text-align: center;
+			vertical-align: text-top;
+			display: -moz-inline-stack;
+			display: inline-block;
+			_overflow: hidden;
+			zoom: 1;
+			*display: inline;
+
+			.photoGalleryItemThumbnailImage
+			{
+				padding: 6px;
+
+				IMG
+				{
+					padding: 0;
+					border: 0;
+				}
+			}
+
+			.photoGalleryItemThumbnailImageHover
+			{
+				padding: 6px;
+
+				IMG
+				{
+					padding: 0;
+					border: 0;
+				}
+
+				.photoGalleryItemDescription
+				{
+					overflow: hidden;
+					width: 100px;
+				}
+			}
+		}
+	}
+}

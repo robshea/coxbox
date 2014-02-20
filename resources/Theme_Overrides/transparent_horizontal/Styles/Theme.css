@@ -1,0 +1,2196 @@
+/************************************************************************/
+/******* THEME NAME: Transparent Horizontal                       *******/
+/*******                                                          *******/
+/******* Last changed: 2008-10-21 15:15 GMT                       *******/
+/******* Overlaying styles in the file                            *******/
+/******* you can easily change visual design of the website theme *******/
+/************************************************************************/
+
+/*******************************************************************/
+/******* COMMON STYLES                                       *******/
+/*******************************************************************/
+
+BODY
+{
+  background-color: #FFFFFF;
+}
+
+/******* Main font styles *******/
+
+BODY, TD, P, H1, H2, H3, H4, H5, H6
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+BODY
+{
+  font-size: 0.80em;
+  font-weight: normal;
+}
+H1, H2, H3, H4, H5, H6
+{
+  font-weight: bold;
+}
+H1
+{
+  font-size: 1.85em;
+}
+H2
+{
+  font-size: 1.60em;
+}
+H3
+{
+  font-size: 1.35em;
+}
+H4
+{
+  font-size: 1.10em;
+}
+H5
+{
+  font-size: 1.05em;
+}
+H6
+{
+  font-size: 1.00em;
+}
+P:first-child, H1:first-child, H2:first-child, H3:first-child, H4:first-child, H5:first-child, H6:first-child
+{
+  margin-top: 0;
+}
+A, A:link, A:active, A:visited
+{
+  color: #0781C7;
+}
+A:hover
+{
+  color: #00A2FF;
+}
+
+/*******************************************************************/
+/******* Extra font styles                                   *******/
+/*******************************************************************/
+
+#idPrimaryContentBlock1Content H1.pageTitle,
+#idPrimaryContentBlock1Content H1.contentPageTitle
+{
+  font-size: 1.35em;
+}
+
+#idPrimaryContentBlock1Content H1.contentPageTitle
+{
+	font-size: 1.35em;/*##1.6em##*/
+}
+
+#idPrimaryContentBlock1Content H2.pageSubTitle,
+#idPrimaryContentBlock1Content H2.stepTitle
+{
+  font-size: 1.10em;
+}
+
+H1.contStyleExcHeadingColored,
+H2.contStyleExcHeadingColored,
+H3.contStyleExcHeadingColored,
+H4.contStyleExcHeadingColored
+{
+  color: #555555;
+}
+SPAN.contStyleExcInlineColored1
+{
+  color: #555555;
+}
+SPAN.contStyleExcInlineColored2
+{
+  color: #53A31B;
+}
+SPAN.contStyleExcInlineHighlighted
+{
+  background-color: #CCCCCC;
+}
+SPAN.contStyleExcInlineLarger
+{
+  font-size: 120%;
+}
+SPAN.contStyleExcInlineSmaller
+{
+  font-size: 85%;
+}
+
+/******* Extra font styles for the header *******/
+
+#idHeaderContent H1.contStyleExcHeadingColored,
+#idHeaderContent H2.contStyleExcHeadingColored,
+#idHeaderContent H3.contStyleExcHeadingColored,
+#idHeaderContent H4.contStyleExcHeadingColored
+{
+  color: #53A31B;
+}
+#idHeaderContent SPAN.contStyleExcInlineColored1
+{
+  color: #53A31B;
+}
+#idHeaderContent SPAN.contStyleExcInlineColored2
+{
+  color: #555555;
+}
+#idHeaderContent SPAN.contStyleExcInlineHighlighted
+{
+  background-color: #CCCCCC;
+}
+#idHeaderContent SPAN.contStyleExcInlineLarger
+{
+}
+#idHeaderContent SPAN.contStyleExcInlineSmaller
+{
+}
+
+/******* Extra font styles for content *******/
+
+#idPrimaryContentBlock1Content,
+#idPrimaryContentBlock1Content TD,
+#idPrimaryContentBlock1Content P
+{
+}
+#idPrimaryContentBlock1Content H1,
+#idPrimaryContentBlock1Content H2,
+#idPrimaryContentBlock1Content H3,
+#idPrimaryContentBlock1Content H4,
+#idPrimaryContentBlock1Content H5,
+#idPrimaryContentBlock1Content H6
+{
+  color: #555555;
+}
+#idPrimaryContentBlock1Content A,
+#idPrimaryContentBlock1Content A:link,
+#idPrimaryContentBlock1Content A:active,
+#idPrimaryContentBlock1Content A:visited
+{
+}
+#idPrimaryContentBlock1Content A:hover
+{
+}
+#idPrimaryContentBlock1Content H1.contStyleExcHeadingColored,
+#idPrimaryContentBlock1Content H2.contStyleExcHeadingColored,
+#idPrimaryContentBlock1Content H3.contStyleExcHeadingColored,
+#idPrimaryContentBlock1Content H4.contStyleExcHeadingColored
+{
+  color: #000000;
+}
+#idPrimaryContentBlock1Content SPAN.contStyleExcInlineColored1
+{
+  color: #555555;
+}
+#idPrimaryContentBlock1Content SPAN.contStyleExcInlineColored2
+{
+  color: #53A31B;
+}
+#idPrimaryContentBlock1Content SPAN.contStyleExcInlineHighlighted
+{
+  background-color: #CCCCCC;
+}
+#idPrimaryContentBlock1Content SPAN.contStyleExcInlineLarger
+{
+}
+#idPrimaryContentBlock1Content SPAN.contStyleExcInlineSmaller
+{
+}
+#idPrimaryContentBlock1Content .linkCurrent
+{
+}
+#idPrimaryContentBlock1Content .linkDisabled
+{
+}
+
+/******* Extra font styles for the footer *******/
+
+#idFooterContent H1.contStyleExcHeadingColored,
+#idFooterContent H2.contStyleExcHeadingColored,
+#idFooterContent H3.contStyleExcHeadingColored,
+#idFooterContent H4.contStyleExcHeadingColored
+{
+  color: #53A31B;
+}
+#idFooterContent SPAN.contStyleExcInlineColored1
+{
+  color: #53A31B;
+}
+#idFooterContent SPAN.contStyleExcInlineColored2
+{
+  color: #555555;
+}
+#idFooterContent SPAN.contStyleExcInlineHighlighted
+{
+  background-color: #CCCCCC;
+}
+#idFooterContent SPAN.contStyleExcInlineLarger
+{
+}
+#idFooterContent SPAN.contStyleExcInlineSmaller
+{
+}
+
+/*******************************************************************/
+/******* Main content container                              *******/
+/*******************************************************************/
+
+#idMainContainer
+{
+  width: 919px;
+  height: auto;
+}
+
+/*******************************************************************/
+/******* HEADER                                              *******/
+/*******************************************************************/
+
+#idHeaderContainer
+{
+  width: 919px;
+  height: auto;
+}
+
+/******* Header containers for applying background *******/
+
+#idHeaderContainer .d1
+{
+  width: 100%;
+  float: right;
+}
+
+/******* Header content container *******/
+
+#idHeaderContainer .inner
+{
+  height: 138px;
+}
+
+/******* Default logo container *******/
+
+#idHeaderLogo 
+{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 1;
+}
+
+/******* Default organization name container *******/
+
+#idHeaderAssociationName 
+{
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  z-index: 2;
+  font-size: 175%;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/******* Editable header region container *******/
+/******* (Specify default background color for editable region below) *******/
+
+.headerContentHolder
+{
+  width: 919px;
+  height: 138px;
+  background-color: #FFFFFF;
+}
+
+#idHeaderContent
+{
+  width: 919px;
+  height: 138px;
+}
+
+/******* Header and content separator container *******/
+
+#idHeaderSeparator
+{
+  display: none;
+  visibility: visible;
+}
+
+/*******************************************************************/
+/******* LOGIN BOX                                           *******/
+/*******************************************************************/
+
+
+#idHeaderContent
+{
+  width: 719px;
+}
+.headerContentHolder
+{
+  width: 719px;
+}
+#idLoginContainer
+{
+  position: absolute;
+  top: 10px;
+  left: 720px;
+  width: 190px;
+  height: 103px;
+  z-index: 33003;
+  display: block;
+}
+#idLoginContainer #idLoginUserName,
+#idLoginContainer #idLoginPassword
+{
+  width: 190px;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 0;
+  margin-bottom: 5px;
+/ float: none;
+/ margin-bottom: 3px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#idLoginContainer #idLoginUserName,
+#idLoginContainer #idLoginPassword
+{
+	margin-bottom: 0;
+}
+}
+
+#idLoginContainer #idLoginUserNameLabel
+{
+  width: 65px;
+  float: left;
+  margin-top: 4px;
+}
+#idLoginContainer #idLoginPasswordLabel
+{
+  width: 65px;
+  float: left;
+  margin-top: 4px;
+}
+#idLoginContainer #idLoginUserNameLabel LABEL,
+#idLoginContainer #idLoginPasswordLabel LABEL
+{
+  display: block;
+  width: auto;
+  text-align: right;
+  color: #000000;
+}
+#idLoginContainer #idLoginUserNameTextBox,
+#idLoginContainer #idLoginPasswordTextBox
+{
+  display: block;
+  float: right;
+  width: 118px;
+}
+#idLoginContainer #idLoginUserName INPUT,
+#idLoginContainer #idLoginPassword INPUT
+{
+  display: block;
+  width: 110px;
+  border: 1px solid #78B4D7;
+  font-size: 1.00em;
+}
+#idLoginContainer #idLoginActionRememberMe
+{
+  display: block;
+  clear: both;
+  padding-left: 68px;
+  padding-bottom: 2px;
+  color: #000000;
+}
+#idLoginContainer #idLoginActionRememberMe LABEL
+{
+  position: relative;
+  top: -2px;
+}
+#idLoginContainer #idLoginAction
+{
+  padding-left: 71px;
+}
+
+html>body #idLoginContainer #idLoginAction
+{
+  width: 57px;
+  float: left;
+}
+
+/******* Login box common styles *******/
+
+#idLoginContainer
+{
+  font-size: 0.85em;
+}
+#idLoginContainer .d6,
+#idLoginContainer .d7,
+#idLoginContainer .d2,
+#idLoginContainer .d9,
+#idLoginContainer .d8,
+#idLoginContainer .d3
+{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#idLoginContainer .inner .inner
+{
+  padding: 0;
+}
+#idLoginContainer DIV#loginData
+{
+  width: auto;
+}
+#idLoginContainer DIV#loginData .inner
+{
+  padding: 5px 0 7px 0;
+}
+#idLoginContainer DIV#loginData .inner .inner
+{
+  padding: 0;
+}
+#idLoginContainer A,
+#idLoginContainer A:active,
+#idLoginContainer A:hover,
+#idLoginContainer A:visited
+{
+  color: #0073E4;
+}
+#idLoginContainer A:hover
+{
+}
+#idLoginPasswordForgot
+{
+  position: absolute;
+  left: 130px;
+  top: 75px;
+}
+html>body #idLoginPasswordForgot
+{
+  position: static;
+  left: auto;
+  top: auto;
+}
+#idLoginContainer #idLoginPasswordForgot A
+{
+  font-weight: normal;
+  font-size: 0.90em;
+  color: #999999;
+}
+#idLoginContainer #idLoginAction INPUT
+{
+  vertical-align: bottom;
+  font-size: 1.00em;
+  display: inline;
+}
+#idLoginContainer #idLoginAction INPUT.loginButton
+{
+  display: inline;
+  padding: 3px 2px 4px 2px;
+  overflow: hidden;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.00em;
+}
+#idLoginContainer #idLoginAction SPAN
+{
+}
+#idLoginContainer #idLoginAction SPAN LABEL
+{
+  position: relative;
+  padding-right: 2px;
+  vertical-align: bottom;
+}
+#idLoginContainer #idLoginAction SPAN INPUT
+{
+  position: relative;
+  bottom: -3px;
+}
+#idLoginContainer #idLoggedName SPAN
+{
+  display: block;
+  width: auto;
+  margin-bottom: 5px;
+  padding-right: 25px;
+  padding-top: 5px;
+  text-align: right;
+}
+#idLoginContainer DIV.profileBox
+{
+  display: block;
+  width: auto;
+  margin-bottom: 5px;
+  padding-right: 25px;
+  text-align: right;
+}
+#idLoginContainer #idLoggedAction A
+{
+  display: block;
+  width: auto;
+  margin-bottom: 5px;
+  padding-right: 25px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/*******************************************************************/
+/******* MENU and CONTENT                                    *******/
+/*******************************************************************/
+
+/******* Menu and content main container *******/
+
+#idContentContainer
+{
+  width: 919px;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/******* Menu column container *******/
+
+#idNavigationContainer
+{
+  width: 919px;
+  height: auto;
+  margin-bottom: 15px;
+  float: left;
+}
+
+/*******************************************************************/
+/******* MENU                                                *******/
+/*******************************************************************/
+
+/******* Menu container *******/
+
+#idMainMenuContainer
+{
+  float: left;
+}
+#idMainMenuContainer .d1
+{
+  width: 100%;
+}
+#idMainMenuContainer .d1 .d1
+{
+  width: auto;
+  background: none;
+}
+#idMainMenuContainer .inner
+{
+  padding: 0px;
+}
+#idMainMenuContainer .inner .inner
+{
+  padding: 0;
+}
+
+/******* MENU LEVEL 1 *******/
+
+/******* The 1st menu level container *******/
+
+#idMainMenu
+{
+  margin: 15px 0 0 0;  
+  float: left;
+  width: 919px;
+}
+#idMainMenu TABLE
+{
+  margin: 0;
+	width: auto;
+}
+
+#idMainMenu,
+#idMainMenu TABLE
+{
+  font-style: normal; 
+  border: none;
+  border-collapse: collapse;  
+  height: auto;
+  padding: 0;
+  clear: both;
+  background-color: transparent;
+}
+
+/******* Item container of the 1st menu level  *******/
+
+#idMainMenu TD 
+{
+  position: relative;
+  z-index: 302;
+  height: auto;
+  margin: 4px 0 0 0;
+  padding: 0;
+  vertical-align: top;
+  background: none;
+}
+#idMainMenu TD .inner
+{
+    position: relative;
+}
+
+#idMainMenu TD.separator
+{
+  width: 14px;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+}
+
+#idMainMenu TD.separator SPAN
+{
+  display: block;
+  width: 1px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 0.00em;
+  background-color: #CCCCCC;
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-left: 7px;
+/ margin-top: 4px;
+/ margin-left: 0px;
+}
+
+#idMainMenu TD.firstSeparator
+{
+  width: 9px;
+  text-align: left;
+}
+#idMainMenu TD.firstSeparator SPAN
+{
+  margin-left: 0px;
+}
+
+#idMainMenu TD.lastSeparator
+{
+  display: none;
+}
+
+#idMainMenu TD.lastSeparator
+{
+  display: none;
+}
+
+#idMainMenu TD .item,
+#idMainMenu TD .d4
+{
+	background-color: transparent;
+}
+
+#idMainMenu TD.itemCurrent .d4,
+#idMainMenu TD.itemCurrentLeaf .d4,
+#idMainMenu TD.itemCurrentParent .d4
+{
+	background-color: transparent;
+}
+#idMainMenu TD.last
+{
+}
+#idMainMenu TD.itemNormal .d5
+{
+  padding-right: 10px;
+  background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-closed-l1-black.gif) right center no-repeat;
+}
+#idMainMenu TD.itemCurrent .d5,
+#idMainMenu TD.itemCurrentParent .d5
+{
+  padding-right: 10px;
+  background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-opened-l1-black.gif) right center no-repeat;
+}
+
+#idMainMenu TD.itemNormal TABLE TD .d5,
+#idMainMenu TD.itemCurrent TABLE TD .d5,
+#idMainMenu TD.itemCurrentParent TABLE TD .d5,
+#idMainMenu TD.itemNormal .d5 .d5,
+#idMainMenu TD.itemCurrent .d5 .d5,
+#idMainMenu TD.itemCurrentParent .d5 .d5
+{
+  padding-right: 0;
+  background: none;
+}
+
+/******* Item of the 1st menu level *******/
+
+#idMainMenu TD A,
+#idMainMenu TD A:link,
+#idMainMenu TD A:active,
+#idMainMenu TD A:visited,
+#idMainMenu TD A:hover,
+#idMainMenu TD SPAN SPAN
+{
+  display: block;
+  height: 100%;
+  margin: 0 0px 0 0;
+  padding: 5px 5px 5px 5px;
+  background-color: transparent;
+  font-size: 120%;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;  
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+/ display: inline-block;
+/ margin-right: 0;
+/ padding-right: 5px;
+}
+
+#idMainMenu TD A:hover,
+#idMainMenu TD.itemNormal:hover A,
+#idMainMenu TD.itemCurrentParent A:hover
+{
+  background-color: #777777;
+  color: #FFFFFF;
+}
+#idMainMenu TD.itemCurrentParent A,
+#idMainMenu TD.itemCurrentParent A:link,
+#idMainMenu TD.itemCurrentParent A:active,
+#idMainMenu TD.itemCurrentParent A:visited,
+#idMainMenu TD SPAN SPAN
+{
+	background-color: transparent;
+  color: #3A75C8;
+}
+
+/******* System icons on the 1st menu level items *******/
+#idMainMenuContainer #idMainMenu DIV.mainMenuPublicHiddenIcon,
+#idMainMenuContainer #idMainMenu IMG.mainMenuPublicHiddenIcon
+{
+  -moz-opacity: 0.50;
+  -khtml-opacity: 0.50;
+  opacity: 0.50;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+background-position: left top;
+}
+
+#idMainMenuContainer #idMainMenu DIV.mainMenuPublicHiddenIcon
+{
+  left: 6px;
+  top: -5px;
+}
+#idMainMenuContainer #idMainMenu UL.dynamic LI DIV.mainMenuPublicHiddenIcon
+{
+  left: 6px;
+  top: -5px;
+}
+
+#idMainMenuContainer #idMainMenu DIV.mainMenuPublicHiddenIcon.after
+{
+  display: none;
+}
+#idMainMenuContainer #idMainMenu UL.dynamic LI DIV.mainMenuPublicHiddenIcon.before
+{
+  display: none;
+}
+#idMainMenuContainer #idMainMenu UL.dynamic LI DIV.mainMenuPublicHiddenIcon.after
+{
+  background-position: right top;
+  display: inline;
+  float: none;
+  top: auto;
+  left: auto;
+  right: 16px;
+}
+
+/******* MENU LEVEL 2 *******/
+
+#idMainMenu .menuLevel2
+{
+  position: relative;
+  z-index: 300;
+  margin-top: 4px;
+  padding: 8px;
+  background-color: #B3E4FF;
+}
+#idMainMenu .menuLevel2 SPAN.separator
+{
+  padding: 0px 8px;
+}
+
+#idMainMenu .menuLevel2 SPAN.separator SPAN
+{
+	color: #79a9c4;
+}
+
+#idMainMenu .menuLevel2 SPAN.item
+{
+	padding: 0;
+	display: inline-block;
+	background: none;
+}
+
+#idMainMenu .menuLevel2 SPAN.item SPAN SPAN,
+#idMainMenu .menuLevel2 SPAN.item SPAN A
+{
+	white-space: nowrap;
+	margin: 0px 0px 4px;
+	font-size: 100%;
+}
+
+#idMainMenu .menuLevel2 SPAN.itemNormalLeaf SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrentLeaf SPAN SPAN
+{
+	padding-right: 0px;
+}
+
+#idMainMenu .menuLevel2 SPAN.itemNormal SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrent SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrent SPAN SPAN
+{
+	padding-right: 12px;
+}
+
+#idMainMenu .menuLevel2 SPAN.itemNormal SPAN A
+{
+	background-image: url(<$StaticModel.ThemeUrl$>/images/mm-ico-closed-l2-black.gif);
+	background-repeat: no-repeat;
+ 	background-position: right center;
+/	background-position-y: 5px;
+}
+
+#idMainMenu .menuLevel2 SPAN.itemCurrent SPAN SPAN,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A
+{
+	background-image: url(<$StaticModel.ThemeUrl$>/images/mm-ico-opened-l2-black.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+/	background-position-y: 5px;	
+}
+
+#idMainMenu .menuLevel2 SPAN.itemNormalLeaf SPAN SPAN,
+#idMainMenu .menuLevel2 SPAN.itemCurrentLeaf SPAN SPAN,
+#idMainMenu .menuLevel2 SPAN.itemNormalLeaf SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrentLeaf SPAN A
+{
+	background-image: none;
+}
+
+#idMainMenu .menuLevel2 SPAN.item SPAN A,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:link,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:active,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:visited,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:hover,
+#idMainMenu .menuLevel2 SPAN.item SPAN SPAN
+{
+  color: #000000;
+  font-weight: normal;
+}
+#idMainMenu .menuLevel2 SPAN.item SPAN A:hover,
+#idMainMenu .menuLevel2 SPAN.item:hover SPAN A
+{
+  background-color: transparent;
+  color: #666677;
+}
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:link,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:active,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:visited,
+#idMainMenu .menuLevel2 SPAN.item SPAN SPAN
+{
+	background-color: transparent;
+	color: #3A75C8;
+}
+#idMainMenu .menuLevel2 TD TABLE TD.itemNormal .d5
+{
+  width: 100%;
+  background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-closed-l2-black.gif) 197px center no-repeat;
+}
+#idMainMenu .menuLevel2 TD TABLE TD.itemCurrent .d5,
+#idMainMenu .menuLevel2 TD TABLE TD.itemCurrentParent .d5
+{
+  width: 100%;
+  background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-opened-l2-black.gif) 197px center no-repeat;
+}
+
+/******* MENU LEVEL 3 *******/
+
+#idMainMenu .menuLevel3
+{
+	padding: 8px;
+	margin-top: 4px;
+	background-color: #DFF3FF;
+}
+
+#idMainMenu .menuLevel3 SPAN.separator
+{
+  padding: 0px 8px;
+  vertical-align: middle;
+}
+
+#idMainMenu .menuLevel3 SPAN.separator SPAN
+{
+	color: #a0bfd1;
+}
+
+#idMainMenu .menuLevel3 SPAN.item
+{
+	padding: 0px;
+	display: inline-block;
+}
+#idMainMenu .menuLevel3 SPAN SPAN SPAN,
+#idMainMenu .menuLevel3 SPAN A
+{
+	white-space: nowrap;
+	margin: 0px 0px 4px;
+	font-size: 100%;
+}
+#idMainMenu .menuLevel3 SPAN.item SPAN A,
+#idMainMenu .menuLevel3 SPAN.item SPAN A:link,
+#idMainMenu .menuLevel3 SPAN.item SPAN A:active,
+#idMainMenu .menuLevel3 SPAN.item SPAN A:visited,
+#idMainMenu .menuLevel3 SPAN.item SPAN A:hover,
+#idMainMenu .menuLevel3 SPAN.item SPAN SPAN SPAN
+{
+  color: #000000;
+  font-weight: normal;
+}
+#idMainMenu .menuLevel3 SPAN.item SPAN A:hover
+{
+  background-color: transparent;
+  color: #666677;
+}
+#idMainMenu .menuLevel3 SPAN.item SPAN SPAN
+{
+	background-color: transparent;
+	color: #3A75C8;
+}
+
+/*******************************************************************/
+/******* DYNAMIC MENU                                        *******/
+/*******************************************************************/
+
+#idMainMenu TD.itemNormal DIV.dynamicMenuLevelContainer,
+#idMainMenu SPAN.itemNormal DIV.dynamicMenuLevelContainer
+{
+  display: block;
+}
+#idMainMenu TD.itemNormal DIV.dynamicMenuLevelContainer
+{
+  position: relative;
+}
+#idMainMenu TD.itemNormal DIV.dynamicMenuLevelContainer DIV.dynamicMenuLevelContainer
+{
+  position: absolute;
+}
+#idMainMenu TD.itemNormal UL.dynamic,
+#idMainMenu SPAN.itemNormal UL.dynamic
+{
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#idMainMenu TD.itemNormal,
+#idMainMenu SPAN.itemNormal
+{
+/ margin-bottom: -3px;
+}
+#idMainMenu TD.itemNormal UL.dynamic,
+#idMainMenu TD.itemNormal TABLE.dynamic
+{
+  font-size: 0.9em;
+}
+#idMainMenu TD UL LI.itemNormal UL.dynamic,
+#idMainMenu TD UL LI.itemNormal TABLE.dynamic
+{
+	font-size: 1.0em;
+}
+#idMainMenu TD.itemNormal TABLE.dynamic TD
+{
+  position: static;
+}
+
+/******* DYNAMIC MENU LEVEL 2 *******/
+
+#idMainMenu TD.itemNormal:hover UL.dynamic,
+#idMainMenu TD.itemNormal A:hover UL.dynamic
+{
+	display: block;
+	left: 0;
+	top: 0px;
+	width: 157px;
+}
+#idMainMenu SPAN.itemNormal UL.dynamic
+{
+	left: 0;
+	top: 0;
+	width: 157px;
+}
+#idMainMenu TD.itemNormal:hover UL.dynamic LI,
+#idMainMenu TD.itemNormal A:hover UL.dynamic LI,
+#idMainMenu TD.itemNormal A:hover TABLE.dynamic UL.dynamic LI
+{
+  position: relative;
+  width: 157px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#idMainMenu SPAN.itemNormal UL.dynamic LI
+{
+	position: relative;
+  width: 157px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#idMainMenu TD.itemNormal TABLE.dynamic
+{
+	display: block;
+}
+#idMainMenu TD.itemNormal A:hover TABLE.dynamic UL.dynamic
+{
+	display: block;
+	left: -5px;
+	top: 5px;
+}
+#idMainMenu TD.itemNormal UL.dynamic,
+#idMainMenu SPAN.itemNormal UL.dynamic
+{
+  padding: 0;
+}
+#idMainMenu TD.itemNormal UL.dynamic LI.last,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.last,
+#idMainMenu TD.itemNormal UL.dynamic LI.only,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.only
+{
+  padding: 0;
+}
+#idMainMenu TD.itemNormal UL.dynamic LI .d1
+#idMainMenu SPAN.itemNormal UL.dynamic LI .d1
+{
+  width: 100%;
+}
+
+#idMainMenu TD.itemNormal UL.dynamic LI.itemNormal
+{
+  /margin-bottom: -2px;
+}
+
+#idMainMenuContainer #idMainMenu .menuLevel1 TD.itemNormal UL.dynamic LI .d4,
+#idMainMenuContainer #idMainMenu .menuLevel1 SPAN.itemNormal UL.dynamic LI .d4,
+#idMainMenuContainer #idMainMenu .menuLevel1 TD.itemNormal UL.dynamic LI .d5,
+#idMainMenuContainer #idMainMenu .menuLevel1 SPAN.itemNormal UL.dynamic LI .d5
+{
+  padding: 0;
+}
+#idMainMenu TD.itemNormal UL.dynamic LI .d4,
+#idMainMenu SPAN.itemNormal UL.dynamic LI .d4
+{
+  background: none;
+}
+#idMainMenu TD.itemNormal UL.dynamic LI.itemNormal .d5,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.itemNormal .d5
+{
+  width: 100%;
+  background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-closed-l2-black.gif) 147px center no-repeat;
+}
+#idMainMenu TD.itemNormal UL.dynamic LI.itemNormal .d5 .d5,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.itemNormal .d5 .d5
+{
+  width: auto;
+  background: none;
+}
+#idMainMenuContainer #idMainMenu SPAN.itemNormal UL.dynamic LI A
+{
+  background-image: none;
+}
+#idMainMenu TD UL.dynamic LI A,
+#idMainMenu TD UL.dynamic LI A:link,
+#idMainMenu TD UL.dynamic LI A:active,
+#idMainMenu TD UL.dynamic LI A:visited,
+#idMainMenu TD UL.dynamic LI A:hover,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI A,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI A:link,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI A:active,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI A:visited,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI A:hover,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A:link,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A:active,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A:visited,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A:hover
+{
+  display: block;
+  width: 139px;
+  height: auto;
+  margin: 0;
+  padding: 3px 11px 3px 7px;
+  background-color: transparent;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  white-space: normal;
+  overflow: hidden;
+}
+#idMainMenu TD.itemNormal:hover UL.dynamic LI:hover A,
+#idMainMenu TD.itemNormal A:hover UL.dynamic LI A:hover,
+#idMainMenu SPAN.itemNormal UL.dynamic LI:hover A,
+#idMainMenu SPAN.itemNormal UL.dynamic LI A:hover
+{
+  background-color: #777777;
+  color: #FFFFFF;
+}
+
+/******* System icons *******/
+
+#idMainMenuContainer #idMainMenu TD UL.dynamic LI DIV.mainMenuPublicHiddenIcon
+{
+  left: 161px;
+  -moz-opacity: 0.37;
+  opacity: 0.37;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=37);
+}
+#idMainMenuContainer #idMainMenu TD UL.dynamic LI DIV.menuMemberOnlyIcon
+{
+  left: 151px;
+}
+.adminContentView #idMainMenuContainer #idMainMenu TD UL.dynamic LI DIV.menuMemberOnlyIcon
+{
+  left: 161px;
+}
+
+/******* DYNAMIC MENU LEVEL 3 *******/
+
+#idMainMenu TD UL LI.itemNormal:hover UL.dynamic,
+#idMainMenu TD UL LI.itemNormal A:hover UL.dynamic,
+#idMainMenu TD.itemNormal UL.dynamic LI.itemNormal:hover UL.dynamic,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.itemNormal:hover UL.dynamic,
+#idMainMenu TD.itemNormal UL.dynamic LI.itemNormal A:hover UL.dynamic,
+#idMainMenu SPAN.itemNormal UL.dynamic LI.itemNormal A:hover UL.dynamic
+{
+	left: 157px;
+	top: 0px;
+	width: 157px;
+}
+#idMainMenu TD UL LI.itemNormal A:hover TABLE.dynamic UL.dynamic,
+#idMainMenu TD.itemNormal TABLE.dynamic UL.dynamic LI.itemNormal A:hover TABLE.dynamic UL.dynamic,
+#idMainMenu SPAN.itemNormal TABLE.dynamic UL.dynamic LI.itemNormal A:hover TABLE.dynamic UL.dynamic
+{
+	display: block;
+	left: 157px;
+	top: 0px;
+}
+#idMainMenu TD UL LI UL.dynamic LI A,
+#idMainMenu TD UL LI UL.dynamic LI A:link,
+#idMainMenu TD UL LI UL.dynamic LI A:active,
+#idMainMenu TD UL LI UL.dynamic LI A:visited,
+#idMainMenu TD UL LI UL.dynamic LI A:hover,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:link,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:active,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:visited,
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:hover,
+#idMainMenu SPAN.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A,
+#idMainMenu SPAN.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:link,
+#idMainMenu SPAN.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:active,
+#idMainMenu SPAN.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:visited,
+#idMainMenu SPAN.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI A:hover
+{
+  width: 142px;
+  padding: 3px 8px 3px 7px;
+  background-color: transparent;
+  color: #000000;
+}
+#idMainMenu TD.itemNormal:hover UL.dynamic LI.itemNormal:hover UL.dynamic LI:hover A,
+#idMainMenu TD.itemNormal A:hover UL.dynamic LI.itemNormal A:hover UL.dynamic LI A:hover
+{
+  background-color: #777777;
+  color: #FFFFFF;
+}
+
+/*******************************************************************/
+/******* CONTENT                                             *******/
+/*******************************************************************/
+
+/******* Content column main container *******/
+
+#idPrimaryContentContainer
+{
+  width: 919px;
+  margin: 0px;
+  height: auto;
+  float: left;
+}
+
+/******* Inner content containers *******/
+
+#idPrimaryContentContainer .d1
+{
+  width: 917px;
+  float: left;
+  border: 1px solid #CCCCCC;
+}
+#idPrimaryContentContainer .d1 .d1
+{
+  width: auto;
+  float: none;
+  border: none;
+}
+#idPrimaryContentContainer .block .inner
+{
+  float: left;
+  padding: 15px 23px 15px 33px;
+}
+
+/******* Container for content editing *******/
+/******* (Specify background color of the content region below) *******/
+
+#idPrimaryContentBlock1ContentHolder,
+#idPrimaryContentBlock1ContentHolderEventAdmin
+{
+  background-color: #FFFFFF;
+}
+#idPrimaryContentBlock1ContentHolder,
+#idPrimaryContentBlock1Content
+{
+  width: 861px;
+}
+
+/*******************************************************************/
+/******* FOOTER                                              *******/
+/*******************************************************************/
+
+/******* Footer and content separator container *******/
+
+#idFooterSeparator
+{
+  display: none;
+  visibility: visible;
+}
+
+/******* Footer main container *******/
+
+#idFooterContainer
+{
+  width: 919px;
+  height: auto;
+}
+
+/******* Footer containers for applying background *******/
+
+#idFooterContainer .d1
+{
+}
+#idFooterContainer .d1 .d1
+{
+  width: auto;
+  float: none;
+  background: none;
+}
+
+/******* Footer content container *******/
+
+#idFooterContainer .inner
+{
+  float: left;
+  padding: 5px;
+}
+#idFooterContainer .inner .inner
+{
+  float: none;
+  padding: 0;
+}
+
+/******* Editable footer region container *******/
+/******* (Specify default background color for editable region below) *******/
+
+.footerContentHolder
+{
+  width: 909px;
+  height: auto;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+#idFooterContent
+{
+  width: 909px;
+}
+
+/*******************************************************************/
+/***  EVENTS                                                     ***/
+/*******************************************************************/
+
+/******* Labels and headers colors *******/
+
+#idPrimaryContentBlock1Content #idEventSummaryContainer H4.boxHeaderTitle A,
+#idPrimaryContentBlock1Content #idEventSummaryContainer H4.boxHeaderTitle A:link,
+#idPrimaryContentBlock1Content #idEventSummaryContainer H4.boxHeaderTitle A:visited
+{
+  color: #000000;
+  text-decoration: none;
+}
+#idPrimaryContentBlock1Content #idEventSummaryContainer DIV.boxFooterContainer A,
+#idPrimaryContentBlock1Content #idEventSummaryContainer DIV.boxFooterContainer A:link,
+#idPrimaryContentBlock1Content #idEventSummaryContainer DIV.boxFooterContainer A:visited
+{
+  color: #0781C7;
+}
+#idPrimaryContentBlock1Content #idEventSummaryContainer H4.boxHeaderTitle A:active,
+#idPrimaryContentBlock1Content #idEventSummaryContainer H4.boxHeaderTitle A:hover,
+#idPrimaryContentBlock1Content #idEventSummaryContainer DIV.boxFooterContainer A:active,
+#idPrimaryContentBlock1Content #idEventSummaryContainer DIV.boxFooterContainer A:hover
+{
+  color: #00A2FF;
+  text-decoration: underline;
+}
+#idEventSummaryContainer DIV.boxBodyInfoContainer DIV.boxActionContainer INPUT
+{
+}
+#idEventPageContainer DIV.boxBodyInfoContainer
+{
+}
+#idEventPageContainer DIV.boxInfoContainer UL.boxInfo LI LABEL
+{
+}
+#idEventPageContainer DIV.boxInfoContainer UL.boxInfo LI SPAN,
+#idEventPageContainer DIV.boxInfoContainer UL.boxInfo LI STRONG
+{
+}
+#idEventSummaryContainer DIV.boxInfoContainer UL.boxInfo LI LABEL
+{
+}
+#idEventSummaryContainer DIV.boxInfoContainer UL.boxInfo LI SPAN,
+#idEventSummaryContainer DIV.boxInfoContainer UL.boxInfo LI STRONG
+{
+}
+
+/******* EVENT DETAILS *******/
+
+#idEventDetailsContainer DIV.boxInfoContainer UL.boxInfo LI LABEL
+{
+  color: #555555;
+}
+#idEventDetailsContainer DIV.boxInfoContainer UL.boxInfo LI SPAN,
+#idEventDetailsContainer DIV.boxInfoContainer UL.boxInfo LI STRONG
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer H4.infoTitle
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer DIV.infoText
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo,
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI LABEL
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI SPAN,
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI STRONG
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI.disabled,
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI.disabled LABEL
+{
+}
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI.disabled SPAN,
+#idEventDetailsContainer DIV.registrationInfoContainer UL.registrationInfo LI.disabled STRONG
+{
+}
+
+/******* Custom form captions *******/
+
+TABLE#registrationDetailsTable TR.caption TH,
+TABLE#registrationDetailsTable TR.caption TD
+{
+  background-color: #FFFFFF;
+}
+#idPrimaryContentBlock1Content TABLE#registrationDetailsTable TR.caption TH DIV,
+#idPrimaryContentBlock1Content TABLE#registrationDetailsTable TR.caption TD DIV
+{
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+  color: #000000;
+}
+TABLE#registrationDetailsTable TH,
+TABLE#registrationDetailsTable TH SPAN.mandatory
+{
+  color: #000000;
+}
+
+/******* EVENT CALENDAR VIEW *******/
+
+.EventListCalendar,
+.EventListCalendarItemDefault,
+.EventListCalendarItemHoliday,
+.EventListCalendarItemInactive,
+.EventListCalendarItemSelected
+{
+  border-color: #EEEEEE;
+}
+
+.EventListCalendar
+{
+  border: solid 1px #EEEEEE;
+  width: 855px;
+}
+
+.EventListCalendarHeader
+{
+  border-bottom: solid 1px #EEEEEE;
+  background-color: #EEEEEE;
+}
+
+.EventListCalendarItemDefault
+{
+  border-color: #EEEEEE;
+  border-right: solid 1px #EEEEEE;
+}
+
+.EventListCalendarItemHoliday
+{
+  border-right: solid 1px #EEEEEE;
+}
+
+.EventListCalendarItemInactive
+{
+  border-right: solid 1px #EEEEEE;
+}
+
+.EventListCalendarItemSelected
+{
+  border-right: solid 1px #EEEEEE;
+}
+
+A.calendarDate,
+A.calendarDate:link,
+A.calendarDate:active,
+A.calendarDate:visited,
+A.calendarDate:hover
+{
+  color: #000000;
+}
+
+A.yearViewHeader,
+A.yearViewHeader:link,
+A.yearViewHeader:active,
+A.yearViewHeader:visited,
+A.yearViewHeader:hover
+{
+  background-color: #EEEEEE;
+  color: #000000;
+}
+/******************************************************************/
+/***  REGISTRATIONS LIST                                        ***/
+/******************************************************************/
+#idContentContainer div#idRegistrationsList  .d1,
+#idContentContainer div#idRegistrationsList  .d2,
+#idContentContainer div#idRegistrationsList  .d3,
+#idContentContainer div#idRegistrationsList  .d4,
+#idContentContainer div#idRegistrationsList  .inner
+{
+  background-color : #EEEEEE;
+}
+div#idRegistrationsList table
+{
+  border-left : solid 1px #EEEEEE;
+}
+div#idRegistrationsList table td
+{
+  border-top : solid 1px #EEEEEE;
+  border-right : solid 1px #EEEEEE;
+  border-bottom : solid 1px #EEEEEE;
+}
+div#idRegistrationsList table thead
+{
+  background-color : #EEEEEE;
+}
+/*******************************************************************/
+/***  MEMBERS AND MEMBERS DIRECTORY                              ***/
+/*******************************************************************/
+
+DIV#searchContainer FIELDSET#criteria
+{
+}
+DIV#searchContainer FIELDSET#criteria DIV SELECT
+{
+}
+DIV#searchContainer FIELDSET#criteria DIV DIV.criteria-condition-placeholder SELECT
+{
+}
+DIV#memberDirectoryHolder
+{
+}
+TABLE.membersTable 
+{
+}
+TABLE.membersTable TH
+{
+  background-color: #EEEEEE;
+  color: #000000;
+}
+#idPrimaryContentBlock1Content DIV.memberDirectorySearchArea SPAN.searchResult
+{
+  color: #777777;
+}
+#idPrimaryContentBlock1Content DIV.memberDirectorySearchArea SPAN EM
+{
+  color: #000000;
+}
+#idPrimaryContentBlock1Content .membersTable TR.hover
+{
+  background-color: #F7F7F7;
+}
+#idPrimaryContentBlock1Content .membersTable TR.normal
+{
+  background: none;
+}
+#idPrimaryContentBlock1Content A.back,
+#idPrimaryContentBlock1Content A.back:link,
+#idPrimaryContentBlock1Content A.back:active,
+#idPrimaryContentBlock1Content A.back:visited,
+#idPrimaryContentBlock1Content .membersTable A,
+#idPrimaryContentBlock1Content .membersTable A:link,
+#idPrimaryContentBlock1Content .membersTable A:active,
+#idPrimaryContentBlock1Content .membersTable A:visited,
+#idPrimaryContentBlock1Content #criteria A,
+#idPrimaryContentBlock1Content #criteria A:link,
+#idPrimaryContentBlock1Content #criteria A:active,
+#idPrimaryContentBlock1Content #criteria A:visited
+{
+  border-bottom-color: #0781C7;
+  color: #0781C7;
+}
+#idPrimaryContentBlock1Content A.back:hover,
+#idPrimaryContentBlock1Content .membersTable A:hover,
+#idPrimaryContentBlock1Content #criteria A:hover
+{
+  border-bottom-color: #00A2FF;
+  background: none;
+  color: #00A2FF;
+}
+.levelRadio input
+{
+  margin-top: 2px;
+  / margin-top: -2px;  
+}
+/*******************************************************************/
+/***  BLOG                                                       ***/
+/*******************************************************************/
+
+#idBlogPageContainer H4.boxHeaderTitle A,
+#idBlogPageContainer H4.boxHeaderTitle A:link,
+#idBlogPageContainer H4.boxHeaderTitle A:active,
+#idBlogPageContainer H4.boxHeaderTitle A:visited,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogEntryPostedBy,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogEntryPostedBy:link,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogEntryPostedBy:active,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogEntryPostedBy:visited
+{
+  color: #0781C7;
+}
+#idBlogPageContainer H4.boxHeaderTitle A:hover,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogEntryPostedBy:hover
+{
+  color: #00A2FF;
+}
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogCommentAnchor,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogCommentAnchor:link,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogCommentAnchor:active,
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogCommentAnchor:visited
+{
+  color: #000000;
+}
+#idBlogDetailsContainer #idBlogCommentsListContainer DIV.commentViewContainer H5 A.blogCommentAnchor:hover
+{
+}
+#idBlogPageContainer #idBlogPostEditContainer DIV.boxHeaderContainer H4.boxHeaderTitle
+{
+}
+#idBlogPageContainer #idBlogSummaryContainer DIV.boxOuterContainer,
+#idBlogPageContainer #idBlogDetailsContainer DIV.boxOuterContainer
+{
+}
+#idBlogPageContainer #idBlogPostEditContainer .generalFieldsContainer INPUT,
+#idBlogPageContainer #idBlogPostEditContainer .generalFieldsContainer INPUT.subjectTextBox,
+#idBlogPageContainer #idBlogPostEditContainer .generalFieldsContainer TEXTAREA,
+#idBlogPageContainer #idBlogPostEditContainer #idEditorContainer
+{
+}
+
+/*******************************************************************/
+/***  CONFIRM WINDOWS                                            ***/
+/*******************************************************************/
+
+DIV.confirmWindowWarning,
+DIV.confirmWindowInfo,
+DIV.confirmWindowSuccess,
+DIV.confirmWindowError
+{
+}
+DIV.RoundedCornerBox
+{
+}
+/*******************************************************************/
+/***  FORUM                                                      ***/
+/*******************************************************************/
+
+/* general styles */
+
+.highlight,
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer tr.highlight,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer tr.highlight
+{
+  background-color: #F0F0F0;
+}
+
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TR TD,
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.threadImageTD,
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.threadTD,
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.lastReplyTD,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxBodyContainer TABLE.forumMessageTable TD.left,
+#idForumContainer #idForumSummaryContainer div
+{
+  border-color: #eee;
+}
+
+/* topic list */
+
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.lastReplyTD,
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.lastReplyTD div.lastReply
+{
+  width: 120px;
+}
+
+/* header */
+
+#idForumContainer #idForumSummaryContainer div.boxHeaderContainer H4.boxHeaderTitle
+{
+}
+
+/* body */
+
+#idForumContainer #idForumSummaryContainer div.boxBodyContainer TABLE TD.lastReplyTD div.lastReply SPAN
+{
+}
+
+/* message list */
+
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote blockquote blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote blockquote blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote blockquote blockquote blockquote blockquote
+{
+  background-color: #EEEBE9;
+  border-left: solid 3px #A79D96;
+}
+
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote blockquote blockquote blockquote,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote blockquote blockquote blockquote,
+.forumEditEntryEditorContainer blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote
+{
+  background-color: #DAD7D5; 
+}
+
+#idForumContainer #idForumEditEntryContainer .generalFieldsContainer INPUT.subjectTextBox
+{
+  width: 752px;
+  / width: 750px;
+}
+
+#idForumContainer #idForumEditEntryContainer #idEditorContainer #idEditorToolbarContainer,
+#idForumContainer #idForumEditEntryContainer #idEditorContainer #idEditorBodyContainer,
+#idForumContainer #idForumEditEntryContainer TEXTAREA
+{
+  width: 738px;
+}
+
+/* forum message box */
+
+/* header */
+
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderInfoContainer,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderBodyContainer
+{
+  color: #000000;
+}
+
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderBodyContainer A,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderBodyContainer A:active,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderBodyContainer A:visited,
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer TD.forumMessageHeaderBodyContainer A:hover
+{
+  color: #000000;
+}
+
+#idForumContainer #idForumDetailsContainer #idMessageListContainer div.boxHeaderContainer span.actionDivider
+{
+  color: #000000;
+}
+
+/* edit forum entry */
+
+/* edit entry box */
+
+/* body */
+
+#idForumContainer #idForumEditEntryContainer #idForumEditEntryBoxContainer DIV.postEditLegend
+{
+}
+
+#idForumContainer #idForumEditEntryContainer div.boxHeaderContainer H4.boxHeaderTitle
+{
+}
+
+#idForumContainer #idForumEditEntryContainer .fieldLabel
+{
+}
+
+/***************************************************************************/
+/* Forum Summary                                                           */
+/***************************************************************************/
+
+/* general styles */
+
+#idForumSummaryPageContainer H4.boxHeaderTitle
+{
+}
+
+/* forum list box */
+
+#idForumSummaryPageContainer #idForumListContainer div.boxHeaderContainer TABLE TD.threadTD div.thread,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.threadTD div.thread
+{
+}
+
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.pageStateIconTD,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.threadTD,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.lastReplyTD,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.topicsCountTD,
+#idForumSummaryPageContainer #idForumListContainer div.boxBodyContainer TABLE TD.repliesCountTD
+{
+  border-color: #eee;
+}
+
+/*******************************************************************/
+/***  BOXES and CORNERS                                          ***/
+/*******************************************************************/
+
+DIV.boxViewOutline DIV.cornersContainer,
+DIV.boxBodyInfoViewFill DIV.cornersContainer
+{
+  background-color: #EEEEEE;
+}
+DIV.cornersContainer DIV.c3,
+DIV.cornersContainer DIV.c4,
+DIV.publicWizardContainer DIV.infoContainer,
+#idPrimaryContentContainer DIV.boxViewOutline DIV.boxBodyContainer,
+#idPrimaryContentContainer DIV.boxViewOutline DIV.boxHeaderContainer DIV.d1,
+#idPrimaryContentContainer DIV.boxViewOutline DIV.boxBodyContainer DIV.d1,
+#idPrimaryContentContainer DIV.boxViewOutline DIV.boxFooterContainer DIV.d1
+{
+  border-color: #EEEEEE;
+}
+DIV.cornersContainer DIV.c1,
+DIV.cornersContainer DIV.c2,
+DIV.cornersContainer DIV.c3,
+DIV.cornersContainer DIV.c4,
+DIV.publicWizardContainer DIV.infoContainer,
+DIV.generalFieldsContainer DIV.captionContainer,
+DIV.boxViewOutline DIV.boxHeaderContainer,
+DIV.boxViewOutline DIV.boxFooterContainer,
+DIV.boxBodyInfoViewFill DIV.boxBodyInfoContainer
+{
+  background-color: #EEEEEE;
+}
+
+/*******************************************************************/
+/***  WIZARDS                                                    ***/
+/*******************************************************************/
+DIV.generalFieldsContainer DIV.fieldBody .typeInstruction
+{
+	color: #666;
+}
+
+DIV.publicWizardContainer DIV.infoOuterContainer DIV.cornersContainer
+{
+  display: none;
+}
+#idContentContainer #idPrimaryContentContainer DIV.publicWizardContainer DIV.infoContainer DIV.inner
+{
+  padding-top: 9px;
+  padding-bottom: 7px;
+}
+DIV.publicWizardContainer DIV.cornersContainer DIV.c3,
+DIV.publicWizardContainer DIV.cornersContainer DIV.c4,
+DIV.publicWizardContainer DIV.infoContainer
+{
+  border-left-color: #EEEEEE;
+  border-right-color:  #EEEEEE;
+}
+DIV.publicWizardContainer DIV.cornersContainer DIV.c1,
+DIV.publicWizardContainer DIV.cornersContainer DIV.c2,
+DIV.publicWizardContainer DIV.cornersContainer DIV.c3,
+DIV.publicWizardContainer DIV.cornersContainer DIV.c4,
+DIV.publicWizardContainer DIV.infoContainer,
+DIV.generalFieldsContainer DIV.captionContainer
+{
+  background-color: #EEEEEE;
+}
+DIV.publicWizardContainer DIV.infoContainer DIV.infoTitle
+{
+  color: #555555;
+}
+DIV.publicWizardContainer DIV.infoContainer DIV.infoText,
+#idPrimaryContentBlock1Content DIV.generalFieldsContainer DIV.captionContainer H4
+{
+  color: #000000;
+}
+DIV.generalFormContainer DIV.formTitleOuterContainer
+{
+  border-bottom: 1px solid #CCCCCC;
+}
+#idPrimaryContentBlock1Content DIV.generalFormContainer DIV.formTitleContainer H3.formTitle
+{
+  color: #999999;
+}
+DIV.generalFieldsContainer DIV.fieldContainer SPAN.validationError
+{
+  color: #FF0000;
+}
+DIV.navigationOuterContainer
+{
+  border-top: 1px solid #EEEEEE;
+}
+
+/*******************************************************************/
+/***  PAGER                                                      ***/
+/*******************************************************************/
+
+#idPrimaryContentBlock1Content DIV.pagerOuterContainer
+{
+}
+#idPrimaryContentBlock1Content DIV.pagerOuterContainer A
+{
+}
+
+/* Fixed bug: wrong login-role radiobutton position; wron login button position */
+DIV.login-role-main,
+DIV.login-role-main DIV,
+DIV.login-role-main DIV INPUT,
+DIV.login-role-actions,
+DIV.login-role-actions DIV,
+DIV.login-role-actions DIV INPUT
+{
+	clear: both;
+}
+
+DIV.login-role-main DIV INPUT
+{
+ display: inline;
+}
+
+/*******************************************************************/
+/***  ARTBOXES                                                   ***/
+/*******************************************************************/
+
+
+/***  Type 001                                                   ***/
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer
+{
+  border: 5px solid #B3E5FF;
+}
+
+/* title */
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleContainer
+{
+  background: #B3E5FF;
+}
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxInner
+{
+  padding: 10px 18px 15px 18px;
+}
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 H4.artBoxTitle
+{
+  color: #000000; 
+}
+
+/* content */
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxContentContainer
+{
+  background: #FFFFFF;
+}
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxInner
+{
+  padding: 12px 12px; 
+}
+
+/* module */
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 DIV.moduleItem
+{
+  padding: 5px 6px 7px 6px;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 DIV.moduleSeparator
+{
+  border-top: 1px dashed #B3E5FF;
+}
+
+
+DIV.artBoxContainerType-001 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 DIV.itemInfoContainer
+{
+  color: #AAAAAA;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 A:link,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 A:active,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 A:visited,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 A:hover
+{
+  color: #0781C7;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-001 DIV.moduleViewType-0 A:hover
+{
+  color: #00A2FF;
+}
+
+/***  Type 002                                                   ***/
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer
+{
+  border: 5px solid #B3E5FF;
+}
+
+/* title */
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleContainer
+{
+  background: #FFFFFF;
+}
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxInner
+{
+  padding: 12px 18px 12px 18px;
+}
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 H4.artBoxTitle
+{
+  color: #000000; 
+}
+
+/* content */
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxContentContainer
+{
+  background: #B3E5FF;
+}
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxInner
+{
+  padding: 12px 12px; 
+}
+
+/* module */
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 DIV.moduleItem
+{
+  padding: 5px 6px 7px 6px;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 DIV.moduleSeparator
+{
+  border-top: 1px dashed #FFFFFF;
+}
+
+
+DIV.artBoxContainerType-002 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 DIV.itemInfoContainer
+{
+  color: #616161;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 A:link,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 A:active,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 A:visited,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 A:hover
+{
+  color: #0781C7;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-002 DIV.moduleViewType-0 A:hover
+{
+  color: #00A2FF;
+}
+
+/***  Type 003                                                   ***/
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer
+{
+  border: 1px solid #000000;
+}
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer .b1
+{
+  border: 4px solid #FFFFFF;
+}
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer .b1 .b1
+{
+  border: none;
+}
+
+/* title */
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleContainer
+{
+  background: #000000;
+}
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxInner
+{
+  padding: 12px 18px 12px 18px;
+}
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxTitleInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 H4.artBoxTitle
+{
+  color: #FFFFFF; 
+}
+
+/* content */
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxContentContainer
+{
+  background: #FFFFFF;
+}
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxInner
+{
+  padding: 12px 12px; 
+}
+
+/* module */
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 DIV.moduleItem
+{
+  padding: 5px 6px 7px 6px;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 DIV.moduleSeparator
+{
+  border-top: 1px dashed #808080;
+}
+
+
+DIV.artBoxContainerType-003 DIV.artBoxGeneralInnerContainer DIV.artBoxContentInnerContainer DIV.artBoxContent,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 DIV.itemInfoContainer
+{
+  color: #AAAAAA;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 A:link,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 A:active,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 A:visited,
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 A:hover
+{
+  color: #0781C7;
+}
+
+#idPrimaryContentBlock1Content DIV.artBoxContainerType-003 DIV.moduleViewType-0 A:hover
+{
+  color: #00A2FF;
+}
+
+/*** Donation Gadgets ***/
+
+DIV.artBoxContainer DIV.moduleViewType-0 TABLE.donationGoalTable TD.donationGoalProgressBarLeftPart
+{
+  background: #52BDED url(<$StaticModel.ThemeUrl$>/images/artbox-percentage-left.gif) center center repeat-x;
+}
+
+/*** 001 ***/
+
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 SPAN.donationGoalCollectedTitle,
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 SPAN.donationGoalAmountTitle
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 SPAN.donationGoalCollectedValue,
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 SPAN.donationGoalAmountValue
+{
+  color: #0EB4FF;
+}
+
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 TABLE.donationGoalTable TD.donationGoalPercentageContainer
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-001 DIV.moduleViewType-0 DIV.donationGoalPeriodContainer
+{
+  color: #66CFFF;
+}
+
+/*** 002 ***/
+
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 SPAN.donationGoalCollectedTitle,
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 SPAN.donationGoalAmountTitle
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 SPAN.donationGoalCollectedValue,
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 SPAN.donationGoalAmountValue
+{
+  color: #0074A9;
+}
+
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 TABLE.donationGoalTable TD.donationGoalPercentageContainer
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-002 DIV.moduleViewType-0 DIV.donationGoalPeriodContainer
+{
+  color: #0079B0;
+}
+
+/*** 003 ***/
+
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 SPAN.donationGoalCollectedTitle,
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 SPAN.donationGoalAmountTitle
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 SPAN.donationGoalCollectedValue,
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 SPAN.donationGoalAmountValue
+{
+  color: #0EB4FF;
+}
+
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 TABLE.donationGoalTable TD.donationGoalPercentageContainer
+{
+  color: #000000;
+}
+
+DIV.artBoxContainerType-003 DIV.moduleViewType-0 DIV.donationGoalPeriodContainer
+{
+  color: #66CFFF;
+}
