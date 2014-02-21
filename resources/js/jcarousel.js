@@ -2,8 +2,13 @@
     $(function() {
         $('.jcarousel')
 		.jcarousel({
-			transitions: true,
-			wrap: 'circular'
+			animation: 750,
+			wrap: 'circular',
+			transitions: Modernizr.csstransitions ? {
+				transforms: Modernizr.csstransforms,
+				transforms3d: Modernizr.csstransforms3d,
+				easing: 'ease-in'
+			} : false
 		})
 		.jcarouselAutoscroll({
 			interval: 4000,

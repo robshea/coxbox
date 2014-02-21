@@ -43,30 +43,19 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
 	position: absolute;
-	top: 155px;
-	width: 30px;
-	height: 30px;
+	top: 292px;
+	width: 50px;
+	height: 38px;
 	text-align: center;
-	background: #4E443C;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 0 0 1px #000;
-	font: 24px/27px Arial, sans-serif;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	-webkit-box-shadow: 0 0 2px #999;
-	-moz-box-shadow: 0 0 2px #999;
-	box-shadow: 0 0 2px #999;
 	opacity: .5;
 }
 
 .jcarousel-control-prev {
-	left: 20px;
+	left: 10px;
 }
 
 .jcarousel-control-next {
-	right: 20px;
+	right: 10px;
 }
 
 .jcarousel-control-prev:hover span,
@@ -85,7 +74,7 @@
 .jcarousel-pagination {
 	position: absolute;
 	bottom: 0;
-	right: 20px;
+	left: 400px;
 }
 
 .jcarousel-pagination a {
