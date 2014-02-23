@@ -1273,7 +1273,7 @@ background-position: left top;
 {
   width: 960px;
   height: auto;
-  margin: 10px;
+  margin: 0;
 }
 
 /******* Footer containers for applying background *******/
@@ -1293,7 +1293,7 @@ background-position: left top;
 #idFooterContainer .inner
 {
   float: left;
-  padding: 5px;
+  padding: 0;
 }
 #idFooterContainer .inner .inner
 {
@@ -1306,14 +1306,14 @@ background-position: left top;
 
 .footerContentHolder
 {
-  width: 940px;
+  width: 960px;
   height: auto;
   padding: 0;
   background-color: #FFFFFF;
 }
 #idFooterContent
 {
-  width: 940px;
+  width: 960px;
 }
 
 /*******************************************************************/

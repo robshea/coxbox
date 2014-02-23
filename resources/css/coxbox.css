@@ -38,8 +38,12 @@
 #idMainMenu TD.separator SPAN {
 	display: none;
 }
-TABLE#idPageLayoutMainContainer .pageLayoutTitleOuterContainer {
+TABLE#idPageLayoutMainContainer .pageLayoutTitleOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContainer {
 	padding-bottom: 0;
+	padding-top: 0;
 }
 .home_promo {
 	margin: 40px auto 0;
@@ -108,4 +112,41 @@ a.button {
 }
 .home_promo .button {
 	float: right;
+}
+.footer {
+	width: 960px;
+}
+.footer_row {
+	clear: both;
+}
+.footer_menu {
+	background-color: #eee;
+	padding: 10px;
+	float: left;
+	margin: 0 50px;
+	width: 200px;
+}
+.footer_menu ul {
+	margin: 0;
+	padding: 0;
+}
+.footer_menu li {
+	list-style-type: none;
+}
+.footer_menu li li {
+	list-style-type: disc;
+	margin-left: 15px;
+}
+.footer_logo {
+	float: left;
+	margin: 40px 50px;
+	width: 220px;
+}
+.footer_row p {
+	text-align: center;
+}
+.footer_logo img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

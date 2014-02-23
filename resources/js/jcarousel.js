@@ -2,12 +2,12 @@
     $(function() {
         $('.jcarousel')
 		.jcarousel({
-			animation: 750,
+			animation: 1000,
 			wrap: 'circular',
 			transitions: Modernizr.csstransitions ? {
 				transforms: Modernizr.csstransforms,
 				transforms3d: Modernizr.csstransforms3d,
-				easing: 'ease-in'
+				easing: 'ease-in-out'
 			} : false
 		})
 		.jcarouselAutoscroll({
