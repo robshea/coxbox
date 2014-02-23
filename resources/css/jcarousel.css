@@ -1,9 +1,8 @@
-.jcarousel-wrapper {
+.carousel-wrapper {
 	position: relative;
 	width: 940px;
 }
-
-.jcarousel-wrapper .photo-credits {
+.carousel-wrapper .photo-credits {
 	position: absolute;
 	right: 15px;
 	bottom: 0;
@@ -12,36 +11,33 @@
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
 	opacity: .66;
 }
-
-.jcarousel-wrapper .photo-credits a {
+.carousel-wrapper .photo-credits a {
 	color: #fff;
 }
 
 /** Carousel **/
 
-.jcarousel {
+.carousel {
 	position: relative;
 	overflow: hidden;
 	width: 940px;
 	height: 340px;
 }
-
-.jcarousel ul {
+.carousel ul {
 	width: 20000em;
 	position: relative;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
-.jcarousel li {
+.carousel li {
 	float: left;
 }
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev,
-.jcarousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
 	position: absolute;
 	top: 292px;
 	width: 50px;
@@ -49,35 +45,30 @@
 	text-align: center;
 	opacity: .33;
 }
-
-.jcarousel-control-prev {
+.carousel-control-prev {
 	left: 10px;
 }
-
-.jcarousel-control-next {
+.carousel-control-next {
 	right: 10px;
 }
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
+.carousel-control-prev:hover span,
+.carousel-control-next:hover span {
 	display: block;
 }
-
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
+.carousel-control-prev.inactive,
+.carousel-control-next.inactive {
 	opacity: .25;
 	cursor: default;
 }
 
 /** Carousel Pagination **/
 
-.jcarousel-pagination {
+.carousel-pagination {
 	position: absolute;
 	bottom: 0;
 	left: 330px;
 }
-
-.jcarousel-pagination a {
+.carousel-pagination a {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 11px;
@@ -92,8 +83,7 @@
 	margin-bottom: 10px;
 	opacity: .5;
 }
-
-.jcarousel-pagination a.active {
+.carousel-pagination a.active {
 	background: #999;
 	color: #999;
 	opacity: .5;
