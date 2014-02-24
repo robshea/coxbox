@@ -1,19 +1,31 @@
-#idHeaderAssociationName 
-{
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+	color: #d01d00;
+	text-decoration: none;  
+	overflow: hidden;
+	white-space: nowrap;
+}
+#idHeaderAssociationName {
 	font-weight: normal;
 	font-family: "News Cycle", sans-serif;
 	-webkit-text-stroke: 0.25px;
 	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 	color: #333;
 }
-
-#idMainMenu TD A,
-#idMainMenu TD A:link,
-#idMainMenu TD A:active,
-#idMainMenu TD A:visited,
-#idMainMenu TD A:hover,
-#idMainMenu TD SPAN SPAN
-{
+.addthis_toolbox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#idMainMenu td a,
+#idMainMenu td a:link,
+#idMainMenu td a:active,
+#idMainMenu td a:visited,
+#idMainMenu td a:hover,
+#idMainMenu td span span {
 	display: block;
 	height: 1.1em;
 	margin: 0;
@@ -34,7 +46,19 @@
 	-webkit-text-stroke: 0.25px;
 	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
-
+.footer_menu a,
+.footer_menu a:link,
+.footer_menu a:active,
+.footer_menu a:visited,
+.footer_menu a:hover {
+	font-size: 1.25em;
+	color: #d01d00;
+	text-decoration: none;  
+	overflow: hidden;
+	font-family: "News Cycle", sans-serif;
+	-webkit-text-stroke: 0.25px;
+	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+}
 #idMainMenu TD.separator SPAN {
 	display: none;
 }
@@ -45,6 +69,14 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	padding-bottom: 0;
 	padding-top: 0;
 }
+.cycle-slideshow {
+	position: relative;
+	width: 940px;
+	height: 340px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
 .home_promo {
 	margin: 40px auto 0;
 	width: 220px;
@@ -53,7 +85,7 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	background-color: #eee;
 	padding: 10px;
 	margin: 0;
-	font-size: 1.25em;
+	font-size: 1.4em;
 	font-family: "News Cycle", sans-serif;
 	-webkit-text-stroke: 0.25px;
 	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
@@ -119,6 +151,9 @@ a.button {
 .footer_row {
 	clear: both;
 }
+.footer_row p {
+	text-align: center;
+}
 .footer_menu {
 	background-color: #eee;
 	padding: 10px;
@@ -141,9 +176,6 @@ a.button {
 	float: left;
 	margin: 40px 50px;
 	width: 220px;
-}
-.footer_row p {
-	text-align: center;
 }
 .footer_logo img {
 	display: block;
