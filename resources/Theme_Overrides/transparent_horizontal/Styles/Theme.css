@@ -1218,7 +1218,7 @@ background-position: left top;
 #idPrimaryContentContainer
 {
   width: 960px;
-  margin: 0 10px;
+  margin: 0;
   height: auto;
   float: left;
 }
@@ -1227,7 +1227,7 @@ background-position: left top;
 
 #idPrimaryContentContainer .d1
 {
-  width: 940px;
+  width: 960px;
   float: left;
 }
 #idPrimaryContentContainer .d1 .d1
@@ -1252,7 +1252,7 @@ background-position: left top;
 #idPrimaryContentBlock1ContentHolder,
 #idPrimaryContentBlock1Content
 {
-  width: 940px;
+  width: 960px;
 }
 
 /*******************************************************************/

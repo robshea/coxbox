@@ -6,7 +6,6 @@ a:hover {
 	color: #d01d00;
 	text-decoration: none;  
 	overflow: hidden;
-	white-space: nowrap;
 }
 #idHeaderAssociationName {
 	font-family: "News Cycle", sans-serif;
@@ -115,7 +114,7 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	width: 940px;
 	height: 340px;
 	overflow: hidden;
-	margin: 0;
+	margin: 0 10px;
 	padding: 0;
 }
 .home_promo {
@@ -185,6 +184,34 @@ a.button {
 }
 .home_promo .button {
 	float: right;
+}
+#landing_about {
+  background-color: #eee;
+  float: left;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+  width: 180px;
+}
+.landing_item {
+  float: left;
+  margin: 20px;
+  width: 200px;
+}
+.landing_item_title {
+  background-color: #eee;
+  height: 70px;
+  position: relative;
+}
+.landing_item_title p {
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+  margin: 0;
+  font-size: 1.4em;
+  font-family: "News Cycle", sans-serif;
+  -webkit-text-stroke: 0.25px;
+  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 .footer {
 	width: 960px;
