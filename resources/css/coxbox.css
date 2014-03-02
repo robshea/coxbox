@@ -9,16 +9,18 @@ a:hover {
 	white-space: nowrap;
 }
 #idHeaderAssociationName {
-	font-weight: normal;
 	font-family: "News Cycle", sans-serif;
+	font-size: 200%;
+	font-weight: normal;
 	-webkit-text-stroke: 0.25px;
 	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
-	color: #333;
+	color: #666;
 }
 .addthis_toolbox {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	width: 90px;
 }
 #idMainMenu td a,
 #idMainMenu td a:link,
@@ -46,6 +48,42 @@ a:hover {
 	-webkit-text-stroke: 0.25px;
 	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
+#idMainMenu TD A:hover,
+#idMainMenu TD.itemNormal:hover A,
+#idMainMenu TD.itemCurrentParent A:hover {
+  background-color: #d01d00;
+  color: White;
+  font-family: "News Cycle", sans-serif;
+}
+#idMainMenu TABLE TD.item UL.dynamic LI A,
+#idMainMenu TABLE TD.item UL.dynamic LI A:link,
+#idMainMenu TABLE TD.item UL.dynamic LI A:active,
+#idMainMenu TABLE TD.item UL.dynamic LI A:visited,
+#idMainMenu TABLE TD.item UL.dynamic LI A:hover,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:link,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:active,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:visited,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover {
+  background-color: White;
+  color: #d01d00;
+  font-family: "News Cycle", sans-serif;
+  font-size: 1.5em;
+  opacity: .9;
+}
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI.itemNormal:hover A,
+#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover,
+#idMainMenu TABLE TD.itemNormal TABLE.dynamic UL.dynamic LI A:hover {
+  background-color: #d01d00;
+  color: White;
+  font-family: "News Cycle", sans-serif;
+  font-size: 1.5em;
+  opacity: .9;
+}
+#idMainMenu TABLE TD.itemNormal UL.dynamic {
+  background-color: White;
+  opacity: .9;
+}
 .footer_menu a,
 .footer_menu a:link,
 .footer_menu a:active,
@@ -61,6 +99,9 @@ a:hover {
 }
 #idMainMenu TD.separator SPAN {
 	display: none;
+}
+.menuLevel2Outer {
+  display: none;
 }
 TABLE#idPageLayoutMainContainer .pageLayoutTitleOuterContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer,

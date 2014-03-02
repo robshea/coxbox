@@ -693,6 +693,7 @@ html>body #idLoginPasswordForgot
 #idMainMenu TD.last
 {
 }
+/*
 #idMainMenu TD.itemNormal .d5
 {
   padding-right: 10px;
@@ -704,7 +705,7 @@ html>body #idLoginPasswordForgot
   padding-right: 10px;
   background: transparent url(<$StaticModel.ThemeUrl$>/images/mm-ico-opened-l1-black.gif) right center no-repeat;
 }
-
+*/
 #idMainMenu TD.itemNormal TABLE TD .d5,
 #idMainMenu TD.itemCurrent TABLE TD .d5,
 #idMainMenu TD.itemCurrentParent TABLE TD .d5,
@@ -1017,20 +1018,20 @@ background-position: left top;
 	display: block;
 	left: 0;
 	top: 0px;
-	width: 157px;
+	width: 200px;
 }
 #idMainMenu SPAN.itemNormal UL.dynamic
 {
 	left: 0;
 	top: 0;
-	width: 157px;
+	width: 200px;
 }
 #idMainMenu TD.itemNormal:hover UL.dynamic LI,
 #idMainMenu TD.itemNormal A:hover UL.dynamic LI,
 #idMainMenu TD.itemNormal A:hover TABLE.dynamic UL.dynamic LI
 {
   position: relative;
-  width: 157px;
+  width: 200px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -1038,7 +1039,7 @@ background-position: left top;
 #idMainMenu SPAN.itemNormal UL.dynamic LI
 {
 	position: relative;
-  width: 157px;
+  width: 200px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -1063,7 +1064,7 @@ background-position: left top;
 #idMainMenu TD.itemNormal UL.dynamic LI.only,
 #idMainMenu SPAN.itemNormal UL.dynamic LI.only
 {
-  padding: 0;
+  padding-bottom: 10px;
 }
 #idMainMenu TD.itemNormal UL.dynamic LI .d1
 #idMainMenu SPAN.itemNormal UL.dynamic LI .d1
@@ -1121,11 +1122,10 @@ background-position: left top;
 #idMainMenu SPAN.itemNormal UL.dynamic LI A:hover
 {
   display: block;
-  width: 139px;
   height: auto;
   margin: 0;
-  padding: 3px 11px 3px 7px;
-  background-color: transparent;
+  padding: 8px 10px;
+  background-color: White;
   font-size: 100%;
   font-weight: normal;
   color: #000000;
