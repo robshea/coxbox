@@ -144,6 +144,13 @@ a:hover {
 #idMainMenu TD SPAN SPAN {
   color: #333;
 }
+#idMainMenu TD.itemCurrentParent:hover A,
+#idMainMenu TD.itemCurrentParent:hover A:link,
+#idMainMenu TD.itemCurrentParent:hover A:active,
+#idMainMenu TD.itemCurrentParent:hover A:visited,
+#idMainMenu TD SPAN SPAN {
+  color: White;
+}
 .footer_menu a,
 .footer_menu a:link,
 .footer_menu a:active,
@@ -267,6 +274,11 @@ a.button {
   position: absolute;
   margin: 0;
   font-size: 1.4em;
+}
+.gallery_image {
+  float: left;
+  margin: 40px;
+  width: 400px;
 }
 .footer {
 	width: 960px;
