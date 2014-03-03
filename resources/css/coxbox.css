@@ -1,3 +1,48 @@
+h1, h2, h3, #idHeaderAssociationName, .home_promo_title, .landing_item_title p {
+  font-family: "News Cycle", sans-serif;
+  font-weight: normal;
+  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.25px;
+}
+h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 {
+  color: #333;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0;
+}
+h2, #idHeaderContent h2, #idPrimaryContentBlock1Content h2, #idFooterContent h2 {
+  color: #333;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+}
+h3, #idHeaderContent h3, #idPrimaryContentBlock1Content h3, #idFooterContent h3 {
+  color: #333;
+  font-size: 1.75em;
+  font-weight: normal;
+  margin: 0;
+}
+#content {
+  float: left;
+  margin-right: 140px;
+  width: 580px;
+}
+#sidebar {
+  float: left;
+  width:  220px;
+}
+#content table {
+  border-spacing: 0;
+}
+#content table th {
+  background-color: #eee;
+  border: solid 1px #eee;
+  padding: 10px;
+}
+#content table td {
+  border: solid 1px #eee;
+  padding: 10px;
+ }
 a,
 a:link,
 a:active,
@@ -8,12 +53,8 @@ a:hover {
 	overflow: hidden;
 }
 #idHeaderAssociationName {
-	font-family: "News Cycle", sans-serif;
-	font-size: 200%;
-	font-weight: normal;
-	-webkit-text-stroke: 0.25px;
-	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 	color: #666;
+	font-size: 200%;
 }
 .addthis_toolbox {
 	position: absolute;
@@ -126,9 +167,6 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	padding: 10px;
 	margin: 0;
 	font-size: 1.4em;
-	font-family: "News Cycle", sans-serif;
-	-webkit-text-stroke: 0.25px;
-	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 .home_promo img {
 	line-height: 1em;
@@ -209,9 +247,6 @@ a.button {
   position: absolute;
   margin: 0;
   font-size: 1.4em;
-  font-family: "News Cycle", sans-serif;
-  -webkit-text-stroke: 0.25px;
-  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
 }
 .footer {
 	width: 960px;
