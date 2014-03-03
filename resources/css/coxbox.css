@@ -20,26 +20,29 @@ h3, #idHeaderContent h3, #idPrimaryContentBlock1Content h3, #idFooterContent h3 
   color: #333;
   font-size: 1.75em;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
-#content {
-  float: left;
-  margin-right: 140px;
+TABLE.pageLayoutTwo2-1Columns TD.pageLayoutLeftOuterContainer {
+  padding: 0 140px 40px 0;
   width: 580px;
 }
-#sidebar {
-  float: left;
-  width:  220px;
+TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer {
+  padding: 0 0 40px 0;
+  width: 220px;
 }
-#content table {
+TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
+  font-size: .9em;
+  margin: 0 0 40px;
+}
+.pageLayoutOuterContainer table {
   border-spacing: 0;
 }
-#content table th {
+.pageLayoutOuterContainer table th {
   background-color: #eee;
   border: solid 1px #eee;
   padding: 10px;
 }
-#content table td {
+.pageLayoutOuterContainer table td {
   border: solid 1px #eee;
   padding: 10px;
  }
@@ -123,6 +126,13 @@ a:hover {
 #idMainMenu TABLE TD.itemNormal UL.dynamic {
   background-color: White;
   opacity: .9;
+}
+#idMainMenu TD.itemCurrentParent A,
+#idMainMenu TD.itemCurrentParent A:link,
+#idMainMenu TD.itemCurrentParent A:active,
+#idMainMenu TD.itemCurrentParent A:visited,
+#idMainMenu TD SPAN SPAN {
+  color: #333;
 }
 .footer_menu a,
 .footer_menu a:link,
