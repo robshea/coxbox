@@ -59,6 +59,16 @@ a:hover {
 	color: #666;
 	font-size: 200%;
 }
+#login {
+  color: #d01d00;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 100;
+}
+#idGeneralLoginBox {
+  display: none;
+}
 .addthis_toolbox {
 	position: absolute;
 	bottom: 0;

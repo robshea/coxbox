@@ -2,3 +2,10 @@
 if(window.BonaPrint != null) {
   BonaPrint.enabled = false;
 }
+$(document).ready(function(){
+	$('#login').css('cursor', 'pointer');
+	$('#login').click(function() {
+		$('#idGeneralLoginBox').show();
+		$('#login').hide();  
+	});
+});
