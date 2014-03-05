@@ -147,8 +147,7 @@ a:hover {
 #idMainMenu TD.itemCurrentParent:hover A,
 #idMainMenu TD.itemCurrentParent:hover A:link,
 #idMainMenu TD.itemCurrentParent:hover A:active,
-#idMainMenu TD.itemCurrentParent:hover A:visited,
-#idMainMenu TD SPAN SPAN {
+#idMainMenu TD.itemCurrentParent:hover A:visited {
   color: White;
 }
 .footer_menu a,
