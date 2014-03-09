@@ -1,4 +1,4 @@
-h1, h2, h3, #idHeaderAssociationName, .home_promo_title, .landing_item_title p {
+h1, h2, h3, #idHeaderAssociationName, .home_promo_title, #landing .item .title p {
   font-family: "News Cycle", sans-serif;
   font-weight: normal;
   text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
@@ -249,7 +249,10 @@ a.button {
 .home_promo .button {
 	float: right;
 }
-#landing_about {
+#landing #header {
+  padding: 0 0 0 10px;
+}
+#landing #about {
   background-color: #eee;
   float: left;
   height: 200px;
@@ -257,17 +260,17 @@ a.button {
   margin: 20px;
   width: 180px;
 }
-.landing_item {
+#landing .item {
   float: left;
   margin: 20px;
   width: 200px;
 }
-.landing_item_title {
+#landing .item .title {
   background-color: #eee;
   height: 70px;
   position: relative;
 }
-.landing_item_title p {
+#landing .item .title p {
   bottom: 0;
   padding: 10px;
   position: absolute;
