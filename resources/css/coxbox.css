@@ -5,10 +5,16 @@ h1, h2, h3, #idHeaderAssociationName, .home_promo_title, #landing .item .title p
   -webkit-text-stroke: 0.25px;
 }
 h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 {
-  color: #333;
   font-size: 2.5em;
   font-weight: normal;
+  letter-spacing: 2px;
   margin: 0;
+}
+#idPrimaryContentBlock1Content h1.dark {
+  color: #333;
+}
+#idPrimaryContentBlock1Content h1.light {
+  color: #eee;
 }
 h2, #idHeaderContent h2, #idPrimaryContentBlock1Content h2, #idFooterContent h2 {
   color: #333;
@@ -21,6 +27,9 @@ h3, #idHeaderContent h3, #idPrimaryContentBlock1Content h3, #idFooterContent h3 
   font-size: 1.75em;
   font-weight: normal;
   margin: 0 0 10px 0;
+}
+body, p, td, li {
+  font-size: 12pt;
 }
 TABLE.pageLayoutTwo2-1Columns TD.pageLayoutLeftOuterContainer {
   padding: 0 140px 40px 0;
@@ -249,8 +258,29 @@ a.button {
 .home_promo .button {
 	float: right;
 }
-#landing #header {
+#banner {
   padding: 0 0 0 10px;
+  position: relative;
+}
+.upper-left { 
+   position: absolute; 
+   top: 5px; 
+   left: 25px; 
+}
+.upper-right {
+   position: absolute; 
+   top: 5px; 
+   right: 25px; 
+}
+.lower-left {
+   position: absolute; 
+   bottom: 10px; 
+   left: 25px; 
+}
+.lower-right {
+   position: absolute; 
+   bottom: 10px; 
+   right: 25px; 
 }
 #landing #about {
   background-color: #eee;
