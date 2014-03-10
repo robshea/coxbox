@@ -312,6 +312,12 @@ a.button {
   margin: 40px;
   width: 400px;
 }
+.coach {
+  float: left;
+  height: 300px;
+  margin: 20px;
+  width: 200px;
+}
 .footer {
 	width: 960px;
 }

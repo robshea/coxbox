@@ -8,4 +8,10 @@ $(document).ready(function(){
 		$('#idGeneralLoginBox').show();
 		$('#login').hide();  
 	});
+	$('.email').dcSpamless({
+    	reverse: false,
+    	splitDomain: '[dot]',
+    	splitName: '[at]',
+    	mailto: true
+	});
 });
