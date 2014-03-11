@@ -11,10 +11,10 @@ h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 
   margin: 0;
 }
 #idPrimaryContentBlock1Content h1.dark {
-  color: #333;
+  color: #222;
 }
 #idPrimaryContentBlock1Content h1.light {
-  color: #eee;
+  color: #fff;
 }
 h2, #idHeaderContent h2, #idPrimaryContentBlock1Content h2, #idFooterContent h2 {
   color: #333;
@@ -43,18 +43,18 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
   font-size: .9em;
   margin: 0 0 40px;
 }
-.pageLayoutOuterContainer table {
+#idPrimaryContentContainer table {
   border-spacing: 0;
 }
-.pageLayoutOuterContainer table th {
+#idPrimaryContentContainer table th {
   background-color: #eee;
   border: solid 1px #eee;
   padding: 10px;
 }
-.pageLayoutOuterContainer table td {
+#idPrimaryContentContainer table td {
   border: solid 1px #eee;
   padding: 10px;
- }
+}
 a,
 a:link,
 a:active,
@@ -262,26 +262,6 @@ a.button {
   padding: 0 0 0 10px;
   position: relative;
 }
-.upper-left { 
-   position: absolute; 
-   top: 5px; 
-   left: 25px; 
-}
-.upper-right {
-   position: absolute; 
-   top: 5px; 
-   right: 25px; 
-}
-.lower-left {
-   position: absolute; 
-   bottom: 10px; 
-   left: 25px; 
-}
-.lower-right {
-   position: absolute; 
-   bottom: 10px; 
-   right: 25px; 
-}
 #landing #about {
   background-color: #eee;
   float: left;
@@ -354,4 +334,36 @@ a.button {
 	display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* style for content */
+
+/* banner text overlay */
+
+.upper-left { 
+   position: absolute; 
+   top: 5px; 
+   left: 25px; 
+}
+.upper-right {
+   position: absolute; 
+   top: 5px; 
+   right: 25px; 
+}
+.lower-left {
+   position: absolute; 
+   bottom: 10px; 
+   left: 25px; 
+}
+.lower-right {
+   position: absolute; 
+   bottom: 10px; 
+   right: 25px; 
+}
+
+/* content */
+
+.right-image {
+  float: right;
+  padding: 40px 10px 40px 40px;
 }
