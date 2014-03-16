@@ -31,6 +31,9 @@ h3, #idHeaderContent h3, #idPrimaryContentBlock1Content h3, #idFooterContent h3 
 body, p, td, li {
   font-size: 12pt;
 }
+#idPrimaryContentContainer {
+  width: 940px;
+}
 TABLE.pageLayoutTwo2-1Columns TD.pageLayoutLeftOuterContainer {
   padding: 0 140px 40px 0;
   width: 580px;
@@ -43,15 +46,15 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
   font-size: .9em;
   margin: 0 0 40px;
 }
-#idPrimaryContentContainer table {
+#id_PageLayoutContainer__1 table {
   border-spacing: 0;
 }
-#idPrimaryContentContainer table th {
+#id_PageLayoutContainer__1 table th {
   background-color: #eee;
   border: solid 1px #eee;
   padding: 10px;
 }
-#idPrimaryContentContainer table td {
+#id_PageLayoutContainer__1 table td {
   border: solid 1px #eee;
   padding: 10px;
 }
@@ -185,6 +188,17 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	padding-bottom: 0;
 	padding-top: 0;
 }
+TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutTwoColumsContainer, TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
+  padding: 40px 10px;
+}
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer {
+  padding-right: 60px;
+  width: 540px;
+}
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutRightOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer {
+  padding-left: 0;
+  width: 340px;
+}
 .cycle-slideshow {
 	position: relative;
 	width: 940px;
@@ -297,6 +311,13 @@ a.button {
   height: 300px;
   margin: 20px;
   width: 200px;
+}
+.sideblock {
+  padding-bottom: 40px;
+}
+.sideblock p {
+  font-size: .8em;
+  margin-top: 0;
 }
 .footer {
 	width: 960px;
