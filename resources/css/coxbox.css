@@ -46,16 +46,25 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
   font-size: .9em;
   margin: 0 0 40px;
 }
+#idPrimaryContentBlock1Content h2 {
+  margin-top: 35px;
+}
+#idPrimaryContentBlock1Content table,
 #id_PageLayoutContainer__1 table {
   border-spacing: 0;
+  margin-top: 20px;
 }
+#idPrimaryContentBlock1Content table th,
 #id_PageLayoutContainer__1 table th {
   background-color: #eee;
   border: solid 1px #eee;
+  font-size: .9em;
   padding: 10px;
 }
+#idPrimaryContentBlock1Content table td,
 #id_PageLayoutContainer__1 table td {
   border: solid 1px #eee;
+  font-size: .9em;
   padding: 10px;
 }
 a,
