@@ -1,7 +1,7 @@
 h1, h2, h3, #idHeaderAssociationName, .home_promo_title, #landing .item .title p {
   font-family: "News Cycle", sans-serif;
   font-weight: normal;
-  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 0 0 0.4px #333; */
   -webkit-text-stroke: 0.25px;
 }
 h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 {
@@ -123,7 +123,7 @@ a:hover {
 	/ padding-right: 5px;
 	font-family: "News Cycle", sans-serif;
 	-webkit-text-stroke: 0.25px;
-	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+	/* text-shadow: 0 0 0.4px #d01d00; */
 }
 #idMainMenu TD A:hover,
 #idMainMenu TD.itemNormal:hover A,
@@ -185,26 +185,60 @@ a:hover {
 	overflow: hidden;
 	font-family: "News Cycle", sans-serif;
 	-webkit-text-stroke: 0.25px;
-	text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+	/* text-shadow: 0 0 0.4px #d01d00; */
 }
-#idMainMenu TD.separator SPAN {
+#idMainMenu TD.separator {
+  width: 20px;
+}
+#idMainMenu TD.firstSeparator {
+  padding-left: 5px;
+  width: 0;
+}#idMainMenu TD.separator SPAN {
 	display: none;
 }
-.menuLevel2Outer {
-  display: none;
+#idMainMenu .menuLevel2 {
+  background-color: White;
+  font-size: 1.1em;
+  padding: 0 10px;
+  font-family: "News Cycle", sans-serif;
+  font-weight: normal;
+  /* text-shadow: 0 0 0.4px #333; */
+  -webkit-text-stroke: 0.25px;
+}
+#idMainMenu .menuLevel2 SPAN.item SPAN A,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:link,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:active,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:visited,
+#idMainMenu .menuLevel2 SPAN.item SPAN A:hover,
+#idMainMenu .menuLevel2 SPAN.item SPAN SPAN {
+  color: #d01d00;
+}
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:link,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:active,
+#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:visited,
+#idMainMenu .menuLevel2 SPAN.item SPAN SPAN {
+  color: #333;
+}
+#idContentContainer {
+ padding-top: 10px;
 }
 TABLE#idPageLayoutMainContainer .pageLayoutTitleOuterContainer,
-TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer,
-TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer,
-TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContainer {
+TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutTwoColumsContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
 	padding-bottom: 0;
 	padding-top: 0;
 }
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer,
 TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
-  padding: 40px 10px;
+  padding: 40px 0;
 }
 #id_PageLayoutOuterContainer__3 {
   padding-top: 40px;
@@ -387,23 +421,23 @@ blockquote p.author {
 
 .upper-left { 
    position: absolute; 
-   top: 5px; 
-   left: 25px; 
+   top: -5px; 
+   left: 15px; 
 }
 .upper-right {
    position: absolute; 
-   top: 5px; 
-   right: 25px; 
+   top: -5px; 
+   right: 35px; 
 }
 .lower-left {
    position: absolute; 
    bottom: 10px; 
-   left: 25px; 
+   left: 15px; 
 }
 .lower-right {
    position: absolute; 
    bottom: 10px; 
-   right: 25px; 
+   right: 35px; 
 }
 
 /* content */
