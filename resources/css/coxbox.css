@@ -34,6 +34,9 @@ body, p, td, li {
 #idPrimaryContentContainer {
   width: 940px;
 }
+#idPrimaryContentBlock1Content {
+  padding: 0 10px;
+}
 TABLE.pageLayoutTwo2-1Columns TD.pageLayoutLeftOuterContainer {
   padding: 0 140px 40px 0;
   width: 580px;
@@ -49,19 +52,19 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
 #idPrimaryContentBlock1Content h2 {
   margin-top: 35px;
 }
-#idPrimaryContentBlock1Content table,
+#pageLayoutTwoColumsContainer table,
 #id_PageLayoutContainer__1 table {
   border-spacing: 0;
   margin-top: 20px;
 }
-#idPrimaryContentBlock1Content table th,
+#pageLayoutTwoColumsContainer table th,
 #id_PageLayoutContainer__1 table th {
   background-color: #eee;
   border: solid 1px #eee;
   font-size: .9em;
   padding: 10px;
 }
-#idPrimaryContentBlock1Content table td,
+#pageLayoutTwoColumsContainer table td,
 #id_PageLayoutContainer__1 table td {
   border: solid 1px #eee;
   font-size: .9em;
@@ -197,8 +200,14 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutTopRowOuterContain
 	padding-bottom: 0;
 	padding-top: 0;
 }
-TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutTwoColumsContainer, TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
+TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
   padding: 40px 10px;
+}
+#id_PageLayoutOuterContainer__3 {
+  padding-top: 40px;
 }
 .pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer {
   padding-right: 60px;
@@ -282,7 +291,6 @@ a.button {
 	float: right;
 }
 #banner {
-  padding: 0 0 0 10px;
   position: relative;
 }
 #landing #about {
@@ -312,14 +320,21 @@ a.button {
 }
 .gallery_image {
   float: left;
-  margin: 40px;
+  margin: 20px 35px;
   width: 400px;
+}
+.gallery_image p {
+  font-size: .8em;
+  margin: 0;
 }
 .coach {
   float: left;
   height: 300px;
   margin: 20px;
   width: 200px;
+}
+blockquote p.author {
+  text-align: right;
 }
 .sideblock {
   padding-bottom: 40px;
