@@ -1,0 +1,1 @@
+For tables contained within content, use the class='content'. Tables are used widely for layout and cannot be isolated by existing selectors. 

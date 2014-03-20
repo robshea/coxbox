@@ -52,20 +52,20 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
 #idPrimaryContentBlock1Content h2 {
   margin-top: 35px;
 }
-#pageLayoutTwoColumsContainer table,
-#id_PageLayoutContainer__1 table {
+
+/* content tables */
+
+table.content {
   border-spacing: 0;
   margin-top: 20px;
 }
-#pageLayoutTwoColumsContainer table th,
-#id_PageLayoutContainer__1 table th {
+table.content th {
   background-color: #eee;
   border: solid 1px #eee;
   font-size: .9em;
   padding: 10px;
 }
-#pageLayoutTwoColumsContainer table td,
-#id_PageLayoutContainer__1 table td {
+table.content td {
   border: solid 1px #eee;
   font-size: .9em;
   padding: 10px;
@@ -74,7 +74,11 @@ a,
 a:link,
 a:active,
 a:visited,
-a:hover {
+a:hover,
+#idLoginContainer DIV.profileBox A,
+#idLoginContainer DIV.profileBox A:link,
+#idLoginContainer DIV.profileBox A:active,
+#idLoginContainer DIV.profileBox A:visited {
 	color: #d01d00;
 	text-decoration: none;  
 	overflow: hidden;
@@ -85,12 +89,32 @@ a:hover {
 }
 #login {
   color: #d01d00;
+  display: none;
   position: absolute;
   right: 10px;
   top: 0;
   z-index: 100;
 }
 #idGeneralLoginBox {
+  display: none;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+#idLoginContainer {
+  height: 135px;
+  right: 0;
+  width: auto;
+}
+#idLoginContainer #idLoggedName SPAN,
+#idLoginContainer DIV.profileBox {
+  margin: 0;
+  padding: 0;
+}
+#idLoginContainer #idLoginUserName,
+#idLoginContainer #idLoginPassword {
+  margin: 0;
+}
+#ctl03_ctl02_loginViewControl_loginControl_userNameRequiredValidator {
   display: none;
 }
 .addthis_toolbox {
@@ -335,6 +359,9 @@ a.button {
   margin: 20px;
   width: 180px;
 }
+#landing #about p {
+  font-size: 0.9em;
+}
 #landing .item {
   float: left;
   margin: 20px;
@@ -420,24 +447,34 @@ blockquote p.author {
 /* banner text overlay */
 
 .upper-left { 
-   position: absolute; 
-   top: -5px; 
-   left: 15px; 
+  position: absolute; 
+  top: -5px; 
+  left: 15px; 
 }
-.upper-right {
-   position: absolute; 
-   top: -5px; 
-   right: 35px; 
+.middle-left {
+  position: absolute;
+  left: 15px;
+  top: 55px;
 }
 .lower-left {
-   position: absolute; 
-   bottom: 10px; 
-   left: 15px; 
+  position: absolute; 
+  bottom: 10px; 
+  left: 15px; 
+}
+.upper-right {
+  position: absolute; 
+  top: -5px; 
+  right: 35px; 
+}
+.middle-right {
+  position: absolute;
+  right: 35px;
+  top: 55px;
 }
 .lower-right {
-   position: absolute; 
-   bottom: 10px; 
-   right: 35px; 
+  position: absolute; 
+  bottom: 10px; 
+  right: 35px; 
 }
 
 /* content */

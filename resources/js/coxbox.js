@@ -3,6 +3,9 @@ if(window.BonaPrint != null) {
   BonaPrint.enabled = false;
 }
 $(document).ready(function(){
+	if ($('#idGeneralLoginBox').length ) {
+		$('#login').show();
+	}
 	$('#login').css('cursor', 'pointer');
 	$('#login').click(function() {
 		$('#idGeneralLoginBox').show();
