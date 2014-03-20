@@ -1252,7 +1252,7 @@ background-position: left top;
 #idPrimaryContentBlock1ContentHolder,
 #idPrimaryContentBlock1Content
 {
-  width: 960px;
+  width: auto;
 }
 
 /*******************************************************************/

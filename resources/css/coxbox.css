@@ -264,9 +264,6 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterCont
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
   padding: 40px 0;
 }
-#id_PageLayoutOuterContainer__3 {
-  padding-top: 40px;
-}
 .pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer {
   padding-right: 60px;
   width: 540px;
@@ -356,7 +353,7 @@ a.button {
   float: left;
   height: 200px;
   padding: 10px;
-  margin: 20px;
+  margin: 16px;
   width: 180px;
 }
 #landing #about p {
@@ -364,7 +361,7 @@ a.button {
 }
 #landing .item {
   float: left;
-  margin: 20px;
+  margin: 16px;
   width: 200px;
 }
 #landing .item .title {
@@ -391,8 +388,12 @@ a.button {
 .coach {
   float: left;
   height: 300px;
-  margin: 20px;
-  width: 200px;
+  margin: 20px 0;
+  padding: 0 45px;
+  width: 140px;
+}
+.coach p {
+  font-size: 0.8em;
 }
 blockquote p.author {
   text-align: right;
