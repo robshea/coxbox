@@ -16,6 +16,12 @@ h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 
 #idPrimaryContentBlock1Content h1.light {
   color: #fff;
 }
+#idPrimaryContentBlock1Content h1.dark-shadow {
+  text-shadow: 1px 1px 4px #222;
+}
+#idPrimaryContentBlock1Content h1.light-shadow {
+  text-shadow: 1px 1px 4px #fff;
+}
 h2, #idHeaderContent h2, #idPrimaryContentBlock1Content h2, #idFooterContent h2 {
   color: #333;
   font-size: 2em;
@@ -257,7 +263,9 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContain
 	padding-top: 0;
 }
 .pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer,
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutRightOuterContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer,
 TABLE.pageLayoutThreeColumnsAndTopRow TD.pageLayoutLeftTwoColumnsContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutBottomRowOuterContainer,
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterContainer,
@@ -450,17 +458,17 @@ blockquote p.author {
 .upper-left { 
   position: absolute; 
   top: -5px; 
-  left: 15px; 
+  left: 25px; 
 }
 .middle-left {
   position: absolute;
-  left: 15px;
+  left: 25px;
   top: 55px;
 }
 .lower-left {
   position: absolute; 
   bottom: 10px; 
-  left: 15px; 
+  left: 25px; 
 }
 .upper-right {
   position: absolute; 
