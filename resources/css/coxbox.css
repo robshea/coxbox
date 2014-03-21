@@ -17,10 +17,10 @@ h1, #idHeaderContent h1, #idPrimaryContentBlock1Content h1, #idFooterContent h1 
   color: #fff;
 }
 #idPrimaryContentBlock1Content h1.dark-shadow {
-  text-shadow: 1px 1px 4px #222;
+  text-shadow: 1px 1px 2px #222;
 }
 #idPrimaryContentBlock1Content h1.light-shadow {
-  text-shadow: 1px 1px 4px #fff;
+  text-shadow: 1px 1px 2px #fff;
 }
 h2, #idHeaderContent h2, #idPrimaryContentBlock1Content h2, #idFooterContent h2 {
   color: #333;
