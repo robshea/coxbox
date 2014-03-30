@@ -1,0 +1,17 @@
+<script type="text/javascript">
+var userGlobalScriptLogoContainer = "footerLogoContainer"
+function userGlobalScriptAddLogo ()
+{
+var navContainer = document.getElementById('idNavigationContainer');
+var logoContainer = document.getElementById
+(userGlobalScriptLogoContainer );
+if (navContainer)
+{
+if (logoContainer)
+{
+navContainer.appendChild(logoContainer);
+}
+}
+}
+if (window.BonaPage) BonaPage.addPageStateHandler(BonaPage.PAGE_PARSED, userGlobalScriptAddLogo);
+</script>

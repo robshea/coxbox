@@ -37,6 +37,20 @@ h3, #idHeaderContent h3, #idPrimaryContentBlock1Content h3, #idFooterContent h3 
 body, p, td, li {
   font-size: 12pt;
 }
+.small {
+  font-size: .6em;
+}
+#idMainContainer {
+  padding: 10px 0;
+}
+#idHeaderLogo {
+  top: 0;
+  left: 10px;
+  position: absolute;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+}
 #idPrimaryContentContainer {
   width: 940px;
 }
@@ -54,9 +68,6 @@ TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer {
 TABLE.pageLayoutTwo2-1Columns TD.pageLayoutRightOuterContainer p {
   font-size: .9em;
   margin: 0 0 40px;
-}
-#idPrimaryContentBlock1Content h2 {
-  margin-top: 35px;
 }
 
 /* content tables */
@@ -250,6 +261,9 @@ a:hover,
 #idMainMenu .menuLevel2 SPAN.item SPAN SPAN {
   color: #333;
 }
+.pageLayoutBodyContainer {
+  padding-top: 20px;
+}
 #idContentContainer {
  padding-top: 10px;
 }
@@ -272,11 +286,15 @@ TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutBottomRowOuterCont
 TABLE.pageLayoutTopAndBottomRowsPlusThreeColumns TD.pageLayoutThreeColumsContainer {
   padding: 40px 0;
 }
-.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer {
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer,
+TABLE.pageLayoutTwoColumns TD.pageLayoutLeftOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutLeftOuterContainer {
   padding-right: 60px;
   width: 540px;
 }
-.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutRightOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer {
+.pageLayoutTwoColumsTable TABLE.pageLayoutTwoColumns TD.pageLayoutRightOuterContainer, TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer,
+TABLE.pageLayoutTwoColumns TD.pageLayoutRightOuterContainer,
+TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer {
   padding-left: 0;
   width: 340px;
 }
@@ -335,7 +353,7 @@ a.button {
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	width:110px;
+	padding: 0 20px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #810e05;
@@ -383,6 +401,7 @@ a.button {
   position: absolute;
   margin: 0;
   font-size: 1.4em;
+  line-height: 1.1;
 }
 .gallery_image {
   float: left;

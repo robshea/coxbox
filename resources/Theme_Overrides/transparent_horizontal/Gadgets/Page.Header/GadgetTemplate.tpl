@@ -1,6 +1,6 @@
 <div id="idHeaderContainerTopCorners" class="cornersContainer"><$Divs(cornersDivsTop = "true", hideInnerDivs = "true")$></div>
 <div id="<$Model.Params.HeaderContainerHtmlId$>"><$Divs(designDivsBegin = "true", innerDivId={idHeaderHeightContainer})$>
-	<div id="header_headerContent" class="header_headerContent"<$Model.OnClick$>>
+	<div id="header_headerContent" class="header_headerContent">
 		<div id="<$Model.Params.HeaderContentHolderHtmlId$>" class="headerContentHolder">
 			<div id="<$Model.Params.HeaderContentHtmlId$>">
 				<$Model.Text$>
