@@ -44,6 +44,7 @@ body, p, td, li {
   padding: 10px 0;
 }
 #idHeaderLogo {
+  border: 0;
   top: 0;
   left: 10px;
   position: absolute;
@@ -82,10 +83,15 @@ table.content th {
   font-size: .9em;
   padding: 10px;
 }
-table.content td {
+table.content td,
+DIV.artBoxContainerType-014 {
   border: solid 1px #eee;
   font-size: .9em;
   padding: 10px;
+}
+DIV.artBoxContainerType-014 DIV.moduleViewType-0 DIV.moduleSeparator {
+  border: solid 1px #eee;
+  height: 0;
 }
 a,
 a:link,
@@ -402,6 +408,10 @@ a.button {
   margin: 0;
   font-size: 1.4em;
   line-height: 1.1;
+}
+#landing .item a img,
+.coach a img {
+  border: 0;
 }
 .gallery_image {
   float: left;
