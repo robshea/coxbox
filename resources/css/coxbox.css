@@ -318,9 +318,10 @@ TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer 
 }
 .home_promo_title {
 	background-color: #eee;
+  font-size: 1.4em;
+  height: 66px;
+  margin: 0;
 	padding: 10px;
-	margin: 0;
-	font-size: 1.4em;
 }
 .home_promo img {
 	line-height: 1em;
