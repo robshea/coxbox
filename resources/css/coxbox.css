@@ -144,7 +144,10 @@ a:hover,
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 90px;
+	width: 170px;
+}
+.addthis_toolbox a {
+  margin-right: 5px;
 }
 #idMainMenu td a,
 #idMainMenu td a:link,
