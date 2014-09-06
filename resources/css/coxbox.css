@@ -44,6 +44,7 @@ body, p, td, li {
   padding: 10px 0;
 }
 #idHeaderLogo {
+  border: 0;
   top: 0;
   left: 10px;
   position: absolute;
@@ -82,10 +83,15 @@ table.content th {
   font-size: .9em;
   padding: 10px;
 }
-table.content td {
+table.content td,
+DIV.artBoxContainerType-014 {
   border: solid 1px #eee;
   font-size: .9em;
   padding: 10px;
+}
+DIV.artBoxContainerType-014 DIV.moduleViewType-0 DIV.moduleSeparator {
+  border: solid 1px #eee;
+  height: 0;
 }
 a,
 a:link,
@@ -161,6 +167,7 @@ a:hover,
   height: 60px;
 }
 .addthis_toolbox {
+<<<<<<< HEAD
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -176,6 +183,22 @@ a:hover,
 #id_MenuGadget .mainMenu td a:visited,
 #id_MenuGadget .mainMenu td a:hover,
 #id_MenuGadget .mainMenu td span span {
+=======
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 170px;
+}
+.addthis_toolbox a {
+  margin-right: 5px;
+}
+#idMainMenu td a,
+#idMainMenu td a:link,
+#idMainMenu td a:active,
+#idMainMenu td a:visited,
+#idMainMenu td a:hover,
+#idMainMenu td span span {
+>>>>>>> FETCH_HEAD
 	display: block;
 	height: 1.1em;
 	margin: 0;
@@ -342,9 +365,10 @@ TABLE.pageLayoutTopAndBottomRowsPlusTwoColumns TD.pageLayoutRightOuterContainer 
 }
 .home_promo_title {
 	background-color: #eee;
+  font-size: 1.4em;
+  height: 66px;
+  margin: 0;
 	padding: 10px;
-	margin: 0;
-	font-size: 1.4em;
 }
 .home_promo img {
 	line-height: 1em;
@@ -432,6 +456,10 @@ a.button {
   margin: 0;
   font-size: 1.4em;
   line-height: 1.1;
+}
+#landing .item a img,
+.coach a img {
+  border: 0;
 }
 .gallery_image {
   float: left;
