@@ -92,10 +92,10 @@ a:link,
 a:active,
 a:visited,
 a:hover,
-#idLoginContainer DIV.profileBox A,
-#idLoginContainer DIV.profileBox A:link,
-#idLoginContainer DIV.profileBox A:active,
-#idLoginContainer DIV.profileBox A:visited {
+#id_LoginBoxGadget .loginContainer DIV.profileBox A,
+#id_LoginBoxGadget .loginContainer DIV.profileBox A:link,
+#id_LoginBoxGadget .loginContainer DIV.profileBox A:active,
+#id_LoginBoxGadget .loginContainer DIV.profileBox A:visited {
 	color: #d01d00;
 	text-decoration: none;  
 	overflow: hidden;
@@ -112,23 +112,42 @@ a:hover,
   top: 0;
   z-index: 100;
 }
-#idGeneralLoginBox {
+
+#idHeaderContent #login
+{
+	display: block;
+}
+
+#id_LoginBoxGadget{
   display: none;
   font-size: 0.8em;
   line-height: 1em;
+  position: inherit;
 }
-#idLoginContainer {
+#id_LoginBoxGadget .loginContainer {
   height: 135px;
   right: 0;
   width: auto;
 }
-#idLoginContainer #idLoggedName SPAN,
-#idLoginContainer DIV.profileBox {
+#id_LoginBoxGadget .loginContainer label,
+#id_LoginBoxGadget .loginContainer input,
+#id_LoginBoxGadget .loginContainer a
+{
+	font-size: 0.8em;
+	line-height: 1em;
+}
+#id_LoginBoxGadget .loginPasswordForgot {line-height: 1em; }
+#id_LoginBoxGadget .mandatorySymbol 
+{
+	display: none;
+}
+#id_LoginBoxGadget .loginContainer .loggedName SPAN,
+#id_LoginBoxGadget .loginContainer DIV.profileBox {
   margin: 0;
   padding: 0;
 }
-#idLoginContainer #idLoginUserName,
-#idLoginContainer #idLoginPassword {
+#id_LoginBoxGadget .loginContainer .loginUserName,
+#id_LoginBoxGadget .loginContainer .loginPassword {
   margin: 0;
 }
 #ctl03_ctl02_loginViewControl_loginControl_userNameRequiredValidator {
@@ -140,12 +159,12 @@ a:hover,
 	right: 0;
 	width: 90px;
 }
-#idMainMenu td a,
-#idMainMenu td a:link,
-#idMainMenu td a:active,
-#idMainMenu td a:visited,
-#idMainMenu td a:hover,
-#idMainMenu td span span {
+#id_MenuGadget .mainMenu td a,
+#id_MenuGadget .mainMenu td a:link,
+#id_MenuGadget .mainMenu td a:active,
+#id_MenuGadget .mainMenu td a:visited,
+#id_MenuGadget .mainMenu td a:hover,
+#id_MenuGadget .mainMenu td span span {
 	display: block;
 	height: 1.1em;
 	margin: 0;
@@ -166,53 +185,53 @@ a:hover,
 	-webkit-text-stroke: 0.25px;
 	/* text-shadow: 0 0 0.4px #d01d00; */
 }
-#idMainMenu TD A:hover,
-#idMainMenu TD.itemNormal:hover A,
-#idMainMenu TD.itemCurrentParent A:hover {
+#id_MenuGadget .mainMenu TD A:hover,
+#id_MenuGadget .mainMenu TD.itemNormal:hover A,
+#id_MenuGadget .mainMenu TD.itemCurrentParent A:hover {
   background-color: #d01d00;
   color: White;
   font-family: "News Cycle", sans-serif;
 }
-#idMainMenu TABLE TD.item UL.dynamic LI A,
-#idMainMenu TABLE TD.item UL.dynamic LI A:link,
-#idMainMenu TABLE TD.item UL.dynamic LI A:active,
-#idMainMenu TABLE TD.item UL.dynamic LI A:visited,
-#idMainMenu TABLE TD.item UL.dynamic LI A:hover,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:link,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:active,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:visited,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover {
+#id_MenuGadget .mainMenu TABLE TD.item UL.dynamic LI A,
+#id_MenuGadget .mainMenu TABLE TD.item UL.dynamic LI A:link,
+#id_MenuGadget .mainMenu TABLE TD.item UL.dynamic LI A:active,
+#id_MenuGadget .mainMenu TABLE TD.item UL.dynamic LI A:visited,
+#id_MenuGadget .mainMenu TABLE TD.item UL.dynamic LI A:hover,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:link,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:active,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:visited,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover {
   background-color: White;
   color: #d01d00;
   font-family: "News Cycle", sans-serif;
   font-size: 1.5em;
   opacity: .9;
 }
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI.itemNormal:hover A,
-#idMainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover,
-#idMainMenu TABLE TD.itemNormal TABLE.dynamic UL.dynamic LI A:hover {
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI.itemNormal:hover A,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal:hover UL.dynamic LI A:hover,
+#id_MenuGadget .mainMenu TABLE TD.itemNormal TABLE.dynamic UL.dynamic LI A:hover {
   background-color: #d01d00;
   color: White;
   font-family: "News Cycle", sans-serif;
   font-size: 1.5em;
   opacity: .9;
 }
-#idMainMenu TABLE TD.itemNormal UL.dynamic {
+#id_MenuGadget .mainMenu TABLE TD.itemNormal UL.dynamic {
   background-color: White;
   opacity: .9;
 }
-#idMainMenu TD.itemCurrentParent A,
-#idMainMenu TD.itemCurrentParent A:link,
-#idMainMenu TD.itemCurrentParent A:active,
-#idMainMenu TD.itemCurrentParent A:visited,
-#idMainMenu TD SPAN SPAN {
+#id_MenuGadget .mainMenu TD.itemCurrentParent A,
+#id_MenuGadget .mainMenu TD.itemCurrentParent A:link,
+#id_MenuGadget .mainMenu TD.itemCurrentParent A:active,
+#id_MenuGadget .mainMenu TD.itemCurrentParent A:visited,
+#id_MenuGadget .mainMenu TD SPAN SPAN {
   color: #333;
 }
-#idMainMenu TD.itemCurrentParent:hover A,
-#idMainMenu TD.itemCurrentParent:hover A:link,
-#idMainMenu TD.itemCurrentParent:hover A:active,
-#idMainMenu TD.itemCurrentParent:hover A:visited {
+#id_MenuGadget .mainMenu TD.itemCurrentParent:hover A,
+#id_MenuGadget .mainMenu TD.itemCurrentParent:hover A:link,
+#id_MenuGadget .mainMenu TD.itemCurrentParent:hover A:active,
+#id_MenuGadget .mainMenu TD.itemCurrentParent:hover A:visited {
   color: White;
 }
 .footer_menu a,
@@ -228,16 +247,16 @@ a:hover,
 	-webkit-text-stroke: 0.25px;
 	/* text-shadow: 0 0 0.4px #d01d00; */
 }
-#idMainMenu TD.separator {
+#id_MenuGadget .mainMenu TD.separator {
   width: 20px;
 }
-#idMainMenu TD.firstSeparator {
+#id_MenuGadget .mainMenu TD.firstSeparator {
   padding-left: 5px;
   width: 0;
-}#idMainMenu TD.separator SPAN {
+}#id_MenuGadget .mainMenu TD.separator SPAN {
 	display: none;
 }
-#idMainMenu .menuLevel2 {
+#id_MenuGadget .mainMenu .menuLevel2 {
   background-color: White;
   font-size: 1.1em;
   padding: 0 10px;
@@ -246,19 +265,19 @@ a:hover,
   /* text-shadow: 0 0 0.4px #333; */
   -webkit-text-stroke: 0.25px;
 }
-#idMainMenu .menuLevel2 SPAN.item SPAN A,
-#idMainMenu .menuLevel2 SPAN.item SPAN A:link,
-#idMainMenu .menuLevel2 SPAN.item SPAN A:active,
-#idMainMenu .menuLevel2 SPAN.item SPAN A:visited,
-#idMainMenu .menuLevel2 SPAN.item SPAN A:hover,
-#idMainMenu .menuLevel2 SPAN.item SPAN SPAN {
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN A,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN A:link,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN A:active,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN A:visited,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN A:hover,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN SPAN {
   color: #d01d00;
 }
-#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A,
-#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:link,
-#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:active,
-#idMainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:visited,
-#idMainMenu .menuLevel2 SPAN.item SPAN SPAN {
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:link,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:active,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.itemCurrentParent SPAN A:visited,
+#id_MenuGadget .mainMenu .menuLevel2 SPAN.item SPAN SPAN {
   color: #333;
 }
 .pageLayoutBodyContainer {
