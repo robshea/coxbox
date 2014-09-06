@@ -167,7 +167,6 @@ a:hover,
   height: 60px;
 }
 .addthis_toolbox {
-<<<<<<< HEAD
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -183,22 +182,6 @@ a:hover,
 #id_MenuGadget .mainMenu td a:visited,
 #id_MenuGadget .mainMenu td a:hover,
 #id_MenuGadget .mainMenu td span span {
-=======
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 170px;
-}
-.addthis_toolbox a {
-  margin-right: 5px;
-}
-#idMainMenu td a,
-#idMainMenu td a:link,
-#idMainMenu td a:active,
-#idMainMenu td a:visited,
-#idMainMenu td a:hover,
-#idMainMenu td span span {
->>>>>>> FETCH_HEAD
 	display: block;
 	height: 1.1em;
 	margin: 0;
