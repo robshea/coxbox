@@ -153,11 +153,22 @@ a:hover,
 #ctl03_ctl02_loginViewControl_loginControl_userNameRequiredValidator {
   display: none;
 }
+.addthis_horizontal_follow_toolbox {
+  position: absolute;
+  right: 0px;
+  top: 120px;
+  width: 149px;
+  height: 60px;
+}
 .addthis_toolbox {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 90px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 150px;
+}
+#atftbx p {
+  position: relative;
+  top: -5px;
 }
 #id_MenuGadget .mainMenu td a,
 #id_MenuGadget .mainMenu td a:link,
