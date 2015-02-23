@@ -1,0 +1,62 @@
+/* layout */
+/*****************************************************************************************************/
+html { margin: 0px; padding: 0px; height: 100%; }
+body { margin: 0px; padding: 0px; height: 100%; background: @BodyBg; }
+
+.mLayout { margin: 0 auto; position: relative; width: 100%; min-height: 100%; }
+* html .mLayout { height: 100%; }
+
+
+.zoneHeader1 { background: @ZoneHeader-Outer; }
+.zoneHeader1 .container_12 > div { background: @ZoneHeader-Inner; }
+.zoneHeader2 { background: @ZoneHeader1-Outer; }
+.zoneHeader2 .container_12 > div { background: @ZoneHeader1-Inner; }
+.zoneHeader3 { background: @ZoneHeader2-Outer; }
+.zoneHeader3 .container_12 > div { background: @ZoneHeader2-Inner; }
+.zoneHeader4 { background: @ZoneHeader3-Outer; }
+.zoneHeader4 .container_12 > div { background: @ZoneHeader3-Inner; }
+
+.zoneContent { background: none; }
+.zoneContent .container_12 > div { background: none; }
+
+.zoneFooter1 { background: @ZoneFooter-Outer; }
+.zoneFooter1 .container_12 > div { background: @ZoneFooter-Inner; }
+.zoneFooter2 { background: @ZoneFooter1-Outer; }
+.zoneFooter2 .container_12 > div { background: @ZoneFooter1-Inner; }
+.zoneFooter3 { background: @ZoneFooter2-Outer; }
+.zoneFooter3 .container_12 > div { background: @ZoneFooter2-Inner; }
+
+
+
+/* GoogleAdSense */
+/*****************************************************************************************************/
+.googleAdCoTop,
+.googleAdCoRight,
+.googleAdCoLeft { width: 180px; margin: 0 auto 0 auto; }
+
+.googleAdCoTop,
+.googleAdCoBottom { width: 728px; margin: 0 auto 0 auto; }
+
+.googleAdLeft,
+.googleAdRight,
+.googleAdTop,
+.googleAdBottom { z-index: 37777; clear: both; }
+
+.googleAdLeft,
+.googleAdRight { position: absolute; left: -180px; top: 0px; display: none; visibility: hidden; }
+
+.googleAdTop,
+.googleAdBottom { width: 889px; padding: 15px; }
+.googleAdTop { margin: 0 auto; }
+
+
+// state3
+@media only screen and (max-width:@state3-maxwidth)
+{
+	.WaLayoutTable { display: block; width: 100%; }
+	.WaLayoutTable > tbody { display: block; width: 100%; }
+	.WaLayoutTable .WaLayoutRow { display: block; width: 100%; }
+	.WaLayoutTable .WaLayoutSeparator { display: none; }
+	.WaLayoutTable .WaLayoutItem { display: block; width: 100% !important; }
+	.WaLayoutTable .WaLayoutItem ~ .WaLayoutItem { margin-top: 20px; }
+}

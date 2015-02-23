@@ -1,0 +1,207 @@
+/* WaGadgetLoginForm,  Open Authorization form (Facebook, GooglePlus) */
+/* WaGadgetContactProfile, Open Authorization buttons (Facebook, GooglePlus) */
+a.wa-authenticateLoginLink,
+a.wa-authenticateLoginLink:hover,
+a.wa-authenticateLoginLink:active,
+a.wa-authenticateLoginLink.activeState,
+a.wa-authenticateLoginLink:visited
+{
+    color: #fff;
+    cursor: pointer;
+    font-family: "Verdana";
+    font-size: 12px;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.wa-authenticateLoginLink
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    font-weight: normal;
+    padding-right: 9px;
+    position: relative;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+
+    span
+    {
+        vertical-align: middle;
+    }
+
+    .authenticateLoginIcon
+    {
+        height: 28px;
+        width: 28px;
+        display: inline-block;
+
+        &:after
+        {
+            content: "";
+            display: block;
+            height: 100%;
+            left: 28px;
+            position: absolute;
+            top: 0;
+            width: 1px;
+        }
+    }
+
+    .authenticateLoginText
+    {
+        padding-left: 9px;
+    }
+
+    &.facebook, // openAuth Facebook button
+    &.Facebook //for server class in WaGadgetContactProfile
+    {
+        border: 1px solid #23336a;
+        background-color: #0073e3; /* layer fill content */
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM4NGI4ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ4NjFhOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+        background-image: -moz-linear-gradient(bottom, #384b8f 0%, #4861a8 100%); /* gradient overlay */
+        background-image: -o-linear-gradient(bottom, #384b8f 0%, #4861a8 100%); /* gradient overlay */
+        background-image: -webkit-linear-gradient(bottom, #384b8f 0%, #4861a8 100%);
+        background-image: linear-gradient(bottom, #384b8f 0%, #4861a8 100%); /* gradient overlay */
+        text-shadow: 0 1px 0 #13204b;
+
+        .authenticateLoginIcon
+        {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0Q4NTNFQjA1NEY0MTFFNEEwMDFDNzU4NDkxRUY1N0QiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0Q4NTNFQUY1NEY0MTFFNEEwMDFDNzU4NDkxRUY1N0QiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmRpZDpGQUZERTk3NTdFNTRFNDExQkMwMUNGOEIyMEY5RjFGMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQUZERTk3NTdFNTRFNDExQkMwMUNGOEIyMEY5RjFGMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrT59r4AAADlSURBVHjaYvz//z8DNQETA5UBVgNFFH3gGAiCgPg6EP8DYpB3/kPFsQIWfLa9ub/FCkitAmJmNCmQwYwkGwgESciG3brzmOH5y7d4NRAyUALGuHbzAYODVy7Dv3//Qd5/Sq6BcPD06WuQYZeBTANoeGIHoGSDBeMFwgreuPSRnWz+k+rlWYuW70hzsjdmkJESBQs8efaaYd/BswRtYsGRDtNB9N5NEzyABsqB2NdvPGAoqpryCMjcQW4sp+vrqmwB0nJIYqBISR/4rDdq4MAaiDcvA9MjqOADJR1vYg1kpHYVABBgABMVf7y4W6QVAAAAAElFTkSuQmCC') center no-repeat;
+
+            &:after
+            {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSItNzk1MCUiIHkxPSIxMTUuMTk2MDc4NDMxMzcyJSIgeDI9Ii03OTUwJSIgeTI9IjE1LjE5NjA3ODQzMTM3MjQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEzMjA0YiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM0NDc4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+                background-image: -moz-linear-gradient(bottom, #13204b -30.39%, #34478a 69.61%); /* gradient overlay */
+                background-image: -o-linear-gradient(bottom, #13204b -30.39%, #34478a 69.61%); /* gradient overlay */
+                background-image: -webkit-linear-gradient(bottom, #13204b -30.39%, #34478a 69.61%); /* gradient overlay */
+                background-image: linear-gradient(bottom, #13204b -30.39%, #34478a 69.61%); /* gradient overlay */
+            }
+        }
+
+        &:hover
+        {
+            border: 1px solid #35487e; /* stroke */
+            background-color: #0073e3; /* layer fill content */
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmNjFhMSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVkNzNiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+            background-image: -moz-linear-gradient(bottom, #4f61a1 0%, #5d73b3 100%); /* gradient overlay */
+            background-image: -o-linear-gradient(bottom, #4f61a1 0%, #5d73b3 100%); /* gradient overlay */
+            background-image: -webkit-linear-gradient(bottom, #4f61a1 0%, #5d73b3 100%); /* gradient overlay */
+            background-image: linear-gradient(bottom, #4f61a1 0%, #5d73b3 100%); /* gradient overlay */
+        }
+
+        &:active,
+        &.activeState
+        {
+            border: 1px solid #223869;
+            -moz-box-shadow: inset 0 1px 0 rgba(104,129,180, 1); /* inner shadow */
+            -webkit-box-shadow: inset 0 1px 0 rgba(104,129,180, 1); /* inner shadow */
+            box-shadow: inset 0 1px 0 rgba(104,129,180, 1); /* inner shadow */
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM3NTI4ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ0NjE5ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* color overlay + gradient overlay */
+            background-image: -moz-linear-gradient(bottom, #37528f 0%, #44619f 100%); /* color overlay + gradient overlay */
+            background-image: -o-linear-gradient(bottom, #37528f 0%, #44619f 100%); /* color overlay + gradient overlay */
+            background-image: -webkit-linear-gradient(bottom, #37528f 0%, #44619f 100%); /* color overlay + gradient overlay */
+            background-image: linear-gradient(bottom, #37528f 0%, #44619f 100%); /* color overlay + gradient overlay */
+        }
+    }
+
+    &.googlePlus, // openAuth Google+ button
+    &.GooglePlus //for server class in WaGadgetContactProfile
+    {
+        border: 1px solid #9d3726; /* stroke */
+        background-color: #0073e3; /* layer fill content */
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q5NDIyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhNjA0OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+        background-image: -moz-linear-gradient(bottom, #d94227 0%, #ea6048 100%); /* gradient overlay */
+        background-image: -o-linear-gradient(bottom, #d94227 0%, #ea6048 100%); /* gradient overlay */
+        background-image: -webkit-linear-gradient(bottom, #d94227 0%, #ea6048 100%); /* gradient overlay */
+        background-image: linear-gradient(bottom, #d94227 0%, #ea6048 100%); /* gradient overlay */
+        text-shadow: 0 1px 0 #8e2618; /* drop shadow */
+
+        .authenticateLoginIcon
+        {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjkyOTUyMDE1NTAzMTFFNEExNEFFRUZBNzZGNjc0REYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjkyOTUyMDI1NTAzMTFFNEExNEFFRUZBNzZGNjc0REYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OTI5NTFGRjU1MDMxMUU0QTE0QUVFRkE3NkY2NzRERiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2OTI5NTIwMDU1MDMxMUU0QTE0QUVFRkE3NkY2NzRERiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmVxoxIAAAJTSURBVHjaYvz//z8DNQETA5UBC6UG9KtLEnShFhBPA+JFQPwWiEFhcg+ItwOxPbriwpvPD+Mz0ByIDx/qaloHtPnLXCezvW9uXf/75+dPxZURfnpAsQogtsfiiMO4DJz049PH+2fnTl8JZHcm7zsV9vPjRy8WdnYGo8Q0caBYLdBFB/GGASiWkfDn5xfPfexTk9iHLP73z+/3T86c/A8UXwkVWwrEu6H4/fMLZ9/D+OiRclVEXcucT0qGDSVcmFkYXl6+8B3IlIIKRQO9vhRIi8Vs3MOwPMwbpwvt/v7+9ffB4f1/N+cmK0HFQoH4xBQj1Q9AF3aiqQfhw0BxEGYAYfQwPHR8Uk/Kl5cv/uuGxx759/cPKLAr5zmbT/315fMNILsFS6idwReGYAy0SW9ZiOcqIPs/MEzfAfnngJgHh1oQ7oe5kBFP1hP5+/v3OWZWVtm7+3Y+V3ZyVwKK/SA1YYMS9TIgng/E4d/fvZ3w6Nihb0DDJF9fv3pvXXIENyl52QGIT90/uPcQ0FZ2IDaZbWf4c21ieOGpGROviWpqS7Lz8oPkmInNy5N+fPxwd0NaTA+QHQZMwNuQ5GYBXfuMS1jECMh2AuLdxLhQ8dfXL+rANHcezTAQYOQUEv765dWLB0C2OrFe7gQmaHb3zol6z86d5kUSB4VbGxBfurN7+x8gfYdYL7ccbK9XkTIyi+eTln30/+/fK4zMzKDw+vbz06dNM610GBkgKWInPgMxkg0w0N2BVCo0xl8DMSvIUCBeDcRzgMHxF1+yYQQlRmoCgAADAFBTXlBIUnGPAAAAAElFTkSuQmCC') no-repeat center;
+
+            &:after
+            {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSItNzk1MCUiIHkxPSIxMTUuMTk2MDc4NDMxMzcyJSIgeDI9Ii03OTUwJSIgeTI9IjE1LjE5NjA3ODQzMTM3MjQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhlMjYxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M0MzgyNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+                background-image: -moz-linear-gradient(bottom, #8e2618 -30.39%, #c43825 69.61%); /* gradient overlay */
+                background-image: -o-linear-gradient(bottom, #8e2618 -30.39%, #c43825 69.61%); /* gradient overlay */
+                background-image: -webkit-linear-gradient(bottom, #8e2618 -30.39%, #c43825 69.61%); /* gradient overlay */
+                background-image: linear-gradient(bottom, #8e2618 -30.39%, #c43825 69.61%); /* gradient overlay */
+            }
+        }
+
+        &:hover
+        {
+            border: 1px solid #ac4e3a; /* stroke */
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmNTkzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VkNzU1ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+            background-image: -moz-linear-gradient(bottom, #df593d 0%, #ed755d 100%); /* gradient overlay */
+            background-image: -o-linear-gradient(bottom, #df593d 0%, #ed755d 100%); /* gradient overlay */
+            background-image: -webkit-linear-gradient(bottom, #df593d 0%, #ed755d 100%); /* gradient overlay */
+            background-image: linear-gradient(bottom, #df593d 0%, #ed755d 100%); /* gradient overlay */
+        }
+
+        &:active,
+        &.activeState
+        {
+            border: 1px solid #9d3726; /* stroke */
+            -moz-box-shadow: inset 0 1px 0 rgba(235,125,103, 1); /* inner shadow */
+            -webkit-box-shadow: inset 0 1px 0 rgba(235,125,103, 1); /* inner shadow */
+            box-shadow: inset 0 1px 0 rgba(235,125,103, 1); /* inner shadow */
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RhNDMyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyNTIzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* color overlay + gradient overlay */
+            background-image: -moz-linear-gradient(bottom, #da4328 0%, #e25239 100%); /* color overlay + gradient overlay */
+            background-image: -o-linear-gradient(bottom, #da4328 0%, #e25239 100%); /* color overlay + gradient overlay */
+            background-image: -webkit-linear-gradient(bottom, #da4328 0%, #e25239 100%); /* color overlay + gradient overlay */
+            background-image: linear-gradient(bottom, #da4328 0%, #e25239 100%); /* color overlay + gradient overlay */
+        }
+    }
+}
+
+
+
+.WaGadgetLoginForm .oAuthForm .oAuthButtonsContainer .wa-authenticateLoginLink,
+.WaGadgetLoginForm .oAuthForm .oAuthButtonsContainer .wa-authenticateLoginLink:hover
+{
+    color: #fff;
+    font-size: 12px;
+}
+
+.WaGadgetLoginForm
+{
+
+    .oAuthForm
+    {
+
+        .oAuthButtonsContainer
+        {
+            text-align: left;
+
+            .wa-authenticateLoginLink
+            {
+                margin-bottom: 5px;
+                max-width: 178px;
+            }
+
+        }
+    }
+}
+
+.WaGadgetContactProfile
+{
+
+    .wa-authenticateLoginLink
+    {
+        max-width: 105px;
+    }
+}

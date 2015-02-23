@@ -1,0 +1,26 @@
+/*****************************************************************************************************/
+/*	WaGadgetSiteSearch                                                                              
+/*****************************************************************************************************/
+
+.WaGadgetSiteSearch {
+	.searchBoxFieldContainer:before { left: auto; top: 51%; right: 0.7em; font-size: 1.1em; color: @FormFieldBorder; }
+	.searchBoxField { padding: 6px 35px 6px 14px; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @TypographyHeader1Color; height: 33px;
+		line-height: 19px; outline: none; width: 270px; }
+	.autoSuggestionBox { border: 1px solid #ccc; background: #fff; box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+		.item + .item.last {
+			&:before { background: #eee; }
+		}
+		.item.selectedSuggestions { background: #dbe3eb; background: rgba(219,227,235,0.5);
+		}
+	}
+}
+
+
+.WaGadgetSiteSearchResults {
+	.siteSearchResults {
+		.searchControls {
+			.searchBoxField { border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; outline: none; }
+		}
+	}
+}
+

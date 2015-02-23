@@ -1,0 +1,114 @@
+// Common wizard button
+.functionalButton { position: relative; display: inline-block; padding: 8px 15px 9px 15px; margin: 0; height: auto; text-transform: none; outline: none;
+	border: none; background: @FunctionButtonBg; -webkit-appearance: none;
+	font: normal 15px/1.25 'Open Sans'; color: @FunctionButtonColor; white-space: nowrap; text-decoration: none; text-align: center; vertical-align: middle;
+	&[type=submit] { min-width: 100px; }
+	&:hover { background: @FunctionButtonBgHover; }
+
+	.disabled,
+	&[disabled="disabled"],
+	&.aspNetDisabled
+	{ .opacity(50); cursor: default;
+		&:hover { background: @FunctionButtonBg; }
+	}
+}
+
+
+
+// link-button of singular gadgets
+.iconLinkProto() { display: inline-block; visibility: visible; white-space: nowrap;
+	&:before { content: ""; display: inline-block; width: 20px; height: 20px; margin-right: 9px; vertical-align: top; background: url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 50px 50px no-repeat; }
+}
+
+.iconLink {
+	.readMore() { .iconLinkProto();
+		&:before { width: 19px; height: 19px; background-position: 0 -350px; }
+		&:hover:before { background-position: -50px -350px; }
+	}
+	.comment() { .iconLinkProto();
+		&:before { width: 26px; height: 20px; background-position: 0 -400px; }
+		&:hover:before { background-position: -50px -400px; }
+	}
+	.edit() { .iconLinkProto();
+		&:before { width: 20px; height: 20px; background-position: 0 -450px; }
+		&:hover:before { background-position: -50px -450px; }
+	}
+	.delete() { .iconLinkProto();
+		&:before { width: 16px; height: 20px; background-position: 0 -500px; }
+		&:hover:before { background-position: -50px -500px; }
+	}
+	.back() { .iconLinkProto(); padding-top: 3px;
+		&:before { width: 19px; height: 23px; margin-top: -3px; background-position: 0 -550px; }
+		&:hover:before { background-position: -50px -550px; }
+	}
+	.anchor() { .iconLinkProto();
+		&:before { width: 18px; height: 18px; margin-top: 1px; background-position: 0 -600px; }
+		&:hover:before { background-position: -50px -600px; }
+	}
+	.reply() { .iconLinkProto();
+		&:before { width: 20px; height: 16px; margin-top: 2px; background-position: 0 -650px; }
+		&:hover:before { background-position: -50px -650px; }
+	}
+	.addComment() { .iconLinkProto();
+		&:before { width: 19px; height: 19px; margin-top: 1px; background-position: 0 -700px; }
+		&:hover:before { background-position: -50px -700px; }
+	}
+	.quote() { .iconLinkProto();
+		&:before { width: 18px; height: 17px; margin-top: 2px; background-position: 0 -950px; }
+		&:hover:before { background-position: -50px -950px; }
+	}
+	.move() { .iconLinkProto();
+		&:before { width: 23px; height: 20px; margin-top: 0px; background-position: 0 -2550px; }
+		&:hover:before { background-position: -50px -2550px; }
+	}
+	.merge() { .iconLinkProto();
+		&:before { width: 14px; height: 20px; margin-top: 0px; background-position: 0 -2600px; }
+		&:hover:before { background-position: -50px -2600px; }
+	}
+	.subscribe() { .iconLinkProto();
+		&:before { width: 31px; height: 20px; background-position: 0 -850px; }
+		&:hover:before { background-position: -50px -850px; }
+	}
+	.calendarView() { .iconLinkProto(); padding-top: 4px;
+		&:before { width: 26px; height: 26px; margin-top: -4px; background-position: 0 -300px; }
+		&:hover:before { background-position: -50px -300px; }
+	}
+	.listView() { .iconLinkProto(); padding-top: 4px;
+		&:before { width: 26px; height: 26px; margin-top: -4px; background-position: 0 -800px; }
+		&:hover:before { background-position: -50px -800px; }
+	}
+	.showDetails() { .iconLinkProto(); padding-top: 0;
+		&:before { display: none; }
+		&:after { content: ">>"; margin: 0 0 0 9px; font-family: 'Oswald'; font-size: 16px; line-height: 20px; }
+	}
+	.backToTop() { .iconLinkProto(); padding-top: 3px;
+		&:before { width: 27px; height: 27px; margin-top: -3px; background-position: 0 -1100px; }
+		&:hover:before { background-position: -50px -1100px; }
+	}
+
+
+	// icon only
+	.calendarDate() { .iconLinkProto();
+		&:before { width: 19px; height: 19px; margin: 0px 0 0 0px; background-position: 0 -1000px; cursor: pointer; }
+		&:hover:before { background-position: -50px -1000px; }
+	}
+	.calendarTime() { .iconLinkProto();
+		&:before { width: 20px; height: 20px; margin: 0px 0 0 0px; background-position: 0 -1050px; cursor: pointer; }
+		&:hover:before { background-position: -50px -1050px; }
+	}
+	.deleteWithoutText { .iconLinkProto(); width: 16px; height: 20px; position: relative; text-indent: -1000px; overflow: hidden;
+		&:before { position: absolute; left: 0; top: 0; width: 16px; height: 20px; background-position: 0 -500px; }
+		&:hover:before { background-position: -50px -500px; }
+	}
+
+	.forumTopic { .iconLinkProto(); width: 19px; height: 20px; position: relative; text-indent: -1000px; overflow: hidden;
+		&:before { position: absolute; left: 0; top: 0; width: 14px; height: 20px; background-position: 0 -2450px; }
+		&:hover:before { background-position: 0 -2450px; }
+	}
+	.stickyForumTopic { .iconLinkProto(); width: 19px; height: 20px; position: relative; text-indent: -1000px; overflow: hidden;
+		&:before { position: absolute; left: 0; top: 0; width: 19px; height: 19px; background-position: 0 -2500px; }
+		&:hover:before { background-position: 0 -2500px; }
+	}
+
+
+}

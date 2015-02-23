@@ -1,0 +1,33 @@
+/* page navigation (1 2 3 ...) */
+/*****************************************************************************************************/
+.pagerOuterContainer { padding: 0px; margin: 0 0 20px 0; clear: both;
+	.bound,
+	.near,
+	.linkCurrent,
+	a { display: inline-block; vertical-align: middle; margin: 0 0px; padding: 0 6px; font-size: 16px; line-height: 20px; font-weight: 600; text-decoration: none; }
+
+	a {  }
+	/*a:visited { color: @PagerColor; }*/
+	a:hover {  }
+
+	.linkCurrent { color: #333333; text-decoration: none; }
+
+	.bound,
+	.near { width: 20px; height: 20px; padding: 0; overflow: hidden; text-indent: -1000px; background-image: url(<$StaticModel.ThemeUrl$>/images/icon_set.png); background-color: transparent; background-repeat: no-repeat; }
+	a.bound,
+	a.near { background-color: transparent; }
+
+	.bound { background-position: 3px -245px; }
+	.near { background-position: 5px -195px; }
+	a.bound { background-position: 3px -45px; }
+	a.near { background-position: 5px 4px; }
+	a.bound:hover { background-position: 3px -145px; }
+	a.near:hover { background-position: 5px -95px; }
+
+	.linkCurrent ~ a.bound { background-position: -47px -45px; }
+	.linkCurrent ~ a.near { background-position: -45px 5px; }
+	.linkCurrent ~ a.bound:hover { background-position: -47px -145px; }
+	.linkCurrent ~ a.near:hover { background-position: -45px -95px; }
+	.linkCurrent ~ span.bound { background-position: -47px -245px; }
+	.linkCurrent ~ span.near { background-position: -45px -195px; }
+}

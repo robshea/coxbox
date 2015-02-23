@@ -1,0 +1,372 @@
+
+// Basic structure of form
+.generalFormOuterContainer {
+	.formTitleOuterContainer {  } // title block ->
+	.captionoutercontainer {  } // section divider and name ->
+	.sectionOuterContainer { margin: 20px 0;
+		.sectionContainer {
+			.fieldContainer {  } // different fields ->
+		}
+	}
+	.navigationOuterContainer {  } // control link and bottoms under form ->
+}
+
+// Clear selection
+.clearSelectionLabel { cursor: pointer; display: inline-block; margin: 0 0 8px 0; text-decoration: none; }
+.clearSelectionLabel:hover { text-decoration: underline; }
+
+// Title block
+.formTitleOuterContainer { margin: 0 0 30px 0;
+	.formTitleContainer { padding-bottom: 5px; border-bottom: 1px solid @FormFieldBorder;
+		.inner { .clearAfter;
+			&:before { display: none; }
+			h3.formTitle { color: @FormTitleColor; font: @FormTitleFont; } // title form
+			.mandatoryFieldsTitle { padding: 0; font-size: inherit; font: @FormTitleFont;
+				span.mandatorySymbol {  } // symbol "*"
+				strong { color: @FormTitleColor; font-weight: inherit; } // text "Mandatory fields"
+			}
+		}
+	}
+}
+
+
+// Section divider and name
+.captionOuterContainer { background: @FormSectionBg; padding: 0; margin: 30px 0 30px 0;
+	.captionContainer {
+		.fieldBody {
+			h4 { font-size: 40px; font-weight: bold; color: @FormSectionColor; }
+		}
+	}
+}
+
+
+//special rule for empty divider with hidden repeater
+#idCaptionContainer0.captionOuterContainer { padding: 0;
+	.fieldLabel,
+	.fieldBody h4 { font-size: 0; }
+}
+
+
+
+// Common field
+.fieldSubContainer { margin: 20px 0 20px 0; .clearfix();
+	// label
+	.fieldLabel { font-size: inherit; line-height: normal; color: @FormLabelColor;
+		span.mandatorySymbol {  }
+		span {  } // text of field label
+		strong.mandatoryLabel { font-weight: normal; }
+		.labeledImage {
+			img {  }
+		}
+		.memberFormCheckBox {
+			input[type=checkbox] {  }
+			label {  }
+		}
+		strong { font-weight: normal; }
+	}
+	// input
+	.fieldBody { font-size: 15px;
+		& > .typeInstruction { padding: 6px 0 0 0; font-style: italic; color: #9b9b9b; font-size: 14px; }
+		.fieldItem { margin: 0 0 10px 0;
+			span.typeCheckboxContainer,
+			span.typeRadioContainer { margin: 2px 9px 0 0;
+				input.typeCheckbox,
+				input.typeRadio {  }
+			}
+			span.label { font-size: 15px; display: table; overflow: visible;
+				.textLine { }
+				img {  }
+				label {
+					span.textLine {  } // text for radiobutton
+				}
+				.typeInstruction {
+					.levelDescription {  }
+				}
+				label.levelProperties {  }
+				.labelSubTitle {  }
+			}
+			&.disabled .label span:first-child label {  }
+		}
+		.groupBodyVertical { padding-top: 3px; margin-bottom: -10px; font-size: 15px;
+			.clearSelectionLabel { position: relative; top: -1px; }
+		}
+		& > .fieldItem {  }
+
+		a.inactiveLink {  }
+
+	// just value
+		& > span,
+		& > strong { vertical-align: top; }
+		& > a { }
+		ul.list {
+			li {
+				&.checked {  }
+				&.unchecked {  }
+				ul.list {  }
+			}
+		}
+	}
+	table {
+		td.left {
+			.fieldLabel {  }
+		}
+		td.right {
+			.fieldBody {  }
+		}
+	}
+}
+
+
+
+
+
+// Field - text
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					input.subjectTextBox,
+					input.typeText,
+					input[type=text] { border: 1px solid @FormFieldBorder; font-size: 15px; padding: 2px 4px 2px 4px; background: @FormFieldBg; color: @FormFieldColor; font: 15px 'Open Sans'; }
+					input[disabled=disabled] { background: @FormFieldBgDisabled; }
+				}
+			}
+		}
+	}
+}
+
+
+// Field - select
+.fieldContainer.dropdownFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					select { padding: 1px 1px 2px 1px; font-size: 15px; font-family: 'Open Sans'; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+					select[disabled=disabled] { background: @FormFieldBgDisabled; }
+				}
+			}
+		}
+	}
+}
+
+
+// Field - donation
+.fieldContainer.donationAmountContainer {
+	.fieldSubContainer {
+		.fieldBody {
+			input.typeText { border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+			input.typeText[disabled=disabled] { background: @FormFieldBgDisabled; }
+		}
+	}
+}
+
+
+// Field - date picker
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					span {
+						input[type=text] { width: 140px; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; margin-right: 6px; } // for input date
+						input[disabled=disabled] { background: @FormFieldBgDisabled; }
+						.DES_CalPopup {
+							span { .iconLink.calendarDate; vertical-align: top; }
+							img { visibility: hidden; } // click image - popup calendar
+						}
+						/*.DES_TPPopup { position: relative; top: -4px; }*/
+						.DES_TPPopup { margin-left: 0px;
+							span { .iconLink.calendarTime; vertical-align: top; }
+							img { visibility: hidden; } // click image - popup calendar
+						}
+
+						div[id$="Time_PU"] { background: none;
+							img { cursor: pointer; }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Field - textarea
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer {
+		.fieldBody {
+			textarea { margin: -1px 0 0 0; border: 1px solid @FormFieldBorder; font: 15px 'Open Sans'; padding: 2px 4px 2px 4px; background: @FormFieldBg; color: @FormFieldColor; } // for input text
+			textarea[disabled=disabled] { background: @FormFieldBgDisabled; }
+		}
+	}
+}
+
+
+// Field - WYSIWYG
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		.fieldBody {
+			#idEditorContainer { border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor;
+				#idEditorToolbarContainer { border-bottom: 1px solid #8cc63f; }
+			}
+		}
+	}
+}
+
+
+// Control links and bottoms under form
+.navigationOuterContainer { margin: 30px 0 20px 0; border: none;
+	.navigationContainer {
+		.left {
+			input.nextButton,
+			input.typeButton,
+			input[type=submit] { .functionalButton; margin-right: 10px; } // wizard button
+		}
+		.right {
+			input.nextButton,
+			input.typeButton,
+			input[type=submit] { .functionalButton; margin-left: 10px; } // wizard button
+		}
+	}
+}
+.generalFieldsContainer {
+	.fieldSubContainer {
+		input[type=submit],
+		input.typeButton { .functionalButton; margin-right: 10px; } // wizard button
+	}
+}
+
+
+/*****************************************************************************************************/
+/*	Responsive                                                                                       */
+/*****************************************************************************************************/
+// state2
+@media only screen and (min-width:@state2-minwidth) and (max-width:@state2-maxwidth)
+{
+	// EditorFieldContainer
+	.fieldContainer[id*='EditorFieldContainer'] {
+		.fieldLabel { width: 23%; float: none; padding-right: 2%; padding-bottom: 5px; text-align: right;
+			& > div { float: none !important; }
+		}
+		.fieldBody { width: auto; float: none; text-align: center;
+			#idEditorContainer { display: inline-block; vertical-align: top; }
+		}
+		table { display: block;
+			tbody { width: auto; display: block; }
+			tr { width: auto; display: block; }
+			td.left { width: 23%; display: block; padding-right: 2%; text-align: right;
+				.fieldLabel { width: auto; float: none; }
+			}
+			td.right { width: auto; display: block; text-align: left; }
+		}
+	}
+
+}
+
+
+// state3
+@media only screen and (max-width:@state3-maxwidth)
+{
+	// Section divider and name
+	.captionOuterContainer {
+		.captionContainer {
+			.fieldLabel { width: 0; float: left; }
+			.fieldBody { width: 100%; float: left; }
+		}
+	}
+
+	.fieldSubContainer {
+		.fieldLabel { width: auto; float: none; padding-right: 0; text-align: left; font-size: 14px; font-weight: 600; color: #aaa;
+			& > div { float: none !important; }
+		}
+		.fieldBody { width: auto; float: none; text-align: left;
+
+		}
+		table { display: block;
+			tbody { width: auto; display: block; }
+			tr { width: auto; display: block; }
+			td.left { width: auto; display: block; padding-right: 0; text-align: left;
+				.fieldLabel {  }
+			}
+			td.right { width: auto; display: block; text-align: left; }
+		}
+	}
+
+
+	// Field - date picker
+	.fieldContainer.textFieldContainer {
+		.fieldSubContainer.singleStringContainer {
+			table {
+				td.right {
+					.fieldBody {
+						span {
+							input[type=text] { width: 110px; } // for input date
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// Field - text
+	.fieldContainer.textFieldContainer {
+		.fieldSubContainer.singleStringContainer {
+			table {
+				td.right {
+					.fieldBody {
+						input.subjectTextBox,
+						input.typeText,
+						input[type=text] { width: 100%; }
+					}
+				}
+			}
+		}
+	}
+
+
+
+	// Field - textarea
+	.fieldContainer.textFieldContainer {
+		.fieldSubContainer {
+			.fieldLabel {
+				span {  } // text of field label
+			}
+			.fieldBody {
+				textarea { width: 100%; } // for input text
+				span.mandatory {  } // limit for input
+			}
+		}
+	}
+
+	// Field - WYSIWYG
+	.fieldContainer.textFieldContainer {
+		.fieldSubContainer.singleStringContainer {
+			.fieldLabel {
+				span {  } // text of field label
+				/*.mandatorySymbol[style*='visibility:hidden;'] { display: none; }*/
+			}
+			.fieldBody {
+				#idEditorContainer { width: auto;
+					img {  }
+					#idEditorToolbarContainer {  }
+					TEXTAREA {  }
+				}
+			}
+		}
+	}
+
+
+	.WaGadgetChangePassword {
+		.introContainer { margin: 0 0 20px 0; }
+	}
+
+
+	.commonMessageBox {
+		.commonMessageBox .cww-co {  }
+		.kvTable { margin: 0 0 0 -40px; }
+		.kvTable td.labelInfoColumn { width: 86px; }
+	}
+}

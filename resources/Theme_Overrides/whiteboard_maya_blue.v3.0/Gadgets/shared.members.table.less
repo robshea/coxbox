@@ -1,0 +1,68 @@
+// -> members table
+.genericListTable,
+.membersTable { border: none; border-collapse: separate; border-spacing: 0;
+	thead {
+		th { padding: 19px 25px 21px 0px; height: auto; font-weight: bold; font-size: 24px; line-height: 1em; background-color: @TableHeadingBg; color: @TableHeadingColor; }
+		th:first-child { padding-left: 25px; }
+	}
+	tbody {
+		td { padding: 15px 25px 15px 0px; border-top: none; height: auto;
+			&:first-child { padding-left: 25px; }
+			.memberValue { padding: 0;
+				h5 { font-family: 'Open Sans'; font-size: inherit;
+					a {  } // link to View details
+				}
+			}
+		}
+		tr:first-child td { border-top: none; }
+	}
+	tr.hover {
+		td { background-color: @TableRowHighlightBg; }
+	}
+}
+
+
+/*****************************************************************************************************/
+/*	Responsive                                                                                       */
+/*****************************************************************************************************/
+// state2
+@media only screen and (min-width:@state2-minwidth) and (max-width:@state2-maxwidth)
+{
+	.genericListTable,
+	.membersTable {
+		thead {
+			th { padding: 19px 10px 21px 0px; font-size: 18px; }
+			th:first-child { padding-left: 10px; }
+		}
+		tbody {
+			td { padding: 15px 10px 15px 0px;
+				&:first-child { padding-left: 10px; }
+			}
+		}
+	}
+
+}
+
+// state3
+@media only screen and (max-width:@state3-maxwidth)
+{
+	.genericListTable,
+	.membersTable { display: block;
+		thead { display: block;
+			tr { display: block; }
+			th { display: block; padding: 5px 10px 5px 10px; font-size: 18px; width: auto;
+				&:first-child { padding-top: 19px; padding-left: 10px; }
+				&:last-child { padding-bottom: 21px; }
+			}
+		}
+		tbody { display: block;
+			tr { display: block; }
+			td { display: block; padding: 5px 10px 5px 10px; width: auto;
+				&:first-child { padding-top: 15px; padding-left: 10px; }
+				&:last-child { padding-bottom: 15px; }
+			}
+		}
+
+	}
+
+}

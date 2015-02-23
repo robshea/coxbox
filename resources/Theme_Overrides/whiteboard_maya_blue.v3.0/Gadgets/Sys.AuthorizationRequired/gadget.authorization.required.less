@@ -1,0 +1,41 @@
+/* gadget: authorization required
+/****************************************************************************************************/
+.WaGadgetAuthorizationRequired {
+	.openAuthFormContainer {  }
+	.authFormContainer {  }
+	.loginPageTable {
+		#idLoginBox,
+		#idPasswordBox {
+			div {
+				input[type=text],
+				input[type=password] { border: 1px solid @FormFieldBorder; font-size: 15px; padding: 2px 4px 2px 4px; background: @FormFieldBg; color: @FormFieldColor; font: 15px 'Open Sans'; }
+			}
+		}
+		#idRememberMe { white-space: nowrap;
+			input[type=checkbox] { display: inline-block; width: 13px; height: 13px; margin: 1px 2px 0 0; padding: 0; vertical-align: middle; }
+			label { display: inline-block;vertical-align: middle; }
+		}
+		#idSubmitBox {
+			#idLoginButtonBox { display: inline-block; float: none; vertical-align: middle;
+				span {
+					input.loginButton { .functionalButton; }
+				}
+			}
+			#idForgotLinkBox { display: inline-block; float: none; padding: 0; vertical-align: middle;
+				a {  }
+			}
+		}
+	}
+}
+
+/*****************************************************************************************************/
+/*	Responsive                                                                                       */
+/*****************************************************************************************************/
+// state3
+@media only screen and (max-width:@state3-maxwidth)
+{
+	.WaGadgetAuthorizationRequired {
+		.openAuthFormContainer { display: block; border-right: 0; border-bottom: 1px solid #cdcdcd; max-width: 1000px; padding-right: 0; margin-bottom: 20px; }
+		.authFormContainer { display: block; padding-left: 0; }
+	}
+}

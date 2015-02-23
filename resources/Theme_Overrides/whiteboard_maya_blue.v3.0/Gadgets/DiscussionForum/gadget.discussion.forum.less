@@ -1,0 +1,466 @@
+
+/****************************************************************************************************/
+/*	WaGadgetForum                                                                                     */
+/*		WaGadgetForumStateTopicList                                                                        */
+/*		WaGadgetForumStateAddTopic                                                                         */
+/*		WaGadgetForumStateEditTopic                                                                        */
+/*		WaGadgetForumStateMessageList                                                                      */
+/*		WaGadgetForumStateEditMessage                                                                      */
+/*		WaGadgetForumStateNewMessage                                                                       */
+/****************************************************************************************************/
+
+
+/* mode: WaGadgetForumStateTopicList (list of topics) */
+/*****************************************************************************************************/
+.WaGadgetForumStateTopicList {
+	.pageTitleOuterContainer {  } // page title ->
+	.forumPanelOuterContainer {  } // forum panel ->
+	.pagerOuterContainer {  } // page nav ->
+	.boxOuterContainer.boxViewOutline {  }
+	#idTopicListContainer {  } // topic list ->
+	.pagerOuterContainer {  } // page nav ->
+	.forumBottomPanelOuterContainer {  } // forum bottom panel ->
+}
+
+.WaGadgetForumStateTopicList {
+	.introOuterContainer { margin: 0 0 30px 0; }
+}
+
+// -> topic list
+.WaGadgetForum #idTopicListContainer { clear: both; padding: 20px 0 0 0; margin: 0 0 30px 0;
+	.boxHeaderOuterContainer {
+		table { table-layout: fixed;
+			td { padding: 15px 25px 8px 0px; background: @ForumTableHeadingBg;
+				&:first-child { padding-left: 25px; }
+			}
+			td.threadImageTD { width: 7%;
+				div.threadImage { min-width: 19px; }
+			}
+			td.threadTD { width: 55%;
+				div.thread {
+					h4.boxHeaderTitle { font-size: 24px; color: @ForumTableHeadingColor; font-weight: bold; line-height: normal; }
+				}
+			}
+			td.lastReplyTD { width: 25%;
+				.lastReply {
+					h4.boxHeaderTitle { font-size: 24px; color: @ForumTableHeadingColor; font-weight: bold; line-height: normal; }
+				}
+			}
+			td.repliesCountTD { width: 13%;
+				.repliesCount { text-align: center;
+					.boxHeaderTitle { font-size: 24px; color: @ForumTableHeadingColor; font-weight: bold; line-height: normal; }
+				}
+			}
+		}
+	}
+	.boxBodyOuterContainer {
+		table { border: none; table-layout: fixed;
+			td { padding: 10px 25px 10px 0px; border-top: none; border-bottom: none;
+				&:first-child { padding-left: 25px; }
+			}
+			tr.topicListRow.normal {  }
+			tr.topicListRow.highlight td { background: @ForumTableHighlightBg; }
+			tr.topicListRow {
+				td.threadImageTD { width: 7%;
+					div.threadImage { vertical-align: middle; .iconLink.forumTopic();
+						img { visibility: visible; } // topic image
+					}
+					div.threadImage.stickyForumTopic { .iconLink.stickyForumTopic(); }
+				}
+				td.threadTD { width: 55%;
+					div.thread {
+						a {  } // topic name
+					}
+				}
+				td.lastReplyTD { width: 25%;
+					.lastReply { font-size: 14px;
+						a { font-style: italic; } // date
+						span { margin: 0px 0 0 0; } // user name
+					}
+				}
+				td.repliesCountTD { width: 13%;
+					.repliesCount { text-align: center;
+						span {  } // count of replies
+					}
+				}
+			}
+			tr.topicListRow:first-child td {  }
+		}
+	}
+}
+
+
+/* mode: WaGadgetForumStateMessageList (list of messages in current topic) */
+/*****************************************************************************************************/
+.WaGadgetForumStateMessageList {
+	.pageTitleOuterContainer { }  // page title ->
+	.topicTitleOuterContainer {
+		h4 { font-size: 32px; font-weight: bold; text-transform: none; // topic name
+			a {  }
+		}
+	}
+	.forumPanelOuterContainer {  } // forum panel ->
+	.pagerOuterContainer {  } // page nav ->
+	.messageListOuterContainer {  } // message list in topic ->
+	.pagerOuterContainer {  } // page nav ->
+	.forumBottomPanelOuterContainer {  } // forum bottom panel ->
+}
+
+
+// -> message list in topic
+.WaGadgetForumStateMessageList {
+	.messageListOuterContainer { clear: both; padding: 1px 0 0 0;
+		ul.boxesList {
+			li.boxesListItem { margin: 30px 0 30px 0; padding: 0px;
+				.boxHeaderOuterContainer { padding: 0 0 0px 0; margin: 0 0 20px 0;
+					table.forumMessageHeaderTable { border: none; background: none;
+						td { padding: 0; font-size: inherit; font-weight: normal; vertical-align: middle; line-height: normal; }
+						td.forumMessageHeaderInfoContainer { padding-right: 30px; vertical-align: top;
+							.forumMessageHeaderInfo { padding: 0 0 0 0;
+								img { display: none; }
+								span { vertical-align: top; font-style: italic; }
+							}
+						}
+						td.forumMessageHeaderBodyContainer {
+							.messageActionsContainer {
+								a[title^="Edit"] { .iconLink.edit; }
+								a[title^="Merge"] { .iconLink.merge; }
+								a[title^="Move"] { .iconLink.move; }
+								a[title^="Delete"] { .iconLink.delete; }
+								a[title^="Quote"] { .iconLink.quote; }
+								span.actionDivider { visibility: hidden; margin: 0 6px; } // symbol "|"
+							}
+						}
+					}
+				}
+				.boxBodyOuterContainer {
+					table.forumMessageTable { border: none; table-layout: fixed;
+						& > tbody > tr > td { padding: 0; }
+						td.left { width: 22%; padding-right: 30px;
+							.boxBodyInfoOuterContainer {
+								.boxBodyInfoContainer {
+									.pictureContainer {
+										img {  }
+									}
+									a {  } // user
+									span.postedByComment {  } // type of user
+								}
+							}
+						}
+						td.right { border-left: none;
+							.boxBodyContentOuterContainer { width: 100%; overflow: hidden; }
+							.forumMessage {  } // user's message
+							.forumMessageLastModified { margin: 1em 0 0 0; padding: 0; color: #9b9b9b; font-size: 14px; text-align: right; } // if message modified
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// page title
+.WaGadgetForum {
+	.pageTitleOuterContainer {
+		.pageTitleContainer {
+			h1.pageTitle {  } // page title
+		}
+		.pageBackContainer { margin: 0 0 30px 0;
+			a { .iconLink.back; } // link "Back to topics"
+		}
+	}
+}
+
+
+// forum panel
+.forumPanelOuterContainer {
+	.forumPanelContainer {
+		input.typeButton { .functionalButton; float: left; margin: 0 45px 0px 0; } // button "Create topic", "Reply"
+		div .forumSortedOrderLink { padding-right: 0; }
+		.forumPanelButton {  }
+		div {
+			#idSubscribe { float: left; padding: 8px 0 0 0;
+				a { .iconLink.subscribe;
+					span {  } // link "Subscribe to forum"
+				}
+			}
+		}
+		div {
+			#idUnsubscribe { float: left; padding: 5px 0 0 0;
+				img.forumPanelSubscribeImage { display: inline-block; vertical-align: middle; }
+				a { display: inline-block; line-height: normal; vertical-align: middle;
+					span {  } // link "Subscribed (Unsubscribe)"
+				}
+			}
+		}
+		.forumPanelSubscribeLink { display: block; float: left; padding: 8px 0 0 0; } // message like a "Subscribing..."
+		.forumSelectAction { clear: both; float: right; margin: -10px 0 0 0;
+			select { padding: 1px 1px 2px 1px; font-size: 15px; font-family: 'Open Sans'; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+		}
+		.clearEndContainer { display: none; }
+	}
+}
+
+
+.noTopicsOuterContainer { clear: both; padding: 20px 0 0 0;
+	.noTopicsContainer { }
+}
+
+
+/* popup tooltip for topic */
+.controlTooltipExtender { border: none; background-color: @ForumPopupTooltipBg; padding: 20px; box-shadow: 0 0 3px rgba(0,0,0,0.3); line-height: 1.2;
+	strong { font-weight: 600; font-size: 14px; line-height: 1.143; }
+	hr { margin-top: 0.8em; }
+}
+
+
+// forum bottom panel
+.WaGadgetForum {
+	.forumBottomPanelOuterContainer {
+		.forumBottomPanelContainer {
+			input.typeButton { .functionalButton; float: left; margin: 0 45px 0 0; } // button "Create topic", "Reply"
+			a[href$="#top"] { .iconLink.backToTop; float: left; margin: 4px 0 0 0; } // link like a "Back to top"
+		}
+	}
+}
+
+
+// -> page navigation 1 2 3 ...
+.WaGadgetForum {
+	.pagerOuterContainer { float: right; padding: 5px 0 0 0px; margin: 0; clear: none; }
+}
+#idForumTopPagerContainer { margin: 0 0 -10px 0; clear: both; }
+
+
+/* mode: WaGadgetForumStateAddTopic, WaGadgetForumStateEditTopic, WaGadgetForumStateEditMessage, WaGadgetForumStateNewMessage */
+/*****************************************************************************************************/
+.WaGadgetForum {
+	.forumEditEntryBoxContainer {
+		.boxHeaderOuterContainer { padding: 0 0 5px 0; border-bottom: 1px solid @FormFieldBorder;
+			h4.boxHeaderTitle { padding: 0; margin: 0 150px 0 0; color: @FormTitleColor; font: @FormTitleFont; }
+		}
+		.boxBodyOuterContainer {
+			.mandatoryFieldsTitle { margin: -27px 0 30px 0; padding: 0 0 8px 0; text-align: right; color: @FormTitleColor; font: @FormTitleFont;
+				em { color: #ff0000; font-style: normal; font-weight: bold; } // "*"
+				strong { font-weight: inherit; } // text "Mandatory"
+			}
+			#idMakeSticky .fieldItem { margin: 0; }
+			#idAuthorLabelContainer {
+				.fieldLabel { font-weight: normal; }
+			}
+			.fieldContainer {
+				.stickinessForumLabelDate + span input { border: 1px solid #c6c6c6; font-size: 15px; font-family: 'Open Sans'; }
+				.DES_CalPopup {
+					span { .iconLink.calendarDate;
+						img { display: none; }
+					}
+				}
+			}
+		}
+		.boxFooterOuterContainer {
+			.boxFooterPrimaryOuterContainer {
+				input { .functionalButton; }
+			}
+			.boxFooterSecondaryOuterContainer {
+				input { .functionalButton; }
+			}
+			#idForumSubscribeOptionsContainer { padding: 12px 0 0 20px;
+				#idForumSubscribeOptionSelect {
+					select { border: 1px solid #c6c6c6; }
+				}
+				#idForumSubscribeOptionCheckbox {
+					input[type=checkbox] { margin: 0 5px 0 0; vertical-align: baseline; }
+					label { vertical-align: baseline; }
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/*****************************************************************************************************/
+/*	Responsive                                                                                       */
+/*****************************************************************************************************/
+// state2
+@media only screen and (min-width:@state2-minwidth) and (max-width:@state2-maxwidth)
+{
+	// -> topic list
+	.WaGadgetForum #idTopicListContainer {
+		.boxHeaderOuterContainer {
+			table {
+				td { padding: 10px 10px 8px 0px; }
+				td.threadImageTD { display: none; }
+				td.threadTD { padding-left: 10px;
+					div.thread h4.boxHeaderTitle { font-size: 18px; font-weight: normal; }
+				}
+				td.lastReplyTD {
+					.lastReply h4.boxHeaderTitle { font-size: 18px; font-weight: normal; }
+				}
+				td.repliesCountTD {
+					.repliesCount h4.boxHeaderTitle { font-size: 18px; font-weight: normal; }
+				}
+			}
+		}
+		.boxBodyOuterContainer {
+			table {
+				td { padding: 10px 10px 10px 0px; }
+				tr.topicListRow {
+					td.threadImageTD { display: none; }
+					td.threadTD { padding-left: 10px; }
+					td.lastReplyTD {  }
+					td.repliesCountTD {  }
+				}
+			}
+		}
+	}
+
+
+	// -> message list in topic
+	.WaGadgetForumStateMessageList {
+		.messageListOuterContainer {
+			ul.boxesList {
+				li.boxesListItem {
+					.boxHeaderOuterContainer {
+						table.forumMessageHeaderTable {
+							td.forumMessageHeaderBodyContainer {
+								.messageActionsContainer {
+									a[title^="Edit"] { overflow: hidden; width: 20px; }
+									a[title^="Merge"] { overflow: hidden; width: 15px; }
+									a[title^="Move"] { overflow: hidden; width: 23px; }
+									a[title^="Delete"] { overflow: hidden; width: 20px; }
+									a[title^="Quote"] { overflow: hidden; width: 20px; }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// state3
+@media only screen and (max-width:@state3-maxwidth)
+{
+	// forum panel
+	.forumPanelOuterContainer {
+		.forumPanelContainer {
+			input.typeButton { margin: 0 15px 0px 0; } // button "Create topic", "Reply"
+			div .forumSortedOrderLink { margin: 8px 0; }
+			div[id*="messageList"] { clear: both; text-align: right; }
+			div {
+				#idSubscribe { float: none; }
+			}
+			div {
+				#idUnsubscribe { float: none; }
+			}
+			.forumPanelSubscribeLink {  } // message like a "Subscribing..."
+			.forumSelectAction { margin: 8px 0 0 0; }
+		}
+	}
+
+	// -> topic list
+	.WaGadgetForum #idTopicListContainer {
+		.boxHeaderOuterContainer {
+			table { display: block;
+				td { padding: 10px 10px 8px 0px; }
+				td.threadImageTD { display: none; }
+				td.threadTD { padding-left: 10px;
+					div.thread h4.boxHeaderTitle { font-size: 18px; font-weight: normal; }
+				}
+				td.lastReplyTD { display: none;
+					.lastReply h4.boxHeaderTitle { font-size: 18px; font-weight: normal; }
+				}
+				td.repliesCountTD {
+					.repliesCount h4.boxHeaderTitle { font-size: 18px; font-weight: normal; text-align: right; }
+				}
+			}
+		}
+		.boxBodyOuterContainer {
+			table {
+				tbody {  }
+				tr {  }
+				td { padding: 10px 10px 10px 0px; height: auto; }
+				tr.topicListRow {
+					td.threadImageTD { display: none; }
+					td.threadTD { padding-left: 10px; }
+					td.lastReplyTD { display: block; display: none; }
+					td.repliesCountTD {
+						.repliesCount { text-align: right; }
+					}
+				}
+			}
+		}
+	}
+
+
+	// -> message list in topic
+	.WaGadgetForumStateMessageList {
+		.messageListOuterContainer {
+			ul.boxesList {
+				li.boxesListItem { padding: 0px;
+					.boxHeaderOuterContainer {
+						table.forumMessageHeaderTable {
+							td.forumMessageHeaderInfoContainer { white-space: normal; }
+							td.forumMessageHeaderBodyContainer {
+								.messageActionsContainer { margin: 0 0 6px 0;
+									a[title^="Edit"] { overflow: hidden; width: 20px; }
+									a[title^="Merge"] { overflow: hidden; width: 15px; }
+									a[title^="Move"] { overflow: hidden; width: 23px; }
+									a[title^="Delete"] { overflow: hidden; width: 20px; }
+									a[title^="Quote"] { overflow: hidden; width: 20px; }
+									span.actionDivider { visibility: hidden; margin: 0 0px; } // symbol "|"
+								}
+								& > span { display: block; clear: both; float: none; text-align: right; }
+							}
+						}
+					}
+					.boxBodyOuterContainer {
+						table.forumMessageTable { display: block;
+							tbody { display: block; }
+							tr { display: block; }
+							td.left { width: auto; display: block; padding-right: 0; height: auto;
+								.boxBodyInfoOuterContainer {
+									.boxBodyInfoContainer {
+										.pictureContainer { float: left; margin-right: 10px;
+											img { width: 30px; }
+										}
+										a {  } // user
+										span.postedByComment {  } // type of user
+									}
+								}
+							}
+							td.right { display: block; width: auto; height: auto;
+								.boxBodyContentOuterContainer {  }
+								.forumMessage {  } // user's message
+								.forumMessageLastModified {  } // if message modified
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// forum bottom panel
+	.WaGadgetForum {
+		.forumBottomPanelOuterContainer {
+			.forumBottomPanelContainer {
+				a[href$="#top"] { display: none; } // link like a "Back to top"
+			}
+		}
+	}
+
+
+	// add & edit topic or message
+	.WaGadgetForum {
+		.forumEditEntryBoxContainer {
+			.boxFooterOuterContainer { padding: 0; }
+		}
+	}
+}

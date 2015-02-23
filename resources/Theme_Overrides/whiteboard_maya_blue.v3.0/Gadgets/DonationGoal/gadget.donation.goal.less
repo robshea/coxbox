@@ -1,0 +1,82 @@
+.WaGadgetDonationGoal {
+	.gadgetStyleTitle { margin: 0; }
+	.gadgetStyleTitle h4 { margin: 0; padding: 0; }
+	.gadgetStyleBody {  }
+}
+
+
+.WaGadgetDonationGoal {
+	table.donationGoalProgressLabels { float: left; margin: 2px 0 15px 0; border-collapse: collapse;
+		th { padding-right: 10px; text-align: left; vertical-align: top; font-weight: normal; }
+		td { text-align: left; vertical-align: top; }
+		tr.donationGoalProgressCollected {
+			th.donationGoalCollectedTitleContainer {  }
+			td.donationGoalCollectedValueContainer {  }
+		}
+		tr.donationGoalProgressAmount {
+			th.donationGoalAmountTitleContainer {  }
+			td.donationGoalAmountValueContainer {  }
+		}
+	}
+	.progressBar { overflow: visible; zoom: 1; margin: 0 0 18px 0;
+		.progressBarRight { float: right; padding: 0; margin: 18px 0 15px 20px; font-size: 26px; line-height: 1em; font-weight: bold; color: #494949; } // value donation in %
+		.progressBarLeft { clear: both; overflow: visible; zoom: 1; overflow: hidden; border: 1px solid #acacac; padding: 2px; background: #ffffff;
+			table { width: 100%; margin: 0; padding: 0; border-collapse: separate; border: 0; overflow: hidden;
+				td.donationGoalProgressBarLeftPart { padding: 0; height: 38px; background: none; // progress bar in % left part
+					span { display: block; height: 38px; background-color: #afafaf; overflow: hidden; min-width: 4px; }
+				}
+				td.donationGoalProgressBarRightPart { padding: 0; height: 38px; overflow: hidden; // progress bar in % right part
+					span { display: block; width: 0px; overflow: hidden; }
+				}
+			}
+		}
+	}
+	.donationGoalNotesContainer { margin: 0 0 25px 0; font-style: italic; } // some description
+	.donationGoalButton { text-align: left;
+		input.typeButton { .functionalButton; }
+	}
+}
+
+
+.WaGadgetDonationGoal.gadgetStyleNone {  }
+.WaGadgetDonationGoal.gadgetStyleNone .gadgetStyleTitle { margin: 0 0 1em 0; }
+.WaGadgetDonationGoal.gadgetStyleNone .progressBar .progressBarRight { color: #494949; }
+.WaGadgetDonationGoal.gadgetStyleNone .progressBar .progressBarLeft { border: 2px solid #cccccc; padding: 0; }
+.WaGadgetDonationGoal.gadgetStyleNone .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #e1e1e1; }
+.WaGadgetDonationGoal.gadgetStyleNone .donationGoalButton input.typeButton { background-color: #f0f0f0; color: #333333; }
+.WaGadgetDonationGoal.gadgetStyleNone .donationGoalButton input.typeButton:hover { background-color: darken(#f0f0f0, 5%); }
+
+.WaGadgetDonationGoal.gadgetStyle001 {  }
+.WaGadgetDonationGoal.gadgetStyle001 .progressBar .progressBarRight { color: #494949; }
+.WaGadgetDonationGoal.gadgetStyle001 .progressBar .progressBarLeft { border: 1px solid #acacac; }
+.WaGadgetDonationGoal.gadgetStyle001 .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #333333; }
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalButton input.typeButton { background-color: #f0f0f0; color: #333333; }
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalButton input.typeButton:hover { background-color: darken(#f0f0f0, 5%); }
+
+.WaGadgetDonationGoal.gadgetStyle002 {  }
+.WaGadgetDonationGoal.gadgetStyle002 .progressBar .progressBarRight { color: #494949; }
+.WaGadgetDonationGoal.gadgetStyle002 .progressBar .progressBarLeft { border: 2px solid #cccccc; padding: 0; }
+.WaGadgetDonationGoal.gadgetStyle002 .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #e1e1e1; }
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalButton input.typeButton { background-color: #f0f0f0; color: #333333; }
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalButton input.typeButton:hover { background-color: darken(#f0f0f0, 5%); }
+
+.WaGadgetDonationGoal.gadgetStyle003 {  }
+.WaGadgetDonationGoal.gadgetStyle003 .progressBar .progressBarRight { color: #95ab63; }
+.WaGadgetDonationGoal.gadgetStyle003 .progressBar .progressBarLeft { border: 1px solid #95ab63; }
+.WaGadgetDonationGoal.gadgetStyle003 .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #95ab63; }
+.WaGadgetDonationGoal.gadgetStyle003 .donationGoalButton input.typeButton { background-color: #95ab63; color: #fff; }
+.WaGadgetDonationGoal.gadgetStyle003 .donationGoalButton input.typeButton:hover { background-color: darken(#95ab63, 5%); }
+
+.WaGadgetDonationGoal.gadgetStyle004 {  }
+.WaGadgetDonationGoal.gadgetStyle004 .progressBar .progressBarRight { color: #40b2cf; }
+.WaGadgetDonationGoal.gadgetStyle004 .progressBar .progressBarLeft { border: 1px solid #40b2cf; }
+.WaGadgetDonationGoal.gadgetStyle004 .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #40b2cf; }
+.WaGadgetDonationGoal.gadgetStyle004 .donationGoalButton input.typeButton { background-color: #40b2cf; color: #fff; }
+.WaGadgetDonationGoal.gadgetStyle004 .donationGoalButton input.typeButton:hover { background-color: darken(#40b2cf, 5%); }
+
+.WaGadgetDonationGoal.gadgetStyle005 {  }
+.WaGadgetDonationGoal.gadgetStyle005 .progressBar .progressBarRight { color: #bd8d46; }
+.WaGadgetDonationGoal.gadgetStyle005 .progressBar .progressBarLeft { border: 1px solid #bd8d46; }
+.WaGadgetDonationGoal.gadgetStyle005 .progressBar .progressBarLeft table td.donationGoalProgressBarLeftPart span { background-color: #bd8d46; }
+.WaGadgetDonationGoal.gadgetStyle005 .donationGoalButton input.typeButton { background-color: #bd8d46; color: #fff; }
+.WaGadgetDonationGoal.gadgetStyle005 .donationGoalButton input.typeButton:hover { background-color: darken(#bd8d46, 5%); }

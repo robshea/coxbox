@@ -1,0 +1,49 @@
+.WaGadgetCustomMenu {
+
+	ul { font-size: 18px; font-weight: 600; margin: 0; padding: 0;
+		li {
+			a {  }
+		}
+	}
+}
+
+
+.WaGadgetCustomMenu.menuStyleNone {
+	.orientationHorizontal { list-style: none;
+		li { display: inline-block; vertical-align: top;
+			& + li:before { content: "|"; color: @CustomMenu-StyleNone-Link-Color; }
+			a { display: inline-block; margin: 0 10px; color: @CustomMenu-StyleNone-Link-Color; }
+			a:hover { color: @CustomMenu-StyleNone-Link-Color-Hover; }
+		}
+	}
+}
+
+.WaGadgetCustomMenu.menuStyle001 {
+	.orientationHorizontal { list-style: none;
+		li { display: inline-block; vertical-align: top;
+			& + li:before { content: ""; display: inline-block; vertical-align: middle; width: 7px; height: 7px; border-radius: 50%; background: @CustomMenu-Style001-Link-Color; }
+			a { display: inline-block; vertical-align: top; margin: 0 10px; color: @CustomMenu-Style001-Link-Color; }
+			a:hover { color: @CustomMenu-Style001-Link-Color-Hover; }
+		}
+	}
+}
+
+.WaGadgetCustomMenu.menuStyleNone {
+	.orientationVertical { list-style: none;
+		li {
+			&:before { content: "|"; color: @CustomMenu-StyleNone-Link-Color; }
+			a { display: inline-block; margin: 0px; color: @CustomMenu-StyleNone-Link-Color; }
+			a:hover { color: @CustomMenu-StyleNone-Link-Color-Hover; }
+		}
+	}
+}
+
+.WaGadgetCustomMenu.menuStyle001 {
+	.orientationVertical { list-style: none;
+		li {
+			&:before { content: ""; display: inline-block; vertical-align: middle; width: 7px; height: 7px; border-radius: 50%; background: @CustomMenu-Style001-Link-Color; }
+			a { display: inline-block; vertical-align: top; margin: 0 0 0 3px; color: @CustomMenu-Style001-Link-Color; }
+			a:hover { color: @CustomMenu-Style001-Link-Color-Hover; }
+		}
+	}
+}

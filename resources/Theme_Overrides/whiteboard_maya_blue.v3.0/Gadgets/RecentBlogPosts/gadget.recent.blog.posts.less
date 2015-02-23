@@ -1,0 +1,19 @@
+
+.WaGadgetRecentBlogPosts {
+	ul { margin: 0; padding: 0; list-style: none;
+		li { padding: 0 0 0 0px; margin: 0px 0 16px 0; position: relative; line-height: 1.2;
+			.title { margin: 0 0 6px 0; padding: 0; }
+			.title a {  }
+			.date { display: inline; margin: 0; padding: 0; font-size: 14px; color: #373737;
+				&:after { content: "\2022"; background: none; text-decoration: none; font-style: normal; font-weight: normal; color: #373737;
+					font-size: 14px;
+				}
+				span { font-style: italic; }
+			}
+			.author { display: inline; font-size: 14px; color: #373737;
+				a, span { color: inherit; }
+			}
+		}
+	}
+	li.last { margin: 0; }
+}

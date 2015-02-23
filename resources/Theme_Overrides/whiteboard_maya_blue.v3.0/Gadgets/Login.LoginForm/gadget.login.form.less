@@ -1,0 +1,165 @@
+
+/* gadget: login box */
+/*****************************************************************************************************/
+.WaGadgetLoginForm {
+
+	a, a:link, a:visited, a:active {  }
+
+// Vertical
+	.loginContainerAuthenticated.orientationVertical {
+		.loggedName { font-size: 15px; }
+		a { font-size: 15px; }
+		.profileBox {
+			a {  }
+		}
+		.viewProfileBox {  }
+		.changePasswordBox {  }
+		.loggedAction {
+			.loginBoxLogout { display: inline-block; margin: 0; border: none; padding: 0; height: auto; font-family: "Open Sans"; font-size: 15px; color: @LoginLinkColor; text-decoration: none; background: none;
+				&:hover { color: @LoginLinkColorHover; }
+			}
+		}
+	}
+
+	.loginContainerForm.orientationVertical {
+		form { display: block; max-width: 270px; vertical-align: top; position: relative; padding-bottom: 35px; .clearAfter;
+			.mandatorySymbol {  }
+			.loginUserName {
+				.loginUserNameLabel {  }
+				.loginUserNameTextBox { display: block; width: auto; max-width: 215px; height: 23px; padding: 6px 15px 6px 40px; border: 1px solid @FormFieldBorder;
+					background: #fff url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 11px -1141px no-repeat;
+					input.emailTextBoxControl { width: 100%; height: 23px; padding: 0px 0px 0px 0px; font-size: 15px; line-height: 19px; color: #373737; border: none;
+						 font-family: "Open Sans"; outline: none; background-color: transparent; .box-sizing(border-box);
+					}
+					input::-webkit-input-placeholder { padding-top: 1px; }
+					input:-moz-placeholder {  }
+					input::-moz-placeholder {  }
+					input:-ms-input-placeholder {  }
+				}
+			}
+			.loginPassword {
+				.loginPasswordLabel {  }
+				.loginPasswordTextBox { display: block; width: auto; max-width: 215px; height: 23px; padding: 6px 15px 6px 40px; border: 1px solid @FormFieldBorder;
+					background: #fff url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 12px -1190px no-repeat;
+					input.passwordTextBoxControl { width: 100%; height: 23px; padding: 0px 0px 0px 0px; font-size: 15px; line-height: 19px; color: #373737; border: none;
+						font-family: "Open Sans"; outline: none; background-color: transparent; .box-sizing(border-box);
+					}
+					input::-webkit-input-placeholder { padding-top: 1px; }
+					input:-moz-placeholder {  }
+					input::-moz-placeholder {  }
+					input:-ms-input-placeholder {  }
+				}
+			}
+			.loginActionRememberMe { position: relative; float: left; white-space: nowrap;
+				input.rememberMeCheckboxControl { vertical-align: baseline; position: relative; top: 1px; }
+				label { display: inline-block; vertical-align: top; color: @LoginLinkColor; cursor: pointer;
+					&:hover { color: @LoginLinkColorHover; }
+				}
+				.checkboxReplacement { display: inline-block; margin: 2px 2px 0 0; width: 18px; height: 18px; background: url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 0px -1250px no-repeat; vertical-align: top; cursor: pointer; }
+				.checkboxReplacement.checked { background: url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 0px -1300px no-repeat; }
+				.checkboxReplacement + input.rememberMeCheckboxControl { display: none; }
+			}
+			.loginAction { position: absolute; left: 0; bottom: 0;
+				input.loginButton { .functionalButton; background: @LoginButtonBg; color: @LoginButtonColor; outline: none; min-width: 0;
+					&:hover { background: @LoginButtonBgHover; }
+				}
+			}
+			.loginPasswordForgot { float: right; padding: 0; margin: 0 0 10px 10px;
+				a {  }
+			}
+		}
+	}
+
+
+// Horizontal
+	.loginContainerAuthenticated.orientationHorizontal {
+		.loggedName { font-family: inherit; font-size: inherit; margin: 0; }
+		.profileBox { font-family: inherit; font-size: inherit;
+			a {  }
+		}
+		.viewProfileBox {
+			a {  }
+		}
+		.changePasswordBox {
+			a {  }
+		}
+		.loggedAction {
+			a {  }
+			input[type=submit] { display: inline-block; margin: 0; padding: 0; border: 0; font-size: 15px; font-family: 'Open Sans'; color: @TypographyLinkColor;
+				background: none;
+				&:hover { color: @TypographyLinkColorHover; }
+			}
+		}
+	}
+
+	.loginContainerForm.orientationHorizontal { font-family: inherit;
+		form {
+			.loginPasswordForgot { margin-left: 5px; margin-right: 8px; font-size: 15px;
+				a {  }
+			}
+			.loginUserName {
+				.mandatorySymbol {  }
+				.loginUserNameLabel {
+					label {  }
+				}
+				.loginUserNameTextBox { display: inline-block; width: 165px; height: 23px; padding: 6px 15px 6px 40px; border: 1px solid @FormFieldBorder;
+					background: #fff url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 11px -1141px no-repeat;
+					input.emailTextBoxControl { width: 100%; height: 23px; padding: 0px 0px 0px 0px; font-size: 15px; line-height: 19px; color: #373737; border: none;
+						font-family: "Open Sans"; outline: none; background-color: transparent; .box-sizing(border-box);
+					}
+					input::-webkit-input-placeholder { padding-top: 1px; }
+					input:-moz-placeholder {  }
+					input::-moz-placeholder {  }
+					input:-ms-input-placeholder {  }
+				}
+			}
+			.loginPassword {
+				.mandatorySymbol {  }
+				.loginPasswordLabel {
+					label {  }
+				}
+				.loginPasswordTextBox {  display: inline-block; width: 165px; height: 23px; padding: 6px 15px 6px 40px; border: 1px solid @FormFieldBorder;
+					background: #fff url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 12px -1190px no-repeat;
+					input.passwordTextBoxControl { width: 100%; height: 23px; padding: 0px 0px 0px 0px; font-size: 15px; line-height: 19px; color: #373737; border: none;
+						font-family: "Open Sans"; outline: none; background-color: transparent; .box-sizing(border-box);
+					}
+					input::-webkit-input-placeholder { padding-top: 1px; }
+					input:-moz-placeholder {  }
+					input::-moz-placeholder {  }
+					input:-ms-input-placeholder {  }
+				}
+			}
+			.loginActionRememberMe { position: relative;
+				input.rememberMeCheckboxControl { vertical-align: middle; position: relative; top: 1px; }
+				label { display: inline-block; vertical-align: top; color: @LoginLinkColor; cursor: pointer; font-size: 15px;
+					&:hover { color: @LoginLinkColorHover; }
+				}
+				.checkboxReplacement { display: inline-block; margin: 1px 2px 0 0; width: 18px; height: 18px; background: url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 0px -1250px no-repeat; vertical-align: top; cursor: pointer; }
+				.checkboxReplacement.checked { background: url(<$StaticModel.ThemeUrl$>/images/icon_set.png) 0px -1300px no-repeat; }
+				.checkboxReplacement + input.rememberMeCheckboxControl { display: none; }
+			}
+			.loginAction {
+				input.loginButton { .functionalButton; background: @LoginButtonBg; color: @LoginButtonColor; outline: none; min-width: 0;
+					&:hover { background: @LoginButtonBgHover; }
+				}
+			}
+		}
+	}
+}
+
+/* Responsive */
+
+// state2
+@media only screen and (min-width:@state2-minwidth) and (max-width:@state2-maxwidth)
+{
+	.WaGadgetLoginForm {
+		.loginContainerForm.orientationVertical {
+			form {
+				.loginPasswordForgot { float: left; margin: 0 0 10px 25px; }
+			}
+		}
+		.loginContainerForm.orientationHorizontal {
+			form {  }
+		}
+	}
+}
