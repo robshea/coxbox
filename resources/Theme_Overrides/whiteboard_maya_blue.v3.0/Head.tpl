@@ -10,3 +10,7 @@
 <$if (PageModel.IsNoIndexPage)$><meta name="robots" content="noindex,nofollow,noarchive" /><$endif$>
 <$PageModel.RawHeaders$>
 <$if (PageModel.IsSearchEnabled)$><link rel="search" type="application/opensearchdescription+xml" title="<$PageModel.Host$>" href="/opensearch.ashx" /><$endif$>
+
+<link href="/resources/css/coxbox2015.css" media="all" rel="stylesheet" type="text/css">
+<script type='text/javascript' src='/resources/js/jquery.dcspamless.1.0.min.js'></script>
+<script type="text/javascript" src="/resources/js/coxbox.js"></script>
